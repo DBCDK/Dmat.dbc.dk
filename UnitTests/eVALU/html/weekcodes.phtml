@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <title>dmat weekcodes administration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<br/>
+<div class="row">
+    <div class="small-12 columns">
+        <h3>Administration af ugekoder</h3>
+    </div>
+</div>
+
+<form id="wcode" action="">
+    <br/>
+    <div class="row">
+        <div class="small-1 columns end">
+            <!--        <b>Dage:</b> <input disabled type="text" name="days" value="-->
+            <? //= $days ?><!--" size="3"/>-->
+            <b>Dage:</b><?= $days ?>
+        </div>
+        <div class="small-1 columns end">
+            <!--        <b>Plus:</b> <input disabled style="padding_left: 20px;" type="text" name="numbers" value="-->
+            <? //= $numbers ?><!--"-->
+            <!--        size="3"/>-->
+            <b>Plus:</b><?= $numbers ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-8 columns">
+            <br/>
+            <b>Dage:</b> Antal dage før søndag ugenummeret skal skifte. 4 betyder således skift mellem onsdag og
+            torsdag. <br/>
+            <b>Plus:</b> Det antal der skal lægges til det aktuelle ugenummer.<br/>
+            <br/>
+            <!--            Hvis du ændrer et ugenummer udfor en dato, vil det være dette ugenummer der gælder den <br/>-->
+            <!--            pågældende dag. Ugennummeret vil ikke ændre sig selvom du ændre på enten 'Dage' eller 'Plus'.-->
+            <!--            <br/><br/>-->
+            Skriver du fejl i ugenummer (årstal > 2050 eller < 2015, uge nr. < 1 eller > 53) eller laver et blankt
+            ugenummer, <br/>
+            vil ugenummeret blive sat til default.
+
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="small-3 columns">
+            Hvilken uge vil du se/ændre (ååååuu) :
+        </div>
+        <div class="small-1 columns end">
+            <input type="text" name="wcode" value="<?= $wcode ?>" size="6" maxlength="6"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-3 columns" style="color: red">
+            <?= $werror ?>
+        </div>
+    </div>
+
+    <? if ($dat): ?>
+        <br/>
+        <div class="row">
+            <br/>DAT koder<br/>
+            <table>
+                <tr>
+                    <? $i = 0;
+                    foreach ($dat as $key => $val): $i++ ?>
+
+                        <td width="10%">
+                            <?= $disp[$key] ?>
+                            <input size="6" type="text" name="x<?= $key ?>" value="<?= $val ?>"/>
+                        </td>
+
+                    <? endforeach ?>
+                </tr>
+            </table>
+        </div>
+    <? endif ?>
+
+    <? if ($week): ?>
+        <br/>
+        <div class="row">
+            <br/>Ugekoder (NLY, ERE, ERL etc.)<br/>
+            <table>
+                <tr>
+                    <? $i = 0;
+                    foreach ($week as $key => $val): $i++ ?>
+
+                        <td width="10%">
+                            <?= $disp[$key] ?>
+                            <input size="6" type="text" name="y<?= $key ?>" value="<?= $val ?>"/>
+                        </td>
+
+                    <? endforeach ?>
+                </tr>
+            </table>
+        </div>
+    <? endif ?>
+    <br/>
+    <div class="row">
+        <button type="submit" value="Go">Go</button>
+        <button type="submit" name=fortryd value="Fortryd">Fortryd</button>
+    </div>
+
+</form>
+
+
+</body>
+</html>

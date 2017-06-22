@@ -1,0 +1,153 @@
+<?php
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+    class ftpException extends Exception {
+        //  public function __toString() {
+        // return "marcException -->".$this-
+    }
+
+    class posthusFTP_class {
+        private $ftp_server = "dbcposthus.dbc.dk";
+        private $ftp_dir = "datain";
+        private $ftp_user  = "ftp";
+        private $ftp_pass = "ftp";
+        private $conn_id;
+
+        public function __construct($ftp_server = "",$dir = "",$ftp_user = "",$ftp_pass = "") {
+            if ( $ftp_server ) $this->ftp_server = $ftp_server;
+            if ( $ftp_user ) $this->ftp_user = $ftp_user;
+            if ( $ftp_pass ) $this->ftp_pass = $ftp_pass;
+            if ( $ftp_dir ) $this->ftp_dir = $ftp_dir;
+
+
+        }
+
+        private function connect() {
+            // set up a connection or die
+            $this->conn_id = @ftp_connect($this->ftp_server); 
+            if ( ! $this->conn_id )throw new ftpException("Couldn't connect to $this->ftp_server"); 
+
+            // try to login
+            if ( ! @ftp_login($this->conn_id, $this->ftp_user, $this->ftp_pass)) {
+                throw new ftpException("Couldn't connect as $this->ftp_user");
+            }
+            if ( ! ftp_chdir($this->conn_id,$this->ftp_dir)) {
+                throw new ftpException("Couldn't change dir to $this->ftpd_dir");
+            }
+        } 
+
+        //  ---------------------------------------------------------------------------------------------------
+
+        function get_raw_dir() {
+            $this->connect();
+            return ftp_rawlist($this->conn_id,'.');
+        }
+
+        function get_dir() {
+            $lines = array();
+            $this->connect();
+            $arr = ftp_nlist($this->conn_id,'.');
+            foreach($arr as $filename) {
+                $path_parts = pathinfo($filename);
+                $color = 'black';
+                if ( $path_parts['extension'] == 'trans' || $path_parts['extention'] == 'trs' ) $color = 'green';
+                if ( $path_parts['extension'] == 'trans~' || $path_parts['extention'] == 'trs~' ) $color = 'red';
+                $string = "<span id=fileentry style='color:$color;'>";
+                $size = ftp_size($this->conn_id,$filename);
+                $mdtm = ftp_mdtm($this->conn_id,$filename);
+                $string .= date('d-m-Y H:i:s',$mdtm);
+                for($i = 0; $i < 15 - strlen($size); $i++) $string .= ' ';
+                $string .= " $size - ";
+                $string .= "<a href='?getfile=$filename' style='color:$color;'>$filename</a>" ;
+                $string .= "</span>";
+                $lines[chr(strlen($mdtm)+ord('A')). $mdtm . $filename]= $string;
+            }
+            ksort($lines);
+            return $lines;
+        }
+
+        function get_trans() {
+            $transfiles = array();
+            $this->connect();
+            $arr = ftp_nlist($this->conn_id,'.');
+            foreach($arr as $filename) {
+                $path_parts = pathinfo($filename);
+                if ( $path_parts['extension'] == 'trans' || $path_parts['extention'] == 'trs' ) {
+                    $timestamp = ftp_mdtm($this->conn_id,$filename);
+                    $transfiles[chr(strlen($timestamp)+ord('A')) . $timestamp . $filename] = $filename;
+                }
+            }
+            ksort($transfiles);                
+            return $transfiles;
+        }
+
+        function get_oldest_trans($localdir) {
+            $filename = array_pop($this->get_trans());
+           
+            if ( ! $filename ) return false;
+           
+            $localfilename = $localdir . "/" . $filename;
+
+            if ( ! $fp = fopen($localfilename,"w")) 
+                throw new ftpException("Couldn't open the file $localfilename for writing");
+
+            if ( ! ftp_fget($this->conn_id, $fp, $filename, FTP_ASCII, 0)) 
+                throw new ftpException("Couldn't fget the file: $filename");
+
+            fclose($fp);
+
+            $arr = file($localfilename);
+
+            // rename the file at the ftp dir
+            ftp_rename($this->conn_id,$filename,$filename . "~");
+
+            if ( strtolower(substr($arr[count($arr)-1],0,4)) == 'slut' ) $x = array_pop($arr);
+            $returnarray = array();
+            $returnarray['filename'] = $filename;
+            $returnarray['name'] = $localfilename;
+            $returnarray['lines'] = $arr;
+            return $returnarray;
+        }
+
+        function get_file($filename,$localdir) {
+            $this->connect();
+            $localfilename = $localdir . "/" . $filename;
+
+            $arr = ftp_nlist($this->conn_id,'.');
+            $found = false;
+            foreach($arr as $file) {
+                if ( $filename == $file ) {
+                    $found = true;
+                    break;
+                }
+            }
+            if ( ! $found ) return false;
+
+            if ( ! @$fp = fopen($localfilename,"w")) 
+                throw new ftpException("Couldn't open the file $localfilename for writing");
+
+            if ( ! ftp_fget($this->conn_id, $fp, $filename, FTP_BINARY, 0)) 
+                throw new ftpException("Couldn't fget the file: $filename");
+
+            fclose($fp);
+
+            return $localfilename;
+        }
+
+        function delete($filename) {
+            $this->connect();
+            if ( ! @ftp_delete($this->conn_id,$filename) )
+                throw new ftpException("Couldn't delete the file: $filename");
+            return true;
+        }
+        
+        function put($filename,$localfilename) {
+            $this->connect();
+            if ( ! ftp_put($this->conn_id,$filename,$localfilename,FTP_BINARY)) 
+                throw new ftpException("Couldn't put the file:$localfilename to $filename");
+        }
+    }
+
+?>

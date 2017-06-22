@@ -1,0 +1,95 @@
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>digitalResourcesBKM_showtable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../eVALU/foundation/css/foundation.css">
+    <script src="../eVALU/foundation/js/vendor/modernizr.js"></script>
+    <script src="../eVALU/js/script.js"></script>
+</head>
+<body>
+
+
+<?php if ($username): ?>
+    <br/>
+    <div data-alert class="alert-box secondary round">
+        Du er logget ind med: <b> <?= $username ?></b>
+    </div>
+<?php endif; ?>
+
+<?php if ($loginfailure): ?>
+    <br/>
+    <div data-alert class="alert-box alert round">
+        Forkert login eller password!!
+        <a href="#" class="close">&times;</a>
+    </div>
+<?php endif; ?>
+
+<?php if ($pw): ?>
+    <form action="login.php?updatepw" methode="post" data-abide>
+        <input type="hidden" name="loginpar" value="true"/>
+        <div class="name-field">
+            <?php if ($username): ?>
+            <br/>
+            <div data-alert class="alert-box alert round">
+                Password vil være synligt for admininstrator!!
+            </div>
+            <label>Login
+                <input disabled name="initials" type="text" required pattern="[a-zA-Z]+"
+                       value="<?= $username ?>">
+            </label>
+            <small class="error">Du skal skrive dine initialer (kun bogstaver)</small>
+        </div>
+        <div class="email-field">
+            <label>Password
+                <input name="passwd" type="password" required>
+            </label>
+            <small class="error">Du skal skrive dit password.</small>
+        </div>
+
+        <button name="newpw" type="submit">Ret</button>
+        <?php endif; ?>
+    </form>
+<?php endif; ?>
+
+<?php if (!$pw): ?>
+    <form action="login.php" methode="post" data-abide>
+        <input type="hidden" name="loginpar" value="true"/>
+        <div class="name-field">
+            <?php if (!$username): ?>
+            <label>Login
+                <input name="initials" type="text" required pattern="[a-zA-Z]+" value="<?= $username ?>">
+            </label>
+            <small class="error">Du skal skrive dine initialer (kun bogstaver)</small>
+        </div>
+        <div class="email-field">
+            <label>Password
+                <input name="passwd" type="password" required>
+            </label>
+            <small class="error">Du skal skrive dit password.</small>
+        </div>
+
+        <button name="login" type="submit">Login</button>
+        <?php endif; ?>
+        <?php if ($username): ?>
+            <button value="logout" class="tiny button " type="submit" name="logud">Log ud</button>
+        <?php endif; ?>
+    </form>
+<?php endif; ?>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<script src="../eVALU/foundation/js/vendor/jquery.js"></script>
+<script src="../eVALU/foundation/js/foundation.min.js"></script>
+<script src="../eVALU/foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+[setup]
+
+basedir = $basedir
+psqlport = $psqlport
+psqlTestPort = $psqlTestPort
+
+workdir = $workdir
+webdir = $webdir
+datadir = $datadir
+logdir = $logdir
+
+logfile =  $logdir/$logfile
+weblog  =  $webdir/$weblog
+pubhubdir = $pubhubdir
+
+raapostconnect = --db="cisterne_rawrepo_ro:$raapostpass@db.rr.cisterne.prod.dbc.dk:5432/cisterne_rawrepo_db
+
+ociuser= sebasis
+ocipasswd = $bpasswd
+ocidatabase = $bhost/$bhost
+
+connect = "host=$dbhost port=$psqlport dbname=$dbname user=$dbuser password=$dbpasswd"
+impcmd = "psql -h $dbhost -p $psqlport -U $dbuser -f $fil $dbname"
+
+getFaust_cmd = "Rck_send -s $numName -c Newnumber -S 0 -f DBCFAUST2013"
+; upload_cmd   = "Rck_send -s nummerrulle.dbc.dk -c Sending -f isofile -l 870970 -u ebog -S $PhusOrBasis -t @ACC=Y@"
+convert_cmd  = "convert $input $output"
+fpwscanning_cmd =  /usr/dbc/2013-5/bin/fpwscanning -k 870970 -b 870970 -l $workdir/fpwscanning.log -i "$workdir/$id.png" -n "$long_id" -m "image/png" -d "forside_pic"
+addi_cmd = ./addi_load addi_load.cfg
+
+
+ftp_server = dbcposthus.dbc.dk
+ftp_user_name = ftp
+ftp_user_pass = ftp  
+
+pubhub_ftp_server = ftp.pubhub.dk
+pubhub_ftp_user = $pubftpuser
+pubhub_ftp_passwd = $pubftppass
+
+
+; curl_proxy shall be set in a production enviroment.  For testing (inside the firewall) this
+; options shall not be set.
+curl_proxy =  $proxy
+
+; set verboselevel
+;   WARNING - simple warnings
+;   ERROR   - errors in response
+;   FATAL   - major errors
+;   STAT    - Statístical logging
+;   TIMER   - timer logging
+;   TRACE   - program trace
+;   DEBUG   - debugging info
+;   Z3959   - calls to z3950 services
+;   OCI     - oracle
+
+verboselevel = $verboselevel
+
+
+[seBasis]
+ociuser = sebasis
+ocipasswd = $bpasswd
+ocidatabase = $bhost/$bhost
+
+[seLektor]
+ociuser = selektor
+ocipasswd = $spasswd
+ocidatabase = $bhost/$bhost
+
+[sePhus]
+ociuser= sephus
+ocipasswd = $seppasswd
+ocidatabase = $bhost/$bhost
+
+
+[PubHubImages]
+format = eReolen,Netlydbog,ebib,Deff
+
+[lekToDios]
+datafile = "dmat.$ts"
+transfile = "dmat.$ts.ok"
+transline = "b=dmat,f=$datafile,t=lin,c=latin-1,o=lumarc,m=lektor-drift@dbc.dk"
+scpcmd = "scp $datafile dios@strimunto.dbc.dk:$lektordir/$datafile"
+
+[PubHubXMLtoWell]
+datafile  = "150015.forlagsomt.$ts.XMLdata"
+transfile = "150015.$ts.$trans"
+transline = "b=ticklerepo,f=$datafile,c=utf8,t=xml,o=forlag,m=kildepost@dbc.dk"
+format = eReolen,Netlydbog,eReolenLicens,NetlydbogLicens,Deff
+outputformat = RawXml
+sent_to = sent_xml_to_well
+
+[ebibToWell]
+datafile = "150048.$ts.data"
+transfile = "150048.$ts.$trans"
+transline = "b=databroendpr2,f=$datafile,o=ebogsbib,c=latin-1,t=dm2iso,m=kildepost@dbc.dk"
+provider = Pubhub
+format = ebib
+outputformat = ebibWell
+sent_to = sent_to_well
+
+[eReolenToWell]
+datafile  = "150028.$ts.data"
+transfile = "150028.$ts.$trans"
+transline = "b=databroendpr2,f=$datafile,t=dm2iso,c=latin-1,o=ebogsbib,m=kildepost@dbc.dk"
+provider = Pubhub
+format = eReolen
+outputformat = eReolenWell
+sent_to = sent_to_well
+
+[eReolenLicensToWell]
+datafile  = "870970.$ts.eReolenLicens"
+transfile = "870970.$ts.$trans"
+; transline = "b=databroendpr2,f=$datafile,t=dm2iso,c=latin-1,o=ebogsbib,m=kildepost@dbc.dk"
+transline = "b=aquapr2,f=$datafile,t=dm2iso,c=latin-1,o=basis,m=Kildepost@dbc.dk"
+provider = Pubhub
+format = eReolenLicens
+outputformat = eReolenLicensWell
+sent_to = sent_to_well
+
+[NetlydbogToWell]
+datafile  = "150015.$ts.data"
+transfile = "150015.$ts.$trans"
+transline = "b=databroendpr2,f=$datafile,t=dm2iso,c=latin-1,o=netlydbog,m=kildepost@dbc.dk"
+provider = Pubhub
+format = Netlydbog
+outputformat = NetlydbogWell
+sent_to = sent_to_well
+
+[DeffToWell]
+datafile  = "150051.$ts.data"
+transfile = "150051.$ts.$trans"
+transline = "b=databroendpr2,f=$datafile,t=dm2iso,c=latin-1,o=ebogsbib,m=kildepost@dbc.dk"
+provider = Pubhub
+format = Deff
+outputformat = DeffWell
+sent_to = sent_to_well
+
+[PubHubToBasis]
+datafile  = "870970.$ts.DigitalBasis"
+transfile = "870970.$ts.Basis.$trans"
+transline = "b=basis,f=$datafile,t=dm2iso,c=latin-1,o=digital,m=kildepost@dbc.dk"
+
+[PubHubToPhus]
+datafile  = "870970.$ts.DigitalPhus"
+transfile = "870970.$ts.Phus.$trans"
+transline = "b=phus,f=$datafile,t=dm2iso,c=latin-1,o=digital,m=kildepost@dbc.dk"
+
+[EreolBasisToWell]
+datafile  = "870970.$ts.EreolBasisToWell"
+transfile = "870970.$ts.EreolBasisToWell.$trans"
+transline = b=aquapr2,f=$datafile,t=dm2iso,c=latin-1,o=basis,m=kildepost@dbc.dk
+
+[EreolPhusToWell]
+datafile  = "870970.$ts.EreolPhusToWell"
+transfile = "870970.$ts.EreolPhusToWell.$trans"
+transline = b=aquapr2,f=$datafile,t=dm2iso,c=latin-1,o=basis,m=kildepost@dbc.dk
+
+[MediaToPhus]
+datafile = "870970.$ts.MediaPhus"
+transfile = "870970.$ts.MediaPhus.$trans"
+transline = "b=phus,f=$datafile,t=dm2iso,c=latin-1,o=digital,m=hhl@dbc.dk"
+
+[MediaToBasis]
+datafile = "870970.$ts.$name"
+transfile = "870970.$ts.$name.$trans"
+transline = "b=basis,f=$datafile,t=dm2iso,c=latin-1,o=digital,m=hhl@dbc.dk"
+
+[MediaToAquapr2]
+datafile = "870976.$ts.$name"
+transfile = "870976.$ts.$name.$trans"
+transline = "b=aquapr2,f=$datafile,t=dm2iso,c=latin-1,o=anmeld,m=kildepost@dbc.dk"
+
+[pubhubMediaService]
+url = https://service.pubhub.dk/Retailer/V16/MediaService.asmx
+retailerkeycode = $rkey1
+soap['pubhubmediaservice'][] = "<soapenv:Envelope xmlns:soapenv=@http://schemas.xmlsoap.org/soap/envelope/@ xmlns:ser=@http://service.pubhub.dk/@>"
+;soap['pubhubmediaservice'][] = "   <soapenv:Header/>"
+soap['pubhubmediaservice'][] = "   <soapenv:Body>"
+soap['pubhubmediaservice'][] = "      <ser:ListAllBooks>"
+soap['pubhubmediaservice'][] = "         <ser:licenseKey>+retailerkeycode+</ser:licenseKey>"
+soap['pubhubmediaservice'][] = "      </ser:ListAllBooks>"
+soap['pubhubmediaservice'][] = "   </soapenv:Body>"
+soap['pubhubmediaservice'][] = "</soapenv:Envelope>"
+
+tablename = mediaservice
+reftable = mediaservicedref
+notetable = mediaservicenote
+statistics = mediaservicestatistic
+
+promatuser = promat14
+promatpasswd = $ppasswd
+promatdatabase = $phost/$phost
+
+[ONIXpubhub]
+url = http://onix.pubhub.dk/v1/products
+retailerkeycode = $rkey2
+
+[ebib]
+agreementid = $egreementid_ebib
+
+[eReolen]
+agreementid = $egreementid_eReolen
+
+[eReolenLicens]
+agreementid = $egreementid_eReolenLicens
+
+[eReolenKlik]
+agreementid = $egreementid_eReolenKlik
+
+[Netlydbog]
+agreementid = $egreementid_Netlydbog
+
+[NetlydbogLicens]
+agreementid = $egreementid_NetlydbogLicens
+
+
+[pubhubLibraryService]
+url = http://libraryservices.pubhub.dk/getproductlist.asmx?op=GetProductListDbc
+retailerid = 951
+retailerkeycode = $rkey3
+
+soap['pubhubLibraryService'][] = <soapenv:Envelope xmlns:soapenv=\'http://schemas.xmlsoap.org/soap/envelope/\' xmlns:pub=\'http://pubhub.dk/\'>
+soap['pubhubLibraryService'][] =    <soapenv:Header/>
+soap['pubhubLibraryService'][] =    <soapenv:Body>
+soap['pubhubLibraryService'][] =       <pub:GetProductsByAgreement>
+soap['pubhubLibraryService'][] =          <pub:retailerid>+retailerid+</pub:retailerid>
+soap['pubhubLibraryService'][] =          <pub:retailerKeyCode>+retailerkeycode+</pub:retailerKeyCode>
+soap['pubhubLibraryService'][] =          <pub:clientId>+agreementid+</pub:clientId>
+soap['pubhubLibraryService'][] =       </pub:GetProductsByAgreement>
+soap['pubhubLibraryService'][] =    </soapenv:Body>
+soap['pubhubLibraryService'][] = </soapenv:Envelope>
+
+
+[Pligtaflevering]
+cataloguinginfoUrl = http://dbc.pubhub.dk/v1/cataloguinginfo
+
+[openSearch]
+url = http://opensearch.addi.dk/4.0.1/
+soap['openSearch'][] = <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://oss.dbc.dk/ns/opensearch">
+soap['openSearch'][] =   <SOAP-ENV:Body>
+soap['openSearch'][] =     <ns1:searchRequest>
+soap['openSearch'][] =       <ns1:query>%query%</ns1:query>
+soap['openSearch'][] =       <ns1:agency>100200</ns1:agency>
+soap['openSearch'][] =       <ns1:profile>test</ns1:profile>
+soap['openSearch'][] =       <ns1:start>1</ns1:start>
+soap['openSearch'][] =       <ns1:stepValue>100</ns1:stepValue>
+soap['openSearch'][] =     <ns1:objectFormat>marcxchange</ns1:objectFormat>
+soap['openSearch'][] =     </ns1:searchRequest>
+soap['openSearch'][] =   </SOAP-ENV:Body>
+soap['openSearch'][] = </SOAP-ENV:Envelope>
+
+[rawrepro]
+url = https://opensearch.addi.dk/b3.5_4.2/
+soap['rawrepro'][] = <?xml version=\'1.0\' encoding=\'UTF-8\'?>
+soap['rawrepro'][] = <SOAP-ENV:Envelope xmlns:SOAP-ENV=@http://schemas.xmlsoap.org/soap/envelope/@ xmlns:ns1=@http://oss.dbc.dk/ns/opensearch@>
+soap['rawrepro'][] =   <SOAP-ENV:Body>
+soap['rawrepro'][] =     <ns1:searchRequest>
+soap['rawrepro'][] =       <ns1:query>%query%</ns1:query>
+soap['rawrepro'][] =       <ns1:agency>100200</ns1:agency>
+soap['rawrepro'][] =       <ns1:profile>test</ns1:profile>
+soap['rawrepro'][] =       <ns1:start>1</ns1:start>
+soap['rawrepro'][] =       <ns1:stepValue>10</ns1:stepValue>
+soap['rawrepro'][] =       <ns1:repository>prod-rawrecords</ns1:repository>
+soap['rawrepro'][] =     </ns1:searchRequest>
+soap['rawrepro'][] =   </SOAP-ENV:Body>
+soap['rawrepro'][] = </SOAP-ENV:Envelope>
+
+[moreinfoupdate]
+url = $moreinfourl
+soap['moreinfoupdate'][] = <?xml version=\'1.0\' encoding=\'UTF-8\'?>
+soap['moreinfoupdate'][] = <SOAP-ENV:Envelope xmlns:ns0=\'http://schemas.xmlsoap.org/soap/envelope/\' xmlns:ns1=\'http://oss.dbc.dk/ns/moreinfoupdate\' xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' xmlns:SOAP-ENV=\'http://schemas.xmlsoap.org/soap/envelope/\'>
+soap['moreinfoupdate'][] =    <SOAP-ENV:Header/>
+soap['moreinfoupdate'][] =    <ns0:Body>
+soap['moreinfoupdate'][] =       <ns1:moreinfoUpdate>
+soap['moreinfoupdate'][] =          <ns1:moreinfoData>
+soap['moreinfoupdate'][] =             <ns1:moreinfo>
+soap['moreinfoupdate'][] =                <ns1:informationBinary>%coverImage%</ns1:informationBinary>
+soap['moreinfoupdate'][] =             </ns1:moreinfo>
+soap['moreinfoupdate'][] =             <ns1:moreinfoCategory>coverImage</ns1:moreinfoCategory>
+soap['moreinfoupdate'][] =             <ns1:danbibRecordId>
+soap['moreinfoupdate'][] =                <ns1:localIdentifier>%id%</ns1:localIdentifier>
+soap['moreinfoupdate'][] =                <ns1:libraryCode>870970</ns1:libraryCode>
+soap['moreinfoupdate'][] =             </ns1:danbibRecordId>
+soap['moreinfoupdate'][] =          </ns1:moreinfoData>
+soap['moreinfoupdate'][] =          <ns1:source>150015</ns1:source>
+soap['moreinfoupdate'][] =          <ns1:authentication>
+soap['moreinfoupdate'][] =             <ns1:groupIdAut>???</ns1:groupIdAut>
+soap['moreinfoupdate'][] =            <ns1:passwordAut>???</ns1:passwordAut>
+soap['moreinfoupdate'][] =            <ns1:userIdAut>???</ns1:userIdAut>
+soap['moreinfoupdate'][] =         </ns1:authentication>
+soap['moreinfoupdate'][] =      </ns1:moreinfoUpdate>
+soap['moreinfoupdate'][] =   </ns0:Body>
+soap['moreinfoupdate'][] =</SOAP-ENV:Envelope>
+
+
+[testcase]
+connect        =  "host=localhost port=$psqlTestPort dbname=postgres user=db_user password=db_password"

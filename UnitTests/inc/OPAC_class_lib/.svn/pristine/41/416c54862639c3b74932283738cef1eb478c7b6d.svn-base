@@ -1,0 +1,326 @@
+<?php
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+
+$startdir = dirname(__FILE__);
+$inclnk = $startdir . "/..";
+//
+//require_once "$inclnk/OLS_class_lib/z3950_class.php";
+require_once "$inclnk/OLS_class_lib/marc_class.php";
+require_once "$inclnk/OLS_class_lib/verbose_class.php";
+require_once "$inclnk/OLS_class_lib/oci_class.php";
+
+
+class GetMarcFromBasisException extends Exception {
+
+    public function __toString() {
+        return 'GetMarcFromBasisException -->' . $this->getMessage() . ' --- ' .
+            $this->getFile() .
+            ':' . $this->getLine() . "\nStack trace:\n" . $this->getTraceAsString();
+    }
+
+}
+
+/**
+ * Description of GetMarcFromBasis
+ *
+ * @author hhl
+ */
+class GetMarcFromBasis {
+
+//    private $z3950;
+    private $workdir;
+    private $simpelstyr;
+    private $simpelstyrexe;
+    private $cclcom;
+    private $raatdbmf;
+    private $pafexe;
+    private $dbmfexe;
+    private $pafcmd;
+    private $dbmfcmd;
+    private $simpelstyrContent;
+    private $oci;
+    private $phusoci;
+    private $basisoci;
+    private $marcrecord;
+    private $klyngeids;
+    private $libV3Api;
+    private $startdir;
+    private $mr;
+    private $marcRecords;
+
+    /**
+     *    Create an object that can connect to "Basis".
+     *    It uses the programs "paf" and "dbmf" to search
+     *    and retrieve marc records.
+     * @param string $workdir Name of a dir where the program have read
+     *                               and write access.
+     * @access public
+     */
+    function __construct($workdir, $ociuser = false, $ocipasswd = false, $ocidatabase = false, $libv3mockUp = '') {
+        if ($libv3mockUp) {
+            $this->libV3Api = $libv3mockUp;
+        } else {
+            $startdir = dirname(__FILE__);
+            $inclnk = $startdir . "/..";
+            require_once "$inclnk/OLS_class_lib/LibV3API_class.php";
+            $export = "export NLS_LANG=AMERICAN_DENMARK.WE8ISO8859P1 ;";
+            if ($ociuser) {
+                $this->libV3Api = new LibV3API($ociuser, $ocipasswd, $ocidatabase);
+            }
+        }
+
+        $this->libV3Api->set('withAuthor');
+        $this->libV3Api->set('hsb');
+
+//        global $startdir;
+        $this->startdir = dirname(__FILE__);
+
+        $phpexe = "/var/www/php_exec/";
+
+        $this->mr = new marc();
+
+        $this->workdir = $workdir;
+        if (!is_dir($this->workdir)) {
+            // make the directory
+            if (!@mkdir($workdir))
+                throw new GetMarcFromBasisException($this->workdir . " is not a directory");
+        }
+
+        $thisdir = getcwd();
+        // test for the present of simple.styr
+        $this->simpelstyr = $thisdir . "/../paf/simpel.styr";
+        if (!is_file($this->simpelstyr))
+            throw new GetMarcFromBasisException("\"" . $this->simpelstyr . "\" is missing");
+
+        // test for the present of cclcom.dk
+        $this->cclcom = $thisdir . "/../paf/cclcom.dk";
+        if (!is_file($this->cclcom))
+            throw new GetMarcFromBasisException("\"" . $this->cclcom . "\" is missing");
+
+        // test for the present of raat.dbmf
+        $this->raatdbmf = $thisdir . "/../paf/raat.dbmf";
+        if (!is_file($this->raatdbmf))
+            throw new GetMarcFromBasisException("\"" . $this->raatdbmf . "\" is missing");
+
+        // test for the present of paf
+        $this->pafexe = $phpexe . "paf";
+        if (!is_executable($this->pafexe))
+            throw new GetMarcFromBasisException("\"" . $this->pafexe . "\" is not executable");
+
+        // test for the present of dbmf
+        $this->dbmfexe = $phpexe . "dbmf";
+        if (!is_executable($this->dbmfexe))
+            throw new GetMarcFromBasisException("\"" . $this->dbmfexe . "\" is not executable");
+
+        $this->simpelstyrexe = $this->workdir . "/" . "simpel.styr.exe";
+//        $this->pafcmd = $this->pafexe . " -h";
+
+        putenv("LD_LIBRARY_PATH=/usr/dbc/2011-4-devel/lib");
+
+        $fp = fopen($this->simpelstyr, "r");
+        if (!$fp)
+            throw new GetMarcFromBasisException("Couldn't open file \"" . $this->simpelstyr . "\"");
+        $this->simpelstyrContent = fread($fp, filesize($this->simpelstyr));
+
+        $this->setDatabase('Basis');
+    }
+
+    function phuscredintials($ociuser, $ocipasswd, $ocidatabase) {
+        $this->libV3Api->setPhusLogin($ociuser, $ocipasswd, $ocidatabase);
+//        $this->phusoci = new oci($ociuser, $ocipasswd, $ocidatabase);
+//        $this->phusoci->connect();
+    }
+
+    function setDatabase($base) {
+        $this->klyngeids = array();
+        switch ($base) {
+        case 'Basis' :
+            $this->pafcmd = $this->pafexe .
+                " -a Basis-p01.dbc.dk:3019 -b /data/basis_22/se/filelists/alfa ";
+            $this->pafcmd .= " -p " . $this->cclcom . "  -F " . $this->simpelstyrexe;
+            $this->dbmfcmd = $this->dbmfexe . " -F1 -l sebasis/sebasis@dora11.dbc.dk -f " .
+                $this->raatdbmf . " -b udskriv -i ";
+            $this->libV3Api->set('Basis');
+//                $this->oci->disconnect();
+//                $this->oci = $this->basisoci;
+//                $this->oci->connect();
+            break;
+        case 'Phus' :
+            $this->pafcmd = $this->pafexe .
+                " -a Basis-p01.dbc.dk:3028 -b /data/phus_22/se/filelists/current ";
+            $this->pafcmd .= " -p " . $this->cclcom . "  -F " . $this->simpelstyrexe;
+            $this->dbmfcmd = $this->dbmfexe . " -F1 -l sephus/sephus@dora11.dbc.dk -f " .
+                $this->raatdbmf . " -b udskriv -i ";
+            $this->libV3Api->set('Phus');
+//                $this->oci->disconnect();
+//                $this->oci = $this->phusoci;
+//                $this->oci->connect();
+        }
+    }
+
+    function getMarcByLokalidBibliotek($lokalid, $bibliotek) {
+        $m = $this->libV3Api->getMarcByLokalidBibliotek($lokalid, $bibliotek);
+        return $m;
+    }
+
+    private function etchFromOci($klyngeid, $lokalid = "") {
+        if ($lokalid) {
+            $res = $this->libV3Api->getMarcByLokalidBibliotek($lokalid, '870970');
+        } else {
+            $res = $this->libV3Api->getMarcByDanbibid($klyngeid, '870970');
+        }
+//        if ($lokalid) {
+//            $sql = "select data, id from poster "
+//                    . "where lokalid = '$lokalid' and bibliotek = '870970'";
+//        } else {
+//            $sql = "select data, id from poster "
+//                    . "where danbibid = $klyngeid and bibliotek = '870970'";
+//        }
+//            $result = $this->oci->fetch_all_into_assoc($sql);
+//            if (!count($result)) {
+//                return null;
+//            }
+//            $data = $result[0]['DATA'];
+//            $marclngth = substr($data, 0, 5);
+//            if ($marclngth > 4000) {
+//                $id = $result[0]['ID'];
+//                $sql = "select data from poster_overflow "
+//                        . "where id = $id order by lbnr";
+//                $overflow = $this->oci->fetch_all_into_assoc($sql);
+//                foreach ($overflow as $record) {
+//                    $data .= $record['DATA'];
+//                }
+//            }
+        $data = $res[0]['DATA'];
+        $marc = new marc();
+        $marc->fromIso($data);
+//    echo $marc->toLineFormat() . "\n";
+
+        $bind = $marc->findSubFields('004', 'a', 1);
+        if ($bind == 'b' || $bind == 's') {
+            $f014 = $marc->findSubFields('014', 'a', 1);
+            $data = $this->etchFromOci($klyngeid, $f014);
+//            $marc->fromIso($data);
+        }
+        if ($mrecord) {
+            $n = new marc();
+            $n->fromIso($mrecord);
+            $n->insert($marc->findFields('245'));
+            $n->insert($marc->findFields('100'));
+            $n->insert($marc->findFields('260'));
+            $n->insert($marc->findFields('700'));
+//            $strng = $n->toLineFormat();
+            $data = $n->toIso();
+        }
+        return $data;
+    }
+
+//    private function addToMarcRecords($records) {
+//        print_r($records);
+//        $this->mr->fromIso($records['DATA']);
+//        $fs10s = $this->mr->findSubFields('s10', 'a');
+//        foreach ($fs10s as $fs10) {
+//            if ($fs10 == 'DBC') {
+//                $this->marcRecords[] = $records;
+//                return;
+//            }
+//        }
+//    }
+
+    /**
+     *      Make a search i Basis and Phus.
+     *
+     *
+     *      The file simpel.styr is where you can see what you
+     *      actually is searching for.
+     * @param type $searchtxt ex. '9788702048070' or '9788702048070 eller 870204807*'
+     * @param type $noDublets , default false, if true dublets will be ignored
+     * @param type $hsb , Hoved, Sektion og Bind. if record part of multiple volume
+     *                             make a record using 014 pointer.
+     *
+     * @return boolean|array
+     * @throws GetMarcFromBasisException
+     */
+    function getMarc($searchtxt, $noDublets = false, $hsb = false) {
+        // make a simpelstyre file
+        $ss = $this->simpelstyrexe;
+        $content = str_replace('${SEARCHVAR}', $searchtxt, $this->simpelstyrContent);
+//        echo "content:$content\n";
+        $fp = fopen($ss, "w");
+        if (!$fp)
+            throw new GetMarcFromBasisException("Couldn't open " . $ss . " for writing");
+        $ret = fwrite($fp, $content);
+        if (!$ret)
+            throw new GetMarcFromBasisException("Couldn't write to " . $ss);
+//        echo $this->pafcmd . "\n";
+        $ret = 134;
+        $cnt = 0;
+        while ($ret == 134) {
+            $cnt++;
+            if ($cnt > 10) {
+                break;
+            }
+            if ($cnt > 1) {
+                echo "søger igen på \"$searchtxt\"\n";
+                sleep(2);
+            }
+            exec($this->pafcmd, $output, $ret);
+        }
+        if ($ret) {
+            throw new GetMarcFromBasisException("(ret:$ret) Error in " . $this->pafcmd);
+        }
+        if (count($output) == 0 || count($output) > 5000)
+            return false;
+        $this->marcRecords = array();
+        foreach ($output as $klyngeid) {
+            if ($noDublets) {
+                if (key_exists($klyngeid, $this->klyngeids)) {
+                    continue;
+                }
+            }
+            if ($noDublets) {
+                $this->klyngeids[$klyngeid] = true;
+            }
+            if ($this->libV3Api) {
+                $records = $this->libV3Api->getMarcByDanbibid($klyngeid, '870970');
+                if ($records) {
+
+
+// ---------------------------------------
+// det er et flerbindsværk hvis count er forskellig fra 1
+//                    if (count($records) != 1) {
+//                        continue;
+//                    }
+// -----------------------------------------------------------------
+
+                    if ($hsb) {
+                        for ($i = 1; $i < count($records); $i++) {
+                            $records[0]['hsb'][] = $records[$i];
+                        }
+                    }
+                    $this->marcRecords[] = $records[0];
+//                    $this->addToMarcRecords($records[0]);
+                }
+//            if ($this->oci) {
+//                $record = $this->fetchFromOci($klyngeid, '', $hsb);
+//                $this->marcRecords[] = $record;
+            } else {
+                $dbmfoutput = array();
+                exec($export . $this->dbmfcmd . $klyngeid, $dbmfoutput, $ret);
+                if ($ret)
+                    throw new GetMarcFromBasisException("(ret:$ret) error when calling:" . $this->dbmfcmd);
+                foreach ($dbmfoutput as $record) {
+                    $this->marcRecords[] = $record;
+//                    $this->addToMarcRecords($record);
+                }
+            }
+        }
+        return $this->marcRecords;
+    }
+
+}
+
+?>

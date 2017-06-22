@@ -1,0 +1,218 @@
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<div class="sticky">
+    <nav class="top-bar" data-topbar role="navigation"
+         data-options="is_hover: false"
+         style="margin-bottom: 20px;">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="http://dmat.dbc.dk">dmat.dbc.dk</a></h1>
+            </li>
+        </ul>
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li class="has-dropdown">
+                    <a href="#">Vis lister</a>
+                    <ul class="dropdown">
+                        <li class="active"><a href="eVa.php?type=eVa&seqno=0&cmd=onlyone">eVa</a></li>
+                        <li class="active"><a href="eVa.php?type=eLu&seqno=0&cmd=onlyone">eLu</a></li>
+                        <!--                        <li class="active"><a href="eVa.php?type=Template&seqno=0&cmd=onlyone">Template</a></li>-->
+                        <li class="active"><a href="eVa.php?type=Afventer&seqno=0&cmd=onlyone">Afventer</a></li>
+                        <li class="active"><a href="eVa.php?type=AfventerElu&seqno=0&cmd=onlyone">Afventer Elu</a></li>
+                        <li class="active"><a href="eVa.php?type=Drop&seqno=0&cmd=onlyone">Drop</a></li>
+                        <li class="active"><a href="eVa.php?type=kunEreol&seqno=0&cmd=onlyone">kunEreol</a></li>
+                        <li class="active"><a href="eVa.php?type=RETRO_eLu&seqno=0&cmd=onlyone">RETRO_eLu</a></li>
+                        <li class="active"><a href="eVa.php?type=Last&seqno=0&cmd=onlyone">Sidste opdateringer</a></li>
+                        <li class="has-dropdown"><a>Resten</a>
+                            <ul class="dropdown">
+                                <li class="active">
+                                    <a href="eVa.php?type=Alle&seqno=0&cmd=onlyone">Alle</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=Template&seqno=0&cmd=onlyone">Template</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active"
+                                       href="eVa.php?type=UpdateBasis&seqno=0&cmd=onlyone">UpdateBasis</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active"
+                                       href="eVa.php?type=UpdatePromat&seqno=0&cmd=onlyone">UpdatePromat</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=UpdatePublizon&seqno=0&cmd=onlyone">UpdatePublizon</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=OldEva&seqno=0&cmd=onlyone">OldEva</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active"
+                                       href="eVa.php?type=OldTemplate&seqno=0&cmd=onlyone">OldTemplate</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=Pending&seqno=0&cmd=onlyone">Pending</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=NotActive&seqno=0&cmd=onlyone">NotActive</a>
+                                </li>
+                                <li class="active">
+                                    <a class="active" href="eVa.php?type=DigitalR&seqno=0&cmd=onlyone">DigitalR</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="name">
+                    <h1><a href=""><?= $list ?></a></h1>
+                </li>
+            </ul>
+            <ul>
+                <li class="has-form">
+                    <form action="eVa.php">
+                        <input type='hidden' name='seqno' value='0'/>
+                        <input type='hidden' name='cmd' value='titlesearch'/>
+
+                        <div class="row collapse">
+                            <div class="large-8 small-9 columns">
+                                <input type="text" name='titlesearch' placeholder="%titel%">
+                            </div>
+                            <div class="large-4 small-3 columns">
+                                <input type="submit" class="button expand" value="Søg">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="ha-form">
+                    <form name="choice" action="eVa.php">
+                        <input type="hidden" name="seqno" value="<?= $seqno + 1 ?>"/>
+                        <input type="hidden" name="cmd" value="showdirect"/>
+
+                        <div class="row collapse">
+                            <div class="small-6 columns">
+                                <input type="text" placeholder="seqno" name="seqnodirect">
+                            </div>
+                            <div class="small-4 columns end">
+                                <input type="submit" class="button expand" value="Seqno">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+
+                <li class="active">
+                    <a class="button" id="show"
+                       onclick="callnewpg('matchinfo.php?cmd=show&seqno=<?= $seqno ?>&show=true','<?= $seqno ?>')">
+                        Show
+                    </a>
+                </li>
+                <li>&nbsp;</li>
+
+                <li class="active">
+                    <a class="button" id="details"
+                       onclick="callnewpg('info.php?cmd=details&seqno=<?= $seqno ?>&details=true','<?= $seqno ?>')">
+                        Details
+                    </a>
+                </li>
+
+                <li>&nbsp;</li>
+                <li class="active">
+                    <button href='statistik_1.php'
+                            data-reveal-id='ModalStatistic' data-reveal-ajax='true'>Statistik
+                    </button>
+                </li>
+                <?php if ($setup != 'setup' and $setup != ''): ?>
+                    <li>&nbsp;</li>
+                    <li class="active">
+                        <a id='testapps' href="testapps.php">Test-apps</a>
+                    </li>
+                <?php endif; ?>
+                <li>&nbsp;</li>
+                <?php if ($newstatus): ?>
+                    <li class="active">
+                        <button href='newstatus.php?newstatus=<?= $newstatus ?>&seqno=<?= $seqno ?>'
+                                data-reveal-id='newstatusmodal' data-reveal-ajax='true'>
+                            Status -> <strong><?= $newstatus ?></strong>
+                        </button>
+                    </li>
+                <?php endif; ?>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <?php if ($role == 'admin'): ?>
+                    <ul class="left">
+                        <li class="has-dropdown">
+                            <a href="#">Bruger Administration</a>
+                            <ul class="dropdown">
+                                <li class="active"><a href="useradm.php?cmd=create">Opret bruger</a></li>
+                                <!--                                <li class="active"><a href="?cmd=update">Ret Bruger</a></li>
+                                                                <li class="active"><a href="?cmd=delete">Slet Bruger</a></li>-->
+                                <li class="active"><a href="useradm.php?cmd=list">Vis Brugere</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<li class="active"><a class="button" href="useradm.php">Bruger administration</a></li>-->
+                <?php endif; ?>
+
+
+                <?php if ($_SESSION['username']): ?>
+                    <ul class="left">
+                        <li class="has-dropdown">
+                            <a href="#"><?= $_SESSION['username'] ?></a>
+                            <ul class="dropdown">
+                                <li class="active">
+                                    <a href="login.php" data-reveal-id="Loginmodal"
+                                       data-reveal-ajax="true">
+                                        Log ud
+                                    </a>
+                                </li>
+                                <li class="active"><a href="login.php?passwd=true" data-reveal-id="Loginmodal"
+                                                      data-reveal-ajax="true">Nyt passwd</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!--<button href="login.php" data-reveal-id="Loginmodal" data-reveal-ajax='true'><?= $_SESSION['username'] ?></button>-->
+                <?php else: ?>
+                    <li>
+                        <button href="login.php?setup=<?= $setup ?>" data-reveal-id="Loginmodal"
+                                data-reveal-ajax='true'>Login
+                        </button>
+                    </li>
+                    <li>&nbsp;</li>
+                <?php endif ?>
+                <li class="active"><a class="button" href="eVa.php?seqno=<?= $seqno ?>&cmd=Oversigt">Oversigt</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" target="_blank" href="http://wiki.dbc.dk/bin/view/Data/EvaElu">Hjælp</a>
+                <li>&nbsp;</li>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</div>
+
+<?php if ($calllogin): ?>
+    <script>
+        //        $(#Loginmodal).foundation('reveal', 'open', 'login.php');
+        alert("Forkert login eller password!!!");
+    </script>
+<?php endif; ?>
+
+<div id="ModalStatistic" class="reveal-modal " data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+<div id="Loginmodal" class="reveal-modal tiny" data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+<div id="newstatusmodal" class="reveal-modal tiny" data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+<div id="dellektor" class="reveal-modal small" data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>

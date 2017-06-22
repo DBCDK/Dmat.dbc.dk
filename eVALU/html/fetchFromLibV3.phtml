@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<html>
+<head>
+    <title><?= $Title ?></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../inc/foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../inc/foundation/js/moderniz.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        function loaded() {
+            // close after three minuts
+            window.setTimeout(CloseMe, 180000);
+        }
+
+        function CloseMe() {
+            window.close();
+        }
+    </script>
+
+
+</head>
+<body onload="loaded();">
+
+<div class="row ">
+    <div class="medium-12 column ">
+        <pre><?= $marc ?></pre>
+    </div>
+</div>
+
+<script src="../inc/foundation/js/vendor/jquery.js"></script>
+<script src="../inc/foundation/js/foundation.min.js"></script>
+<script src="js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

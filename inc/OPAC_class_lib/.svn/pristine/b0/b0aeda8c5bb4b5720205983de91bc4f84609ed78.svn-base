@@ -1,0 +1,58 @@
+<?php
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+/**
+*
+* Helpfull small functions in php
+*
+* ---------------------------------------- *
+* print_web(mixed $expression,$titletext)
+*   prints the expression via the "print_r" routine, but embrace it with "<pre>"
+*   and adds a title to the print.
+*   $arr = array("a" => "A", "b" => "B");
+*   print_web($arr,"Vis arr:\n");
+*
+<pre>
+Vis arr:
+Array
+(
+    [a] => A
+    [b] => B
+)
+</pre>
+
+* ---------------------------------------- *
+* removeElements($ln)
+*  removes all "<xxx>" from the string "ln"
+* ---------------------------------------- *
+
+**/
+
+
+
+
+/* ---------------------------------------- */
+function print_web($xx,$title = '') {
+  echo "<pre>\n";
+  if ( $title ) echo $title;
+  print_r($xx);
+  echo "</pre>\n";
+}
+
+
+/* ---------------------------------------- */
+function removeElements($ln) {
+  $prnt = true;
+  $txt = "";
+  for($cnt = 0; $cnt < strlen($ln); $cnt++) {
+    if ( $ln[$cnt] == "<" ) $prnt = false;
+    if ( $prnt ) $txt .= $ln[$cnt];
+    if ( $ln[$cnt] == ">" ) $prnt = true;
+  }
+    return $txt;
+}
+
+
+?>

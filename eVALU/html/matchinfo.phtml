@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dmat MatchInfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        function loaded() {
+            // close after 5 minuts
+            window.setTimeout(CloseMe, 300000);
+        }
+
+        function CloseMe() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+
+<div class="row">
+    <div class="medium-12 columns end">
+        <h1>Post #<?= $seqno ?></h1>
+    </div>
+</div>
+
+<div class="row bottomspace">
+    <div class="medium-12 columns end ramme3">
+        <?= $debugstrng ?>
+    </div>
+</div>
+
+<!--<a class="close-reveal-modal" aria-label="Close">&#215;</a>-->
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

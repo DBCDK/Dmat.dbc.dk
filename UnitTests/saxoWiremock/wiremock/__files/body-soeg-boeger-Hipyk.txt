@@ -1,0 +1,3915 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml"
+      class="no-js loading" lang="da">
+<head>
+    
+    
+    <title>Du søgte: 'Frøken Jensens Kogebog Kristine Marie Jensen'</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="Bøger, Billige bøger" />    
+    <meta name="robots" content="noindex,follow" />    
+    <meta name="google-site-verification" content="lCJLddsrxY24WaT7nW0UTxnc4ws3I4sguLYkJUZUyk8" />
+    <meta property="fb:app_id" content="112663618770025" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/webservices/search/opensearch.xml" title="SAXO.com" />
+    <meta charset="utf-8" />
+    
+        <link rel="canonical" href="//www.saxo.com/dk/soeg/boeger/" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable = no" />
+    <!--[if lt IE 9]>
+    <script async src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="//staticcdn.saxo.com/4048/www/assets/scripts/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="/Scripts/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="/Scripts/respond.js"></script>
+    <script src="/Scripts/respond.proxy.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="//staticcdn.saxo.com/4048/www/assets/dist/css/main.min.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'><!--
+    (function () {
+        var swDc = document.createElement('script');
+        swDc.type = 'text/javascript';
+        swDc.charset = 'UTF-8';
+        swDc.async = true;
+        swDc.src = ('https:' === document.location.protocol) ? 'https://a248.e.akamai.net/swordfishinc.download.akamai.com/145199/live/p/313/2fd26091.js' : 'http://media.swordfishdc.com/live/p/313/2fd26091.js';
+        var a = document.getElementsByTagName('script')[0];
+        a.parentNode.insertBefore(swDc, a);
+    }());
+        -->
+
+    </script>
+
+    <meta name="author" content="SAXO.com" />
+    <meta name="copyright" content="SAXO.com" />
+ 
+
+    <meta property="og:site_name" content="SAXO.com" />
+ 
+    
+        <meta property="og:url" content="//www.saxo.com/dk/soeg/boeger/" />
+    
+        <meta property="csrf-token" content="224a0f79-36d6-4479-b597-d0b6b7e034d3" />
+    
+
+
+    <meta name="twitter:site" content="@saxonyt" />
+    <meta name="google-site-verification" content="SCLLZlVzGM0HxzaGWXUNen8IkTlMtvV3zxlOkenZ0w8" />
+    <meta name="msvalidate.01" content="65D1180C3CCF2924F0388925D6BA43A6" />
+
+    <link rel="publisher" href="https://plus.google.com/u/0/108691979647707785255/" />
+ 
+
+<script src="//staticcdn.saxo.com/4048/www/assets/dist/js/headerscripts.min.js"></script>
+<script src="//media.richrelevance.com/rrserver/js/1.2/p13n.js"></script>
+
+    
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var saxoAppKey = '3814';
+                   
+      // Start Visual Website Optimizer Asynchronous Code
+      var _vwo_code = (function () {
+          var account_id = 17089, settings_tolerance = 2000, library_tolerance = 1500, use_existing_jquery = true,
+          // DO NOT EDIT BELOW THIS LINE
+          f = false, d = document; return { use_existing_jquery: function () { return use_existing_jquery; }, library_tolerance: function () { return library_tolerance; }, finish: function () { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } }, finished: function () { return f; }, load: function (a) { var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function () { _vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init: function () { settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance); this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random()); var a = d.createElement('style'), b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); return settings_timer; } };
+      }()); _vwo_settings_timer = _vwo_code.init();
+
+      /// End Visual Website Optimizer Asynchronous Code
+
+      if (typeof (_vis_opt_settings_loaded) == "boolean" && typeof (_vis_opt_top_initialize) == "function") {
+          _vis_opt_top_initialize(); vwo_$(document).ready(function () { _vis_opt_bottom_initialize(); });
+      }
+      //]]>
+    </script>
+    
+    
+
+    
+</head>
+<body>
+    <!-- Datalayer for Tag Manager -->
+<script type="text/javascript">
+var dataLayer = dataLayer || [];
+dataLayer.push({
+'resultCount': '12','appliedFilters': [{TargetPage:'Search'}, {Category:'soeg/boeger'}, {Query:'Frøken Jensens Kogebog Kristine Marie Jensen'}, {PageSize:'50'}, {SortOrder:'4'}, {ShowAll:'False'}],'shop': 'DK'});
+</script>
+
+
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TPBCXF" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : ""; j.async = true; j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f); })(window, document, "script", "dataLayer", "GTM-TPBCXF");</script>
+    <!-- End Google Tag Manager -->
+    <div class="oncanvas">
+        
+
+        
+
+
+<header class="header">
+    <div class="stickyHeader">
+        
+
+<nav class="header__top-nav is-hidden">
+
+    <div class="container">
+        <ul class="header__top-nav__list js-secondary-nav offcanvas__nav">
+            
+
+            <li class="offcanvas__navitem"><a href="//support.saxo.com" target="_blank">Kundeservice</a></li>
+
+            <li class="offcanvas__navitem"><a href="/user/orders">Se din ordrestatus</a></li>
+
+            <li class="offcanvas__navitem"><a href="/side/about-saxo">Om Saxo</a></li>
+
+            <li class="offcanvas__navitem"><a href="/gavekort">Gavekort</a></li>
+            
+            <li class="offcanvas__navitem"><a href="//support.saxo.com/Retur_og_Reklamation/Bytteservice" target="_blank"><b>Bytteservice</b></a></li>
+            
+            
+            <li class="offcanvas__navitem"><a href="/side/plusmedlemskab">Plusmedlemskab</a></li>
+            
+            <li class="offcanvas__navitem"><a href="/login" class="js-login_required">Log ind</a></li>
+            
+        </ul>
+
+        <ul class="header__top-nav__list is-hidden-lap is-hidden-palm js-secondary-nav offcanvas__nav">
+            <li><a href="//www.saxo.com/dk/">Shop</a></li>
+            <li><a href="/side/saxo-read">Read</a></li>
+			<li><a href="https://publish.saxo.com/">Udgiv din egen bog</a></li>
+        </ul>
+    </div>
+</nav>
+
+        <div class="container logocontainer">
+            <div class="header__toggle-offcanvas nav-button js-toggle-offcanvas">Menu</div>
+
+            <a href="/" class="header__logo">
+                <img src="//staticcdn.saxo.com/4048/www/assets/images/site/logo_new.png" alt="Køb dine bøger online på SAXO.com" />        
+            </a>
+
+
+            
+
+<div id="basketview" class="header__basket dropdown js-toggle-dropdown basket" data-bind="component: { name: 'basket', params: $root }">
+</div>
+<script type="text/javascript">
+    $(document).on('ready', function () {
+        $.ajax({
+            cache: false,
+            url: "/webservices/cart/cartsummary.ashx",
+            success: function (data) {
+                if (data) {
+                    var data = JSON.parse(data);
+                    ko.applyBindings(data, document.getElementById('basketview'));
+                }
+            }
+        });
+    });
+</script>
+<script type="text/html" id="basket-view">
+    
+    <a href="/kurv/" class="no-underline">
+        <div class="basket__items-blop" data-bind="text: count"></div>
+    </a>
+    
+    <div class="dropdown__box dropdown__box--basket">
+        <div class="basket__content">
+            <!-- ko if: gotItems -->
+            <ul data-bind="foreach: items">
+                <li class="basket__item">
+                    <p class="basket__title" data-bind="text: Title"></p>
+                    <p class="basket__amount"><span data-bind="text: Quantity"></span> stk.</p>
+                    <p class="basket__price" data-bind="text: Price"></p>
+                </li>
+                <!-- ko if: $index() == ($parent.items().length - 1) && $index() >= 1 && $parent.countUnlisted() > 0 -->
+                <li class="basket__item">
+                    <p class="basket__title">
+                        <a href="/kurv/">Og <span data-bind="text: $parent.countUnlisted"></span> andre titler</a>
+                    </p>
+                </li> 
+                <!-- /ko -->
+            </ul>
+            <ul>                  
+
+                <li class="basket__total">
+                    <p class="basket__description">Fragt</p>
+                    <p class="basket__price" data-bind="text: freight"></p>
+                    <p class="basket__description total">I alt</p>
+                    <p class="basket__price total" data-bind="text: totalPrice"></p>
+                </li>
+            </ul>
+              
+            <a href="/kasse/" class="button button--primary one-whole basket__checkout" style="width:100%">Gå til kassen</a>
+            <p class="basket__edit"><a href="/kurv/" class="button button--secondary button--long">se/ret kurv</a></p>
+                
+            <!-- /ko -->
+
+            <!-- ko ifnot: gotItems -->
+            <ul>
+                <li class="basket__description" style="margin-bottom: 10px">Indkøbskurven er tom</li>
+            </ul>
+            <!-- /ko -->            
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $('.header').on('click', '.basket__content a', function (e) {
+        window.location = $(this).attr('href');
+    });
+</script>
+        
+
+
+
+            <ul class="headermenu is-hidden-lap is-hidden-palm">
+                <li><a href="//www.saxo.com/dk">Privat</a></li>
+                <li><a href="//www.saxo.com/dk/boeger/danske-boeger/studieboeger">Studerende</a></li>
+                <li><a href="//www.saxo.com/dk/boeger/erhverv">Erhverv</a></li>
+                <li><a href="//www.saxo.com/dk/page/bliv-offentlig-kunde.aspx">Offentlig</a></li>
+            </ul>
+        </div>
+        <div class="main-navigation">
+            <nav role="navigation" class="header__primary-nav clearfix">
+                    
+
+
+
+<ul class="header__main-nav js-main-nav offcanvas__nav js-offcanvas-level-0">
+    <li class="dropdown js-toggle-dropdown">
+        <a href="/dk/boeger" title="Bøger" class="nav-button">Bøger</a>
+        <div class="dropdown__box dropdown__banner--regular">
+            <nav class="dropdown__box__column dropdown__box__column--single">
+                <p class="heading is-hidden-palm is-hidden-lap">Områder</p>
+                <ul class="offcanvas__nav">
+                    <li class="offcanvas__navitem offcanvas__first-subitem is-hidden-above-palm"><a href="/dk/boeger">Alle bøger</a></li>
+                    <li class="offcanvas__subnavitem offcanvas__first-subitem__menu offcanvas__navitem">
+                        <a href="/dk/boeger/danske-boeger">Danske bøger</a>
+                        <ul class="offcanvas__nav is-hidden-above-lap">
+                            <li class="offcanvas__navitem offcanvas__second-subitem is-hidden-above-lap"><a href="/dk/boeger/danske-boeger">Alle danske bøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/biografier">Biografier</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/boerneboeger">Børnebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/erotik">Erotik</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/filmboeger">Filmbøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/hobby">Hobby</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/hus-have">Hus &amp; have</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/krimi-spaending">Krimi &amp; spænding</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/krop-sind">Krop &amp; sind</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/kunst-kultur">Kunst &amp; kultur</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/lydboeger">Lydbøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/mad-gastronomi">Mad &amp; gastronomi</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/natur">Natur</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/paperbacks">Paperbacks</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/rejseboeger">Rejsebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/religion-filosofi">Religion &amp; filosofi</a></li>                                
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/samfund-historie">Samfund &amp; historie</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/skoenlitteratur-digte">Skønlitteratur &amp; Digte</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/sport-fritid">Sport &amp; fritid</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/studieboeger">Studiebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/danske-boeger/tegneserier">Tegneserier</a></li>
+                        </ul>
+                    </li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/engelske-boeger">Engelske bøger</a></li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/bestsellers/boeger.aspx">Bestsellers</a>
+                    </li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/danske-boeger/studieboeger">Studiebøger</a></li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/guides.aspx">Guides</a>
+                    </li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/rejseboeger">Rejsebøger</a>
+                    </li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/brugte-boeger">Brugte bøger</a>
+                    </li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/tags_lagersalg">Lagersalg</a></li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/boeger/erhverv">Erhvervsbøger</a></li>
+                    <li class="offcanvas__navitem offcanvas__first-subitem"><a href="/dk/guide/klassesaet-og-skoleboeger.aspx">Klassesæt og skolebøger</a></li>
+                </ul>
+            </nav>
+            <nav class="dropdown__box__column dropdown__box__column--double is-hidden-lap is-hidden-palm">
+                <p class="heading is-hidden-lap is-hidden-palm">Populære kategorier</p>
+                <ul>
+                    <li><a href="/dk/boeger/danske-boeger/biografier">Biografier</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/boerneboeger">Børnebøger</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/erotik">Erotik</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/filmboeger">Filmbøger</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/hobby">Hobby</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/hus-have">Hus &amp; have</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/krimi-spaending">Krimi &amp; spænding</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/krop-sind">Krop &amp; sind</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/kunst-kultur">Kunst &amp; kultur</a></li>
+                    <li><a href="/dk/boeger/lydboeger">Lydbøger</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/mad-gastronomi">Mad &amp; gastronomi</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/natur">Natur</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/paperbacks">Paperbacks</a></li>
+                    <li><a href="/dk/boeger/rejseboeger">Rejsebøger</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/religion-filosofi">Religion &amp; filosofi</a></li>
+
+                    <li><a href="/dk/boeger/danske-boeger/samfund-historie">Samfund &amp; historie</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/skoenlitteratur-digte">Sk&#248;nlitteratur &amp; Digte</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/sport-fritid">Sport &amp; fritid</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/studieboeger">Studiebøger</a></li>
+                    <li><a href="/dk/boeger/danske-boeger/tegneserier">Tegneserier</a></li>
+                </ul>
+            </nav>
+            <!-- The book preview
+            <nav class="dropdown__box__column dropdown__box__column--single productcolumn is-hidden-palm">
+                <p class="heading">Lige nu</p>
+                <ul>
+                    <li>
+                        <img src="//staticcdn.saxo.com/4048/www/assets/images/shop/mainmenuproduct.jpg" />
+                        <p><strong>Hent Haruki Murakami's bestseller helt gratis</strong><br />
+                        <span>Tilbuddet gælder fra 1/7 - 6/7</span></p>
+                    </li>
+                </ul>
+            </nav>
+                -->
+        </div>
+         
+
+    </li>
+    <li class="dropdown js-toggle-dropdown">
+        <a href="/dk/boeger/e-boeger" title="E-bøger" class="nav-button active">E-bøger</a>
+
+        <div class="dropdown__box dropdown__banner--ebook">
+            <nav class="dropdown__box__column dropdown__box__column--single">
+                <p class="heading is-hidden-palm is-hidden-lap">Områder</p>
+                <ul class="offcanvas__nav js-offcanvas-level-1">
+                    <li class="offcanvas__navitem  offcanvas__first-subitem is-hidden-above-palm"><a href="/dk/boeger/e-boeger">Alle e-bøger</a></li>
+                    <li class="offcanvas__subnavitem offcanvas__first-subitem__menu offcanvas__navitem">
+                        <a href="/dk/boeger/e-boeger/sprog_dansk">Danske e-bøger</a>
+                        <ul class="offcanvas__nav js-offcanvas-level-2 is-hidden-above-lap">
+                            <li class="offcanvas__navitem  offcanvas__second-subitem is-hidden-above-lap"><a href="/dk/boeger/e-boeger/sprog_dansk">Alle Danske e-bøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/biografier">Biografier</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/boerneboeger">Børnebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/diverse">Diverse</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/erhverv">Erhverv</a></li>
+
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/erotik">Erotik</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/faglitteratur">Faglitteratur</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/hobby">Hobby</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/hus-have">Hus &amp; have</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/it-boeger">IT-Bøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/job-og-karriere">Job og karriere</a></li>
+
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/krimi-spaending">Krimi &amp; spænding</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/krop-sind">Krop &amp; sind</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/kunst-kultur">Kunst &amp; kultur</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/mad-gastronomi">Mad &amp; gastronomi</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/mad-og-drikke">Mad &amp; drikke</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/musik">Musik</a></li>
+
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/natur">Natur</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/naturvidenskab">Naturvidenskab</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/ordboeger-leksika">Ordbøger &amp; leksika</a></li>
+                                
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/privatoekonomi">Privatøkonomi</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/rejseboeger">Rejsebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/religion-filosofi">Religion &amp; filosofi</a></li>
+
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/samfund-historie">Samfund &amp; historie</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/selvudgivelser">Selvudgivelser</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/singler">Singler</a></li>
+                                
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/skoenlitteratur-digte">Sk&#248;nlitteratur &amp; Digte</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/sport-hobby-og-fritid">Sport &amp; fritid</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/studieboeger">Studiebøger</a></li>
+                            <li class="offcanvas__navitem offcanvas__second-subitem"><a href="/dk/boeger/e-boeger/vinboeger">Vinbøger</a></li>
+                        </ul>
+                    </li>
+                    <li class="offcanvas__navitem  offcanvas__first-subitem"><a href="/dk/boeger/e-boeger/sprog_engelsk">Engelske e-bøger</a></li>
+                    <li class="offcanvas__navitem  offcanvas__first-subitem"><a href="/dk/boeger/e-boeger/singler">Singler</a>
+                    </li>
+                    <li class="offcanvas__navitem  offcanvas__first-subitem"><a href="/dk/boeger/e-boeger?order=2">Gratis e-bøger</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dropdown__box__column dropdown__box__column--double is-hidden-lap is-hidden-palm">
+                <p class="heading is-hidden-lap is-hidden-palm">Populære kategorier</p>
+                <ul>
+                        <li><a href="/dk/boeger/e-boeger/biografier">Biografier</a></li>
+                            <li><a href="/dk/boeger/e-boeger/boerneboeger">Børnebøger</a></li>
+                            <li><a href="/dk/boeger/e-boeger/diverse">Diverse</a></li>
+                            <li><a href="/dk/boeger/e-boeger/erhverv">Erhverv</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/erotik">Erotik</a></li>
+                            <li><a href="/dk/boeger/e-boeger/faglitteratur">Faglitteratur</a></li>
+                            <li><a href="/dk/boeger/e-boeger/hobby">Hobby</a></li>
+                            <li><a href="/dk/boeger/e-boeger/hus-have">Hus &amp; have</a></li>
+                            <li><a href="/dk/boeger/e-boeger/it-boeger">IT-Bøger</a></li>
+                            <li><a href="/dk/boeger/e-boeger/job-og-karriere">Job og karriere</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/krimi-spaending">Krimi &amp; spænding</a></li>
+                            <li><a href="/dk/boeger/e-boeger/krop-sind">Krop &amp; sind</a></li>
+                            <li><a href="/dk/boeger/e-boeger/kunst-kultur">Kunst &amp; kultur</a></li>
+                            <li><a href="/dk/boeger/e-boeger/mad-gastronomi">Mad &amp; gastronomi</a></li>
+                            <li><a href="/dk/boeger/e-boeger/mad-og-drikke">Mad &amp; drikke</a></li>
+                            <li><a href="/dk/boeger/e-boeger/musik">Musik</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/natur">Natur</a></li>
+                            <li><a href="/dk/boeger/e-boeger/naturvidenskab">Naturvidenskab</a></li>
+                            <li><a href="/dk/boeger/e-boeger/ordboeger-leksika">Ordbøger &amp; leksika</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/privatoekonomi">Privatøkonomi</a></li>
+                            <li><a href="/dk/boeger/e-boeger/rejseboeger">Rejsebøger</a></li>
+                            <li><a href="/dk/boeger/e-boeger/religion-filosofi">Religion &amp; filosofi</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/samfund-historie">Samfund &amp; historie</a></li>
+                            <li><a href="/dk/boeger/e-boeger/selvudgivelser">Selvudgivelser</a></li>
+                            <li><a href="/dk/boeger/e-boeger/singler">Singler</a></li>
+
+                            <li><a href="/dk/boeger/e-boeger/skoenlitteratur-digte">Sk&#248;nlitteratur &amp; Digte</a></li>
+                            <li><a href="/dk/boeger/e-boeger/sport-hobby-og-fritid">Sport &amp; fritid</a></li>
+                            <li><a href="/dk/boeger/e-boeger/studieboeger">Studiebøger</a></li>
+                            <li><a href="/dk/boeger/e-boeger/vinboeger">Vinbøger</a></li>
+                </ul>
+            </nav>
+        </div>
+    </li>
+    <li>
+        <a href="/dk/boeger/lydboeger" title="Lydbøger" class="nav-button">Lydbøger</a>
+    </li>
+    <li>
+        <a href="/dk/online-kurser" title="Kurser" class="nav-button">Kurser</a>
+    </li>
+    <!-- For courses
+    <li>
+        <a href="#" class="nav-button">Kurser</a>
+    </li>
+    -->
+</ul>
+
+
+                    <form class="header__search typeahead" action="/dk/soeg/boeger" method="GET">
+                        <input name="query" type="search" autofocus autocomplete="off" placeholder="Søg på titel, forfatter, emne eller ISBN" class="typeahead__input input" value="Fr&#248;ken Jensens Kogebog Kristine Marie Jensen">
+                        <input type="submit" value="Søg" class="button button--red">
+                        <ul class="typeahead__results"></ul>
+                    </form> 
+            </nav>
+        </div>
+        <form class="input-wrapper offcanvas__search typeahead is-hidden-desk" action="/dk/soeg/boeger" method="GET">
+            <input name="query" type="search" autofocus autocomplete="off" placeholder="Skriv dit søgeord her..." class="input typeahead__input" value="Fr&#248;ken Jensens Kogebog Kristine Marie Jensen">
+            <input type="submit" value="Søg" class="button button--white button--search">
+            <ul class="typeahead__results"></ul>
+            <div class="backbutton js-backbutton">
+                <span class="icon-angle-left icon-back-button"></span>
+            </div>
+        </form>
+    </div>
+    <div class="headerPillow"></div>
+</header>
+
+        
+
+        <div class="mainSlider">
+            
+            
+        </div>
+
+        <div class="container">
+
+
+            
+            
+
+
+            <div>
+                
+
+<div class="breadcrump is-hidden-palm">
+    
+    <div class="breadcrump__label">Du er her:</div>
+    <ul>
+        
+        <li class="breadcrump__label">
+            
+            <span>Bøger</span>
+            
+        </li>
+        
+    </ul>
+    
+</div>
+
+            </div>
+
+
+            
+                <div class="">
+                    
+    <div class="grid grid--wrapper">
+        
+
+        <div class="grid one-whole box filterResultItems">
+            
+            <div class="grid grid--wrapper blockFilters">
+                
+
+<div class="grid one-whole categoryFilters">
+    <ul class="boxBg">
+        
+        <li class="dropdown js-toggle-dropdown">
+            <span class="" onclick="">Formater</span>
+            
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="ukendt" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_ukendt?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="ukendt" value="ukendt" />
+                        <span>Ukendt</span> <span>(9)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="indbundet" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_indbundet?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="indbundet" value="indbundet" />
+                        <span>Indbundet</span> <span>(8)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="hardback" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_hardback?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="hardback" value="hardback" />
+                        <span>Hardback</span> <span>(3)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="pdf" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_pdf?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="pdf" value="pdf" />
+                        <span>PDF</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="epub" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_epub?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="epub" value="epub" />
+                        <span>ePub</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="paperback" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/formater_paperback?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Formater" id="paperback" value="paperback" />
+                        <span>Paperback</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+            </ul>
+            
+        </li>
+        
+        <li class="dropdown js-toggle-dropdown">
+            <span class="" onclick="">Sprog</span>
+            
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="dansk" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/sprog_dansk?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Sprog" id="dansk" value="dansk" />
+                        <span>Dansk</span> <span>(14)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="ukendt" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/sprog_ukendt?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Sprog" id="ukendt" value="ukendt" />
+                        <span>Ukendt</span> <span>(9)</span>
+                    </label>
+                </li>
+
+                
+            </ul>
+            
+        </li>
+        
+        <li class="dropdown js-toggle-dropdown">
+            <span class="" onclick="">Forfatter</span>
+            
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="kristine-marie-jensen_4337041" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_kristine-marie-jensen_4337041?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="kristine-marie-jensen_4337041" value="kristine-marie-jensen_4337041" />
+                        <span>Kristine Marie Jensen</span> <span>(20)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="fr-ken-jensen_1852287" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_fr-ken-jensen_1852287?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="fr-ken-jensen_1852287" value="fr-ken-jensen_1852287" />
+                        <span>Fr Ken Jensen</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="frken-jensen_4693262" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_frken-jensen_4693262?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="frken-jensen_4693262" value="frken-jensen_4693262" />
+                        <span>Frken Jensen</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="kristine-marie_6788679" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_kristine-marie_6788679?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="kristine-marie_6788679" value="kristine-marie_6788679" />
+                        <span>Kristine Marie</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="madam-mangor_7063677" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_madam-mangor_7063677?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="madam-mangor_7063677" value="madam-mangor_7063677" />
+                        <span>Madam Mangor</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="bloch_4392121" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_bloch_4392121?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="bloch_4392121" value="bloch_4392121" />
+                        <span>Bloch</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="bente-nissen_6034342" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_bente-nissen_6034342?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="bente-nissen_6034342" value="bente-nissen_6034342" />
+                        <span>Bente Nissen</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="hanne-jensen_6049015" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_hanne-jensen_6049015?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="hanne-jensen_6049015" value="hanne-jensen_6049015" />
+                        <span>Hanne Jensen</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="jensen_6966693" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_jensen_6966693?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="jensen_6966693" value="jensen_6966693" />
+                        <span>Jensen </span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="lundsgaard_7219775" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forfattere_lundsgaard_7219775?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forfatter" id="lundsgaard_7219775" value="lundsgaard_7219775" />
+                        <span>Lundsgaard</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+            </ul>
+            
+        </li>
+        
+        <li class="dropdown js-toggle-dropdown">
+            <span class="" onclick="">Forlag</span>
+            
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="gyldendal_1822" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forlag_gyldendal_1822?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forlag" id="gyldendal_1822" value="gyldendal_1822" />
+                        <span>Gyldendal</span> <span>(17)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="gyldendals-bogklubber_1006" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forlag_gyldendals-bogklubber_1006?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forlag" id="gyldendals-bogklubber_1006" value="gyldendals-bogklubber_1006" />
+                        <span>Gyldendals Bogklubber</span> <span>(3)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="bibliolife_113583" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forlag_bibliolife_113583?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forlag" id="bibliolife_113583" value="bibliolife_113583" />
+                        <span>Bibliolife</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="forlaget-paxhumana_165433" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/forlag_forlaget-paxhumana_165433?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Forlag" id="forlaget-paxhumana_165433" value="forlaget-paxhumana_165433" />
+                        <span>Forlaget Paxhumana</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+            </ul>
+            
+        </li>
+        
+        <li class="dropdown js-toggle-dropdown">
+            <span class="" onclick="">Tags</span>
+            
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="opskrifter" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_opskrifter?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="opskrifter" value="opskrifter" />
+                        <span>Opskrifter</span> <span>(3)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="kogeboeger" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_kogeboeger?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="kogeboeger" value="kogeboeger" />
+                        <span>Kogebøger</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="history" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_history?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="history" value="history" />
+                        <span>History</span> <span>(2)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="mad" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_mad?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="mad" value="mad" />
+                        <span>Mad</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="dansk" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_dansk?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="dansk" value="dansk" />
+                        <span>Dansk</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="kogebog" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_kogebog?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="kogebog" value="kogebog" />
+                        <span>Kogebog</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="madam-mangor" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_madam-mangor?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="madam-mangor" value="madam-mangor" />
+                        <span>Madam Mangor</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="aarstider" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_aarstider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="aarstider" value="aarstider" />
+                        <span>Årstider</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="mad-og-drikke-osv" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_mad-og-drikke-osv?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="mad-og-drikke-osv" value="mad-og-drikke-osv" />
+                        <span>Mad og drikke osv</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="kogeboeger-specielle-retter-og-menuer" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_kogeboeger-specielle-retter-og-menuer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="kogeboeger-specielle-retter-og-menuer" value="kogeboeger-specielle-retter-og-menuer" />
+                        <span>Kogebøger: Specielle retter og menuer</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="generel-madlavning-og-opskrifter" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_generel-madlavning-og-opskrifter?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="generel-madlavning-og-opskrifter" value="generel-madlavning-og-opskrifter" />
+                        <span>Generel madlavning og opskrifter</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="hoejtider-begivenheder-og-aarstider" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_hoejtider-begivenheder-og-aarstider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="hoejtider-begivenheder-og-aarstider" value="hoejtider-begivenheder-og-aarstider" />
+                        <span>Højtider, begivenheder og årstider</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="kogeboeger-af-kendte-personer" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_kogeboeger-af-kendte-personer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="kogeboeger-af-kendte-personer" value="kogeboeger-af-kendte-personer" />
+                        <span>Kogebøger af kendte personer</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="nationale-og-regionale-koekkener" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_nationale-og-regionale-koekkener?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="nationale-og-regionale-koekkener" value="nationale-og-regionale-koekkener" />
+                        <span>Nationale og regionale køkkener</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="hoejtider-og-fejringer" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_hoejtider-og-fejringer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="hoejtider-og-fejringer" value="hoejtider-og-fejringer" />
+                        <span>Højtider og fejringer</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label for="religioese-hoejtider" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger/tags_religioese-hoejtider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                        <input type="radio" name="Tags" id="religioese-hoejtider" value="religioese-hoejtider" />
+                        <span>Religiøse højtider</span> <span>(1)</span>
+                    </label>
+                </li>
+
+                
+            </ul>
+            
+        </li>
+        
+         <li class="dropdown js-toggle-dropdown">
+            <span>Sorter</span>
+            <ul class="dropdown__box">
+                
+                <li>
+                    <label for="sortFilterType_1" onclick='applySortFilter(1);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_1" value="1"  />
+                        <span>Mest populære</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_4" onclick='applySortFilter(4);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_4" value="4"  checked="checked" />
+                        <span>Bedste match</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_5" onclick='applySortFilter(5);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_5" value="5"  />
+                        <span>Nyeste først</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_7" onclick='applySortFilter(7);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_7" value="7"  />
+                        <span>Ældste først</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_3" onclick='applySortFilter(3);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_3" value="3"  />
+                        <span>Billigste først</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_6" onclick='applySortFilter(6);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_6" value="6"  />
+                        <span>Dyreste først</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_15" onclick='applySortFilter(15);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_15" value="15"  />
+                        <span>Vis udsolgt</span>
+                    </label>
+                </li>
+                
+                <li>
+                    <label for="sortFilterType_16" onclick='applySortFilter(16);'>
+                        <input type="radio" name="SelectedSortFilter" id="sortFilterType_16" value="16"  />
+                        <span>Vis kommende</span>
+                    </label>
+                </li>
+                
+            </ul>
+        </li>
+        <li class="relClear"><a class="clearFilters" href="//www.saxo.com/dk/soeg/boeger?query=Fr%c3%b8ken%20Jensens%20Kogebog%20Kristine%20Marie%20Jensen&order=4">Ryd alle</a></li>
+    </ul>
+
+
+    <div class="filtersMobile">
+        <div class="filterInfo" id="filterInfo">Filtrér og sortér</div>
+        <a class="clearFilters" href="//www.saxo.com/dk/soeg/boeger?query=Fr%c3%b8ken%20Jensens%20Kogebog%20Kristine%20Marie%20Jensen&order=4">Ryd alle</a>
+        <ul id="filterOptions">
+              
+            <li>
+                
+                <select class="filterSelect">
+                    <option value="">Formater</option>
+                    
+                    <option for="ukendt" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_ukendt?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="ukendt">Ukendt</option>
+                    
+                    <option for="indbundet" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_indbundet?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="indbundet">Indbundet</option>
+                    
+                    <option for="hardback" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_hardback?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="hardback">Hardback</option>
+                    
+                    <option for="pdf" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_pdf?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="pdf">PDF</option>
+                    
+                    <option for="epub" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_epub?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="epub">ePub</option>
+                    
+                    <option for="paperback" redirecturl="//www.saxo.com/dk/soeg/boeger/formater_paperback?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="paperback">Paperback</option>
+                    
+                </select>
+                
+            </li>
+            
+            <li>
+                
+                <select class="filterSelect">
+                    <option value="">Sprog</option>
+                    
+                    <option for="dansk" redirecturl="//www.saxo.com/dk/soeg/boeger/sprog_dansk?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="dansk">Dansk</option>
+                    
+                    <option for="ukendt" redirecturl="//www.saxo.com/dk/soeg/boeger/sprog_ukendt?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="ukendt">Ukendt</option>
+                    
+                </select>
+                
+            </li>
+            
+            <li>
+                
+                <select class="filterSelect">
+                    <option value="">Forfatter</option>
+                    
+                    <option for="kristine-marie-jensen_4337041" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_kristine-marie-jensen_4337041?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kristine-marie-jensen_4337041">Kristine Marie Jensen</option>
+                    
+                    <option for="fr-ken-jensen_1852287" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_fr-ken-jensen_1852287?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="fr-ken-jensen_1852287">Fr Ken Jensen</option>
+                    
+                    <option for="frken-jensen_4693262" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_frken-jensen_4693262?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="frken-jensen_4693262">Frken Jensen</option>
+                    
+                    <option for="kristine-marie_6788679" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_kristine-marie_6788679?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kristine-marie_6788679">Kristine Marie</option>
+                    
+                    <option for="madam-mangor_7063677" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_madam-mangor_7063677?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="madam-mangor_7063677">Madam Mangor</option>
+                    
+                    <option for="bloch_4392121" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_bloch_4392121?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="bloch_4392121">Bloch</option>
+                    
+                    <option for="bente-nissen_6034342" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_bente-nissen_6034342?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="bente-nissen_6034342">Bente Nissen</option>
+                    
+                    <option for="hanne-jensen_6049015" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_hanne-jensen_6049015?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="hanne-jensen_6049015">Hanne Jensen</option>
+                    
+                    <option for="jensen_6966693" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_jensen_6966693?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="jensen_6966693">Jensen </option>
+                    
+                    <option for="lundsgaard_7219775" redirecturl="//www.saxo.com/dk/soeg/boeger/forfattere_lundsgaard_7219775?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="lundsgaard_7219775">Lundsgaard</option>
+                    
+                </select>
+                
+            </li>
+            
+            <li>
+                
+                <select class="filterSelect">
+                    <option value="">Forlag</option>
+                    
+                    <option for="gyldendal_1822" redirecturl="//www.saxo.com/dk/soeg/boeger/forlag_gyldendal_1822?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="gyldendal_1822">Gyldendal</option>
+                    
+                    <option for="gyldendals-bogklubber_1006" redirecturl="//www.saxo.com/dk/soeg/boeger/forlag_gyldendals-bogklubber_1006?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="gyldendals-bogklubber_1006">Gyldendals Bogklubber</option>
+                    
+                    <option for="bibliolife_113583" redirecturl="//www.saxo.com/dk/soeg/boeger/forlag_bibliolife_113583?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="bibliolife_113583">Bibliolife</option>
+                    
+                    <option for="forlaget-paxhumana_165433" redirecturl="//www.saxo.com/dk/soeg/boeger/forlag_forlaget-paxhumana_165433?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="forlaget-paxhumana_165433">Forlaget Paxhumana</option>
+                    
+                </select>
+                
+            </li>
+            
+            <li>
+                
+                <select class="filterSelect">
+                    <option value="">Tags</option>
+                    
+                    <option for="opskrifter" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_opskrifter?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="opskrifter">Opskrifter</option>
+                    
+                    <option for="kogeboeger" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_kogeboeger?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kogeboeger">Kogebøger</option>
+                    
+                    <option for="history" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_history?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="history">History</option>
+                    
+                    <option for="mad" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_mad?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="mad">Mad</option>
+                    
+                    <option for="dansk" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_dansk?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="dansk">Dansk</option>
+                    
+                    <option for="kogebog" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_kogebog?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kogebog">Kogebog</option>
+                    
+                    <option for="madam-mangor" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_madam-mangor?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="madam-mangor">Madam Mangor</option>
+                    
+                    <option for="aarstider" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_aarstider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="aarstider">Årstider</option>
+                    
+                    <option for="mad-og-drikke-osv" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_mad-og-drikke-osv?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="mad-og-drikke-osv">Mad og drikke osv</option>
+                    
+                    <option for="kogeboeger-specielle-retter-og-menuer" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_kogeboeger-specielle-retter-og-menuer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kogeboeger-specielle-retter-og-menuer">Kogebøger: Specielle retter og menuer</option>
+                    
+                    <option for="generel-madlavning-og-opskrifter" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_generel-madlavning-og-opskrifter?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="generel-madlavning-og-opskrifter">Generel madlavning og opskrifter</option>
+                    
+                    <option for="hoejtider-begivenheder-og-aarstider" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_hoejtider-begivenheder-og-aarstider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="hoejtider-begivenheder-og-aarstider">Højtider, begivenheder og årstider</option>
+                    
+                    <option for="kogeboeger-af-kendte-personer" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_kogeboeger-af-kendte-personer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="kogeboeger-af-kendte-personer">Kogebøger af kendte personer</option>
+                    
+                    <option for="nationale-og-regionale-koekkener" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_nationale-og-regionale-koekkener?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="nationale-og-regionale-koekkener">Nationale og regionale køkkener</option>
+                    
+                    <option for="hoejtider-og-fejringer" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_hoejtider-og-fejringer?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="hoejtider-og-fejringer">Højtider og fejringer</option>
+                    
+                    <option for="religioese-hoejtider" redirecturl="//www.saxo.com/dk/soeg/boeger/tags_religioese-hoejtider?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4" value="religioese-hoejtider">Religiøse højtider</option>
+                    
+                </select>
+                
+            </li>
+            
+             <li>
+                <select class="sortFilterSelect">
+                       <option value="" selected="selected">Sorter</option>
+                    
+                    <option value="1">Mest populære</option>
+                    
+                    <option value="4">Bedste match</option>
+                    
+                    <option value="5">Nyeste først</option>
+                    
+                    <option value="7">Ældste først</option>
+                    
+                    <option value="3">Billigste først</option>
+                    
+                    <option value="6">Dyreste først</option>
+                    
+                    <option value="15">Vis udsolgt</option>
+                    
+                    <option value="16">Vis kommende</option>
+                    
+                </select>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="sortingFiltersTools" class="grid one-whole sortingFiltersTools">
+    <div class="grid grid--wrapper">
+        <div class="grid desk-nine-twelfths lap-ten-twelfths palm-one-whole sortingFiltersCategory">
+            
+            <label class="category-item active" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4');">
+                <span>Alle</span>
+                
+            </label>
+            
+            <label class="category-item" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4&pt=bog');">
+                <span>Bog</span>
+                
+            </label>
+            
+            <label class="category-item" onclick="redirectToFilter('//www.saxo.com/dk/soeg/boeger?query=fr%c3%b8ken%20jensens%20kogebog%20kristine%20marie%20jensen&order=4&pt=e-bog');">
+                <span>E-bog</span>
+                
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="grid one-whole resultFilters">
+    1
+                
+    ud af 12
+    emner 
+        
+</div>
+
+
+<script type="text/javascript">
+    var redirectToFilter = function (url) {
+        window.location.href = url;
+    }
+    var redirectToSubCategory = function (url) {
+        if (window.location.href.split("?").length > 1) {
+            window.location.href = url + "?" + window.location.href.split("?")[1];
+        } else {
+            window.location.href = url;
+        }
+    }
+    var applySortFilter = function (type) {
+        var url = window.location.href;
+        if (type == 15) {
+            url = updateQueryStringParameter(url, "so", 1);
+        } 
+        else if (type == 16){
+            url = updateQueryStringParameter(url, "sf", 3);
+        }
+        else {
+            url = removeURLParameter(url, "sf");
+            url = removeURLParameter(url, "so");
+        }
+        redirectToFilter(updateQueryStringParameter(url, "order", type));
+    }
+    function removeURLParameter(url, parameter) {
+        //prefer to use l.search if you have a location/link object
+        var urlparts = url.split('?');
+        if (urlparts.length >= 2) {
+
+            var prefix = encodeURIComponent(parameter) + '=';
+            var pars = urlparts[1].split(/[&;]/g);
+
+            //reverse iteration as may be destructive
+            for (var i = pars.length; i-- > 0;) {
+                //idiom for string.startsWith
+                if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                    pars.splice(i, 1);
+                }
+            }
+
+            url = urlparts[0] + '?' + pars.join('&');
+            return url;
+        } else {
+            return url;
+        }
+    }
+    var updateQueryStringParameter = function (uri, key, value) {
+        var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+        var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+        if (uri.match(re)) {
+            return uri.replace(re, '$1' + key + "=" + value + '$2');
+        }
+        else {
+            return uri + separator + key + "=" + value;
+        }
+    }
+    $(function () {
+        $(".filterSelect").change(function () {
+            var selected = $(this).children(":selected");
+            if (selected.val() != "" && selected.attr("redirectUrl") != "") {
+                redirectToFilter(selected.attr("redirectUrl"));
+            }
+        });
+        $(".sortFilterSelect").change(function () {
+            var selected = $(this).children(":selected");
+            if (selected.val() != "") {
+                redirectToFilter(updateQueryStringParameter(window.location.href, "order", selected.val()));
+            }
+        });
+        $(".subCategory").change(function () {
+            var selected = $(this).children(":selected");
+            if (selected.val() != "" && selected.attr("redirectUrl") != "") {
+                redirectToSubCategory(selected.attr("redirectUrl"));
+            }
+        });       
+
+        if ($(".selectedFilter").length > 0) {
+            $(".clearFilters").show();
+        } else {
+            $(".clearFilters").hide();
+        }
+    });
+
+    $(document).ready(function () {
+        
+    });
+</script>
+
+            </div>
+            <hr />
+            <div class="grid grid--wrapper">
+
+                <div class="grid desk-ten-twelfths lap-one-whole palm-one-whole productListResult">
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="8195829">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702101393" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler8195829();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_9788702101393/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702101393" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler8195829();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Er du klar til at gå på en tur ind i de traditionelle danske retter, som Frøken Jensen er en mester &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702101393" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">2-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="299.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                        kr. 299,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702101393" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 239,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+        
+            <div class="product_rating book_w">
+                 
+              <span class="rating rating--3"></span><br />
+              (5 anmeldelser)
+          </div> 
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler8195829 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '8195829',
+        'name': 'Frøken Jensens kogebog',
+        'price': 299.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 1
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="44096225">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702192292" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44096225();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_9788702192292/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702192292" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44096225();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Ny udgave af den 'store danske nationalkogebog'. Med over 1.000 opskrifter på alle danske madklassik&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702192292" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt>Forlagets pris: </dt>
+            <dd>
+                <s>kr. 399,95</s>
+            </dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">2-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="388.01" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                        kr. 388,01
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702192292" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 319,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler44096225 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '44096225',
+        'name': 'Frøken Jensens kogebog',
+        'price': 388.01,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 2
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="48706784">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_epub_9788702216257" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler48706784();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702216257/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_epub_9788702216257" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler48706784();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            E-bog, ePub
+            
+            <img src="//staticcdn.saxo.com/4048/www/assets/images/product/E-book.svg" class="ProductIcon" />
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Ny udgave af alle danskeres kogebog, Frøken Jensens Kogebog. Her får du hjælp med alt fra blødkogte &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_epub_9788702216257" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Straks (sendes på e-mail)</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="259.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 259,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_epub_9788702216257" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 209,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler48706784 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '48706784',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 259.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'E-bøger',
+        'variant': 'E-bog',
+        'list': 'Search ',
+        'position': 3
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="21267646">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/mangors-kogebog-for-smaa-husholdninger_pdf_9788793208032" title="Mangors Kogebog for Små Husholdninger" onclick="RecommendationClickHandler21267646();">
+            <div>
+                <img alt="Mangors Kogebog for Små Husholdninger" src="https://imgcdn.saxo.com/_9788793208032/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/mangors-kogebog-for-smaa-husholdninger_pdf_9788793208032" title="Mangors Kogebog for Små Husholdninger" onclick="RecommendationClickHandler21267646();">Mangors Kogebog for Små Husholdninger</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/madam-mangor_7063677" title="Madam Mangor">Madam Mangor</a></li></ul>
+        <p class="product__type">
+            E-bog, PDF
+            
+            <img src="//staticcdn.saxo.com/4048/www/assets/images/product/E-book.svg" class="ProductIcon" />
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">De fleste kender Frøken Jensens Kogebog, skrevet af Kristine Marie Jensen i 1901, og som for længst &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/mangors-kogebog-for-smaa-husholdninger_pdf_9788793208032" title="Mangors Kogebog for Små Husholdninger">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Straks (sendes på e-mail)</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="50.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 50,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/mangors-kogebog-for-smaa-husholdninger_pdf_9788793208032" title="Læs mere om Mangors Kogebog for Små Husholdninger" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler21267646 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '21267646',
+        'name': 'Mangors Kogebog for Små Husholdninger',
+        'price': 50.0,
+        'brand': 'Madam Mangor',
+        'category': 'Mad & gastronomi',
+        'variant': 'E-bog',
+        'list': 'Search ',
+        'position': 4
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623352">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232967" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623352();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702232967/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232967" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623352();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">BørnefødselsdagFra Frøken Jensens Kogebog får du her et udvalg på 55 af hendes bedste opskrifter på &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232967" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232967" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623352 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623352',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 5
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="52279512">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-store-kogebog-med-syltebog_kristine-marie-jensen_ukendt_SX52279512" title="Frøken Jensens store kogebog - med syltebog" onclick="RecommendationClickHandler52279512();">
+            <div>
+                <img alt="Frøken Jensens store kogebog - med syltebog" src="https://imgcdn.saxo.com/_SX52279512/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-store-kogebog-med-syltebog_kristine-marie-jensen_ukendt_SX52279512" title="Frøken Jensens store kogebog - med syltebog" onclick="RecommendationClickHandler52279512();">Frøken Jensens store kogebog - med syltebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Sprog: Dansk Indbinding: Illustreret kartonbind.Stort format Tilstand: Pænt eksemplar Mere end 1100 &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-store-kogebog-med-syltebog_kristine-marie-jensen_ukendt_SX52279512" title="Frøken Jensens store kogebog - med syltebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-7 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="170.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 170,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-store-kogebog-med-syltebog_kristine-marie-jensen_ukendt_SX52279512" title="Læs mere om Frøken Jensens store kogebog - med syltebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler52279512 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '52279512',
+        'name': 'Frøken Jensens store kogebog - med syltebog',
+        'price': 170.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 6
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="44475519">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475519" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44475519();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_SX44475519/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475519" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44475519();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Frøken Jensen 150 år. Indbinding: Kartonbind. Tilstand: Pænt eksemplar.</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475519" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="145.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 145,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475519" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler44475519 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '44475519',
+        'name': 'Frøken Jensens kogebog',
+        'price': 145.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 7
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623353">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232981" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623353();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702232981/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232981" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623353();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Kager og søde sagerFra Frøken Jensens Kogebog får du her et udvalg på 47 af de bedste opskrifter på &hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232981" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702232981" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623353 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623353',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 8
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623357">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233063" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623357();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702233063/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233063" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623357();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Fra Frøken Jensens Kogebog får du her et udvalg af de bedste opskrifter på sovs og saucerDe klassisk&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233063" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233063" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623357 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623357',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 9
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623354">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233001" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623354();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702233001/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233001" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623354();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Ny udgave af den 'store danske nationalkogebog'. Med over 1.000 opskrifter på alle danske madklassik&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233001" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233001" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623354 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623354',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 10
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623356">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233049" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623356();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702233049/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233049" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623356();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Ny udgave af den 'store danske nationalkogebog'. Med over 1.000 opskrifter på alle danske madklassik&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233049" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233049" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623356 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623356',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 11
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="44475520">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475520" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44475520();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_SX44475520/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475520" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler44475520();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Indbinding: Illustreret kartonbind. Tilstand: Pænt eksemplar.</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475520" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="120.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 120,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX44475520" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler44475520 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '44475520',
+        'name': 'Frøken Jensens kogebog',
+        'price': 120.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 12
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="38943863">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_hardback_9781140408741" title="Froken Jensens Kogebog" onclick="RecommendationClickHandler38943863();">
+            <div>
+                <img alt="Froken Jensens Kogebog" src="https://imgcdn.saxo.com/_9781140408741/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_hardback_9781140408741" title="Froken Jensens Kogebog" onclick="RecommendationClickHandler38943863();">Froken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/fr-ken-jensen_1852287" title="Fr Ken Jensen">Fr Ken Jensen</a></li><li>, <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li><li> &amp; <a href="//www.saxo.com/dk/forfatter/frken-jensen_4693262" title="Frken Jensen">Frken Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, hardback
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove"></p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_hardback_9781140408741" title="Froken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-6 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="489.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                        kr. 489,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_hardback_9781140408741" title="Læs mere om Froken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 419,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler38943863 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '38943863',
+        'name': 'Froken Jensens Kogebog',
+        'price': 489.95,
+        'brand': 'Fr Ken Jensen, Kristine Marie Jensen, Frken Jensen',
+        'category': 'General',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 13
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="49512277">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX49512277" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler49512277();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_SX49512277/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX49512277" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler49512277();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Indbinding: Kartonbind. Tilstand: Pænt eksemplar.</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX49512277" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="110.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 110,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX49512277" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler49512277 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '49512277',
+        'name': 'Frøken Jensens kogebog',
+        'price': 110.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 14
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="30708432">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_paperback_9781140408758" title="Froken Jensens Kogebog" onclick="RecommendationClickHandler30708432();">
+            <div>
+                <img alt="Froken Jensens Kogebog" src="https://imgcdn.saxo.com/_9781140408758/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_paperback_9781140408758" title="Froken Jensens Kogebog" onclick="RecommendationClickHandler30708432();">Froken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/fr-ken-jensen_1852287" title="Fr Ken Jensen">Fr Ken Jensen</a></li><li>, <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li><li> &amp; <a href="//www.saxo.com/dk/forfatter/frken-jensen_4693262" title="Frken Jensen">Frken Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, paperback
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove"></p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_paperback_9781140408758" title="Froken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-6 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="379.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                        kr. 379,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froken-jensens-kogebog_froken-jensen_paperback_9781140408758" title="Læs mere om Froken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 309,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler30708432 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '30708432',
+        'name': 'Froken Jensens Kogebog',
+        'price': 379.95,
+        'brand': 'Fr Ken Jensen, Kristine Marie Jensen, Frken Jensen',
+        'category': 'General',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 15
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="48415858">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX48415858" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler48415858();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_SX48415858/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX48415858" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler48415858();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Indbinding: Indbundet Tilstand: Fejlfrit eksemplar</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX48415858" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-10 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="399.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 399,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX48415858" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler48415858 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '48415858',
+        'name': 'Frøken Jensens kogebog',
+        'price': 399.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 16
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57623355">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233025" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623355();">
+            <div>
+                <img alt="Frøken Jensens Kogebog" src="https://imgcdn.saxo.com/_9788702233025/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233025" title="Frøken Jensens Kogebog" onclick="RecommendationClickHandler57623355();">Frøken Jensens Kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Bog, indbundet
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Fisk & vildtFra Frøken Jensens Kogebog får du her et stort udvalg af de bedste opskrifter på fisk og&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233025" title="Frøken Jensens Kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+            <dt class="price-info__release small-line-distance">Forventes udgivet:</dt>
+            <dd class="price-info__release small-line-distance">17-08-2017</dd>
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">Kan forudbestilles</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="69.95" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/PreOrder" />
+                        kr. 69,95
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_indbundet_9788702233025" title="Læs mere om Frøken Jensens Kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                            <dt class="sucbcr__price title_5">Pluspris </dt>
+                            <dd class="sucbcr__price title_5">
+                                kr. 54,95
+                            </dd>            
+                        
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57623355 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57623355',
+        'name': 'Frøken Jensens Kogebog',
+        'price': 69.95,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Kogebøger',
+        'variant': 'Bog',
+        'list': 'Search ',
+        'position': 17
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="57933652">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog-froeken-jensen-i-150-aar_kristine-marie-jensen_ukendt_SX57933652" title="Frøken Jensens kogebog.. Frøken Jensen i 150 år" onclick="RecommendationClickHandler57933652();">
+            <div>
+                <img alt="Frøken Jensens kogebog.. Frøken Jensen i 150 år" src="https://imgcdn.saxo.com/_SX57933652/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-froeken-jensen-i-150-aar_kristine-marie-jensen_ukendt_SX57933652" title="Frøken Jensens kogebog.. Frøken Jensen i 150 år" onclick="RecommendationClickHandler57933652();">Frøken Jensens kogebog.. Frøken Jensen i 150 år</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Sprog: Dansk Indbinding: Hardback Tilstand: Pænt eksemplar. Jubilæumsudgaven af Frøken Jensens kogeb&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-froeken-jensen-i-150-aar_kristine-marie-jensen_ukendt_SX57933652" title="Frøken Jensens kogebog.. Frøken Jensen i 150 år">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-7 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="170.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 170,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog-froeken-jensen-i-150-aar_kristine-marie-jensen_ukendt_SX57933652" title="Læs mere om Frøken Jensens kogebog.. Frøken Jensen i 150 år" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler57933652 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '57933652',
+        'name': 'Frøken Jensens kogebog.. Frøken Jensen i 150 år',
+        'price': 170.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 18
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="58052805">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog-jubilaeums-udgave-1901-2001_kristine-marie-jensen_ukendt_SX58052805" title="Frøken Jensens kogebog jubilæums udgave 1901-2001" onclick="RecommendationClickHandler58052805();">
+            <div>
+                <img alt="Frøken Jensens kogebog jubilæums udgave 1901-2001" src="https://imgcdn.saxo.com/_SX58052805/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-jubilaeums-udgave-1901-2001_kristine-marie-jensen_ukendt_SX58052805" title="Frøken Jensens kogebog jubilæums udgave 1901-2001" onclick="RecommendationClickHandler58052805();">Frøken Jensens kogebog jubilæums udgave 1901-2001</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie_6788679" title="Kristine Marie">Kristine Marie</a></li><li> &amp; <a href="//www.saxo.com/dk/forfatter/jensen_6966693" title="Jensen ">Jensen </a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Frøken Jensen, egl. Kirstine Marie Jensen, 1858-1923, dansk kogebogsforfatter. Frøken Jensen blev fø&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-jubilaeums-udgave-1901-2001_kristine-marie-jensen_ukendt_SX58052805" title="Frøken Jensens kogebog jubilæums udgave 1901-2001">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="170.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 170,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog-jubilaeums-udgave-1901-2001_kristine-marie-jensen_ukendt_SX58052805" title="Læs mere om Frøken Jensens kogebog jubilæums udgave 1901-2001" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler58052805 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '58052805',
+        'name': 'Frøken Jensens kogebog jubilæums udgave 1901-2001',
+        'price': 170.0,
+        'brand': 'Kristine Marie, Jensen ',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 19
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="58064727">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog-for-boern_kristine-marie-jensen_hardback_SX58064727" title="Frøken Jensens kogebog for børn" onclick="RecommendationClickHandler58064727();">
+            <div>
+                <img alt="Frøken Jensens kogebog for børn" src="https://imgcdn.saxo.com/_SX58064727/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-for-boern_kristine-marie-jensen_hardback_SX58064727" title="Frøken Jensens kogebog for børn" onclick="RecommendationClickHandler58064727();">Frøken Jensens kogebog for børn</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">1. udg</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog-for-boern_kristine-marie-jensen_hardback_SX58064727" title="Frøken Jensens kogebog for børn">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="125.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 125,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog-for-boern_kristine-marie-jensen_hardback_SX58064727" title="Læs mere om Frøken Jensens kogebog for børn" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler58064727 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '58064727',
+        'name': 'Frøken Jensens kogebog for børn',
+        'price': 125.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Mad & drikke',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 20
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="58176281">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX58176281" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler58176281();">
+            <div>
+                <img alt="Frøken Jensens kogebog" src="https://imgcdn.saxo.com/_SX58176281/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX58176281" title="Frøken Jensens kogebog" onclick="RecommendationClickHandler58176281();">Frøken Jensens kogebog</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Sprog: Dansk Indbinding: Illustreret hardback med plast smudsomslag Tilstand: Pænt eksemplar. Omarbe&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX58176281" title="Frøken Jensens kogebog">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="95.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 95,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-kogebog_kristine-marie-jensen_ukendt_SX58176281" title="Læs mere om Frøken Jensens kogebog" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler58176281 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '58176281',
+        'name': 'Frøken Jensens kogebog',
+        'price': 95.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 21
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="49051926">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/classic-froeken-jensen_kristine-marie-lundsgaard-bente-nissen-bloch-hanne-jensen_ukendt_SX49051926" title="Classic frøken Jensen" onclick="RecommendationClickHandler49051926();">
+            <div>
+                <img alt="Classic frøken Jensen" src="https://imgcdn.saxo.com/_SX49051926/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/classic-froeken-jensen_kristine-marie-lundsgaard-bente-nissen-bloch-hanne-jensen_ukendt_SX49051926" title="Classic frøken Jensen" onclick="RecommendationClickHandler49051926();">Classic frøken Jensen</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/bente-nissen_6034342" title="Bente Nissen">Bente Nissen</a></li><li>, <a href="//www.saxo.com/dk/forfatter/bloch_4392121" title="Bloch">Bloch</a></li><li>, <a href="//www.saxo.com/dk/forfatter/hanne-jensen_6049015" title="Hanne Jensen">Hanne Jensen</a></li><li>, <a href="//www.saxo.com/dk/forfatter/kristine-marie_6788679" title="Kristine Marie">Kristine Marie</a></li><li> &amp; <a href="//www.saxo.com/dk/forfatter/lundsgaard_7219775" title="Lundsgaard">Lundsgaard</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Ukendt</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Sprog: Dansk Indbinding: Helshirting Tilstand: Fejlfrit eksemplar Ill. i farver - Klassiske retter f&hellip;</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/classic-froeken-jensen_kristine-marie-lundsgaard-bente-nissen-bloch-hanne-jensen_ukendt_SX49051926" title="Classic frøken Jensen">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">1-3 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="210.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 210,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/classic-froeken-jensen_kristine-marie-lundsgaard-bente-nissen-bloch-hanne-jensen_ukendt_SX49051926" title="Læs mere om Classic frøken Jensen" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler49051926 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '49051926',
+        'name': 'Classic frøken Jensen',
+        'price': 210.0,
+        'brand': 'Bente Nissen, Bloch, Hanne Jensen, Kristine Marie, Lundsgaard',
+        'category': 'Diverse',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 22
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="grid grid--wrapper browsing-item" data-product-id="52226097">
+    <div class="grid two-twelfths lap-two-twelfths palm-four-twelfths pos-relative" >
+        <a href="//www.saxo.com/dk/froeken-jensens-danske-desserter_kristine-marie-jensen_hardback_SX52226097" title="Frøken Jensens danske desserter" onclick="RecommendationClickHandler52226097();">
+            <div>
+                <img alt="Frøken Jensens danske desserter" src="https://imgcdn.saxo.com/_SX52226097/medium" class="cover" data-qazy="true" data-qazy-new="true">
+            </div>
+        </a>
+    </div>
+    <div class="grid six-twelfths lap-six-twelfths palm-eight-twelfths">
+        <h2 class="title title--medium truncate"><a href="//www.saxo.com/dk/froeken-jensens-danske-desserter_kristine-marie-jensen_hardback_SX52226097" title="Frøken Jensens danske desserter" onclick="RecommendationClickHandler52226097();">Frøken Jensens danske desserter</a></h2>
+        <ul class="author-list author-list--medium truncate"><li>af <a href="//www.saxo.com/dk/forfatter/kristine-marie-jensen_4337041" title="Kristine Marie Jensen">Kristine Marie Jensen</a></li></ul>
+        <p class="product__type">
+            Ukendt format, brugt
+            
+        </p>
+        
+        <p class="product__type">Sprog: Dansk</p>
+        
+        <p class="is-hidden-palm desk-marginbottom--remove">Indeholder bl.a. reviderede opskrifter fra "Frøken Jensens Kogebog", 1. udg. 1901. 1. udg.</p>
+        <p class="is-hidden-palm desk-marginbottom--remove"><a href="//www.saxo.com/dk/froeken-jensens-danske-desserter_kristine-marie-jensen_hardback_SX52226097" title="Frøken Jensens danske desserter">Se mere om bogen</a></p>
+    </div>
+    <div class="grid four-twelfths lap-four-twelfths palm-eight-twelfths grid--last price-info price-info--browsing">
+        <dl class="price-info__definition-list">
+            
+
+            <dt class="price-info__eta small-line-distance">Leveringstid:</dt>
+            <dd class="price-info__eta small-line-distance">3-10 hverdage</dd>
+             
+                    <dt class="price-info__price blc">Pris </dt>
+
+                    <dd class="price-info__price blc" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="price" content="95.00" />
+                        <meta itemprop="priceCurrency" content="DKK" />
+                        <meta itemprop="availability" content="http://schema.org/OnlineOnly" />
+                        kr. 95,00
+                    </dd>
+                    
+            <dt class="wide-purchase-button">
+
+                
+                   <a href="//www.saxo.com/dk/froeken-jensens-danske-desserter_kristine-marie-jensen_hardback_SX52226097" title="Læs mere om Frøken Jensens danske desserter" class="button button--primary price-info__button button--long">Læs mere</a>
+                
+            </dt>
+            <dd></dd>
+            
+                       
+                  
+        </dl>
+
+             
+
+   </div>
+</div>
+
+<script type="text/javascript">
+    var RecommendationClickHandler52226097 = function () {
+        dataLayer.push({'event': 'productClick', ecommerce : {
+  'currencyCode': 'DKK',
+  'click': {
+    'actionField': {
+      'list': 'Search '
+    },
+    'products': [
+      {
+        'id': '52226097',
+        'name': 'Frøken Jensens danske desserter',
+        'price': 95.0,
+        'brand': 'Kristine Marie Jensen',
+        'category': 'Mad & drikke',
+        'variant': 'Brugt bog',
+        'list': 'Search ',
+        'position': 23
+      }
+    ]
+  }
+}});
+    }
+</script>
+
+                    <hr />
+                    
+
+<div class="productPagination">
+    <div class="inline left resultFilters">
+        1
+                    
+            ud af 12
+        <span class="is-hidden-palm">emner 
+            
+            i "Bøger"
+            
+        </span>
+    </div>
+    
+         <div class="filter__option">
+        Antal
+            <select class="psizeSelect" name="psize" onclick='applyDropdownFilter(this,"50");'>
+                
+                    <option value="5">5</option>
+                
+                    <option value="10">10</option>
+                
+                    <option value="20">20</option>
+                
+                    <option value="30">30</option>
+                
+                    <option value="50" selected="selected=">50</option>
+                
+                    <option value="100">100</option>
+                >
+            </select>
+        </div>
+
+    <ul class="inline inline-list right">
+        <li>Side: </li>
+        
+        <li class="button button--circle button--muted"><a href="//www.saxo.com/dk/soeg/boeger?query=Fr%c3%b8ken%20Jensens%20Kogebog%20Kristine%20Marie%20Jensen&order=4&page=1" title="Gå til side 1">1</a></li>
+            
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+       
+       function updateQueryStringParameter(uri, key, value) {
+                var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+                var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+                if (uri.match(re)) {
+                    return uri.replace(re, '$1' + key + "=" + value + '$2');
+                } else {
+                    return uri + separator + key + "=" + value;
+                }
+            }
+        
+        $(".psizeSelect").change(function () {
+        var selected = $(this).children(":selected");
+        if (selected.val() != "") {
+            var url = updateQueryStringParameter(window.location.href, "psize", selected.val());
+            url = updateQueryStringParameter(url, "page", 1);
+            window.location.href = url;
+        }
+    });
+    });
+</script>
+
+                </div>
+
+                
+                    <div class="grid desk-two-twelfths lap-one-whole palm-one-whole">
+                        <div id="common_recommendations" class="common_recommendations"></div>
+                    </div>
+                
+
+            </div>
+
+            
+        </div>
+        
+                <div class="grid one-whole box">
+                    
+                    <div id="category_recommendations" class="grid grid--wrapper"></div>
+                    
+                </div>
+                
+
+
+<div id="rids_fields">
+</div>
+
+
+<script type="text/javascript" >
+    var R3_COMMON, R3_HOME, R3_CATEGORY, R3_ITEM, R3_SEARCH, R3_CART, R3_ADDTOCART;
+    var recommendation;
+    var recProductId = recProductId != undefined && recProductId.length > 0 ? recProductId : ''; 
+    var all_placements = all_placements != undefined && all_placements.length > 0  ? all_placements : [];
+    
+    
+    var placementId = 'category_recommendations';
+    var imageHtml = '';
+    $('#' + placementId).html(imageHtml);
+
+    all_placements.push({
+        'controlid': placementId,
+        'count': '6',
+        'title': 'Andre der søgte på Frøken Jensens Kogebog Kristine Marie Jensen købte:',
+        'placement': 'search_page.top',
+        'recommendationBasePath': '/anbefalinger/index',
+        'swiperId': '',
+        'showTooltip' : 'False'
+    });
+    
+    var placementId = 'common_recommendations';
+    var imageHtml = '';
+    $('#' + placementId).html(imageHtml);
+
+    all_placements.push({
+        'controlid': placementId,
+        'count': '6',
+        'title': 'Anbefalede bøger',
+        'placement': 'search_page.left',
+        'recommendationBasePath': '/anbefalinger/vertical',
+        'swiperId': '',
+        'showTooltip' : 'False'
+    });
+    
+    
+    var env;
+
+    
+        env = 'recs';
+    
+        R3_COMMON = new r3_common();
+        R3_COMMON.setApiKey('6d580fc8-e293-11e0-9cab-12313b0349b4');
+        R3_COMMON.forceDisplayMode();
+        R3_COMMON.setBaseUrl(window.location.protocol + '//' + env + '.richrelevance.com/rrserver/');
+
+    
+
+        R3_COMMON.setClickthruServer(window.location.protocol + "//" + window.location.host);
+
+        var itemsToExclude = [];
+        for (var i = 0; i < itemsToExclude.length; i++) {
+            R3_COMMON.blockItemId(itemsToExclude[i]);
+        }
+
+    
+        R3_COMMON.addPlacementType('search_page.top');
+        
+        R3_COMMON.addPlacementType('search_page.left');
+        
+
+        // set variables for different types of recommendations
+    
+        R3_SEARCH = new r3_search();
+        R3_SEARCH.setTerms('Frøken Jensens Kogebog Kristine Marie Jensen');
+    
+        R3_SEARCH.addItemId(8195829);
+        
+        R3_SEARCH.addItemId(44096225);
+        
+        R3_SEARCH.addItemId(48706784);
+        
+        R3_SEARCH.addItemId(21267646);
+        
+        R3_SEARCH.addItemId(57623352);
+        
+        R3_SEARCH.addItemId(52279512);
+        
+        R3_SEARCH.addItemId(44475519);
+        
+        R3_SEARCH.addItemId(57623353);
+        
+        R3_SEARCH.addItemId(57623357);
+        
+        R3_SEARCH.addItemId(57623354);
+        
+        R3_SEARCH.addItemId(57623356);
+        
+        R3_SEARCH.addItemId(44475520);
+        
+        R3_SEARCH.addItemId(38943863);
+        
+        R3_SEARCH.addItemId(49512277);
+        
+        R3_SEARCH.addItemId(30708432);
+        
+
+    rr_flush_onload();
+
+    r3();
+
+    recommendation = new Recommendation(all_placements, recProductId);
+    recommendation.init();
+    
+</script>
+
+
+        
+        <div class="grid one-whole box">
+            <p class="heading heading--large">Populære emner inden for Bøger</p>
+            <p>
+                
+                <a href="/dk/boeger/tags_opskrifter" title="Opskrifter">Opskrifter</a>
+                ,
+                <a href="/dk/boeger/tags_ernaering" title="Ernæring">Ernæring</a>
+                ,
+                <a href="/dk/boeger/tags_historie" title="Historie">Historie</a>
+                ,
+                <a href="/dk/boeger/tags_danmark" title="Danmark">Danmark</a>
+                ,
+                <a href="/dk/boeger/tags_historie" title="Historie.">Historie.</a>
+                ,
+                <a href="/dk/boeger/tags_boern" title="Børn">Børn</a>
+                ,
+                <a href="/dk/boeger/tags_krimier-og-mysterier" title="Krimier og mysterier">Krimier og mysterier</a>
+                ,
+                <a href="/dk/boeger/tags_slankekure" title="Slankekure">Slankekure</a>
+                ,
+                <a href="/dk/boeger/tags_vaegttab" title="Vægttab">Vægttab</a>
+                
+            </p>
+
+
+
+            
+            <div>
+                <h3>Yderligere beskrivelse</h3>
+
+                <p>Bogens historie er lang og igennem tiden har den gennemg&aring;et en utrolig udvikling, der stadig er i fuld gang.<br />
+&nbsp;<br />
+Der er mange &aring;rsager til, at b&oslash;ger er og bliver hamrende popul&aelig;re. En af dem er den vidensformidling de st&aring;r for: Igennem b&oslash;ger opn&aring;s l&aelig;rdom og teoretisk viden om alle de fagomr&aring;der en l&aelig;ser kunne beg&aelig;re. Men b&oslash;ger giver ogs&aring; sin l&aelig;ser en fantastisk mulighed for at forlade tid og sted, blive hvirvlet ind i en helt ny verden, og l&aelig;re nye mennesker, nye steder og nye ting at kende.<br />
+&nbsp;<br />
+En k&aelig;mpem&aelig;ssig m&aelig;ngde af forfattere har sat deres fodspor i den litter&aelig;re historie, og det har de med s&aring; mange forskellige genrer, at det er til at blive svimmel af.<br />
+Tilbage i middelalderen var bogens form&aring;l prim&aelig;rt teologisk og kirken havde monopol p&aring; at l&aelig;se og skrive &ndash; s&aring;dan er det langt fra i dag.<br />
+<br />
+B&oslash;ger er til for at formidle al slags viden til alle slags mennesker. Faglig viden s&aring;vel som menneskelig viden.<br />
+De er alt, hvad vi &oslash;nsker de skal v&aelig;re: Tourguides i livets mange oplevelser, underholdning f&oslash;r sengetid, hj&aelig;lpemidler til den skriftlige opgave, og ikke mindst kan de give os nye venner og litter&aelig;re bekendtskaber. F&aring; os til at knibe en t&aring;re, n&aring;r de slutter.<br />
+&nbsp;<br />
+B&oslash;gers mange funktioner og kvaliteter forsvinder nok aldrig, og derfor vil de og deres popularitet fortsat udvikle sig i fremtiden. Vi skal dermed huske at nyde dem, mens vi er til, for de skal nok overleve os.&nbsp;</p>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            dataLayer.push({'event': 'productImpressions', ecommerce : {
+  'currencyCode': 'DKK',
+  'impressions': [
+    {
+      'id': '8195829',
+      'name': 'Frøken Jensens kogebog',
+      'price': 299.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 1
+    },
+    {
+      'id': '44096225',
+      'name': 'Frøken Jensens kogebog',
+      'price': 388.01,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 2
+    },
+    {
+      'id': '48706784',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 259.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'E-bøger',
+      'variant': 'E-bog',
+      'list': 'Search ',
+      'position': 3
+    },
+    {
+      'id': '21267646',
+      'name': 'Mangors Kogebog for Små Husholdninger',
+      'price': 50.0,
+      'brand': 'Madam Mangor',
+      'category': 'Mad & gastronomi',
+      'variant': 'E-bog',
+      'list': 'Search ',
+      'position': 4
+    },
+    {
+      'id': '57623352',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 5
+    },
+    {
+      'id': '52279512',
+      'name': 'Frøken Jensens store kogebog - med syltebog',
+      'price': 170.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 6
+    },
+    {
+      'id': '44475519',
+      'name': 'Frøken Jensens kogebog',
+      'price': 145.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 7
+    },
+    {
+      'id': '57623353',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 8
+    },
+    {
+      'id': '57623357',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 9
+    },
+    {
+      'id': '57623354',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 10
+    },
+    {
+      'id': '57623356',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 11
+    },
+    {
+      'id': '44475520',
+      'name': 'Frøken Jensens kogebog',
+      'price': 120.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 12
+    },
+    {
+      'id': '38943863',
+      'name': 'Froken Jensens Kogebog',
+      'price': 489.95,
+      'brand': 'Fr Ken Jensen, Kristine Marie Jensen, Frken Jensen',
+      'category': 'General',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 13
+    },
+    {
+      'id': '49512277',
+      'name': 'Frøken Jensens kogebog',
+      'price': 110.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 14
+    },
+    {
+      'id': '30708432',
+      'name': 'Froken Jensens Kogebog',
+      'price': 379.95,
+      'brand': 'Fr Ken Jensen, Kristine Marie Jensen, Frken Jensen',
+      'category': 'General',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 15
+    },
+    {
+      'id': '48415858',
+      'name': 'Frøken Jensens kogebog',
+      'price': 399.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 16
+    },
+    {
+      'id': '57623355',
+      'name': 'Frøken Jensens Kogebog',
+      'price': 69.95,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Kogebøger',
+      'variant': 'Bog',
+      'list': 'Search ',
+      'position': 17
+    },
+    {
+      'id': '57933652',
+      'name': 'Frøken Jensens kogebog.. Frøken Jensen i 150 år',
+      'price': 170.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 18
+    },
+    {
+      'id': '58052805',
+      'name': 'Frøken Jensens kogebog jubilæums udgave 1901-2001',
+      'price': 170.0,
+      'brand': 'Kristine Marie, Jensen ',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 19
+    },
+    {
+      'id': '58064727',
+      'name': 'Frøken Jensens kogebog for børn',
+      'price': 125.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Mad & drikke',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 20
+    },
+    {
+      'id': '58176281',
+      'name': 'Frøken Jensens kogebog',
+      'price': 95.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 21
+    },
+    {
+      'id': '49051926',
+      'name': 'Classic frøken Jensen',
+      'price': 210.0,
+      'brand': 'Bente Nissen, Bloch, Hanne Jensen, Kristine Marie, Lundsgaard',
+      'category': 'Diverse',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 22
+    },
+    {
+      'id': '52226097',
+      'name': 'Frøken Jensens danske desserter',
+      'price': 95.0,
+      'brand': 'Kristine Marie Jensen',
+      'category': 'Mad & drikke',
+      'variant': 'Brugt bog',
+      'list': 'Search ',
+      'position': 23
+    }
+  ]
+}});
+
+            $("#filterInfo").click(function () {
+                $("#filterInfo").toggleClass("open");
+                $("#filterOptions, #sortingFiltersTools").slideToggle();
+            })
+        });
+    </script>
+
+                </div>
+                
+            
+            
+            
+        </div>
+        
+<section class="stickyFooter">
+    <div class="container">
+        <div class="grid grid--wrapper shown-info">
+            <div class="grid seven-twelfths">
+                
+                <div id="footer_recommendations" class="footer_recommendations"></div>
+                
+            </div>
+
+            <div class="grid oneandhalf-twelfths stickyFooter-banner grid--last">
+                <i></i>
+            </div>
+
+            <div class="grid threeandhalf-twelfths align-center">
+                <h3>Din personlige bogassistent</h3>
+                <p>
+                    Han følger dig rundt og finder nye anbefalinger,     baseret på de bøger du kigger på.               
+                </p>
+                <p><a href="#" id="hideStickyFooter">Skjul bogassistenten</a></p>
+            </div>
+        </div>
+
+        <div class="hidden-info">
+            <p>Få løbende anbefalinger fra din personlige bogassistent, mens du kigger rundt her på siden.</p>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="container">
+        <footer class="grid grid--wrapper">
+            <section class="grid three-twelfths lap-one-half palm-one-whole footer__section footerLogo">
+
+                <img src="//staticcdn.saxo.com/4048/www/assets/images/site/logo_new.png" class="bottom-logo logo" alt="Din online boghandel med billige bøger" />
+
+                <div class="opening-hours">
+                    <ul class="share-list">
+                        <li><a href="//twitter.com/saxonyt" target="_blank" class="icon-twitter" onclick="dataLayer.push({'eventcategory': 'Outbound links', 'eventaction': 'twitter.com', 'eventlabel': '/saxonyt', 'event': 'eventga'});; dataLayer.push({'eventcategory': 'Outbound links', 'eventaction': 'twitter.com', 'eventlabel': '/saxonyt', 'event': 'eventga'});">Følg os på Twitter</a></li>
+                        <li><a href="//www.facebook.com/saxocom" target="_blank" class="icon-facebook" onclick="dataLayer.push({'eventcategory': 'Outbound links', 'eventaction': 'www.facebook.com', 'eventlabel': '/saxocom', 'event': 'eventga'});; dataLayer.push({'eventcategory': 'Outbound links', 'eventaction': 'www.facebook.com', 'eventlabel': '/saxocom', 'event': 'eventga'});">Følg os på Facebook</a></li>
+                    </ul>
+
+                    <ul class="list">
+                        <li><a href="/cdn-cgi/l/email-protection#9cf5f2faf3dceffde4f3b2fff3f1">E-mail: <span class="__cf_email__" data-cfemail="b3daddd5dcf3c0d2cbdc9dd0dcde">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a><br />
+                        </li>
+                        <li><a href="/cdn-cgi/l/email-protection#06626f616f72676a4675677e692865696b">Digtale varer: <span class="__cf_email__" data-cfemail="73171a141a07121f3300120b1c5d101c1e">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a></li>
+                    </ul>
+                    
+                </div>
+
+            </section>
+            <section class="grid four-twelfths lap-one-half palm-one-whole footer__section">
+                <div class="footer_links">
+                    <h5 class="heading heading--footer">Kontakt</h5>
+                    <ul class="list">
+                        <li><a href="//support.saxo.com" target="_blank">Kontakt os</a></li>
+                        <li><a href="/user/orders">Se din ordrestatus</a></li>
+                        <li><a href="//support.saxo.com/Sp%C3%B8rgsm%C3%A5l_og_svar/Kontaktoplysninger" target="_blank">Adresser</a></li>
+                        <li><a href="//support.saxo.com" target="_blank">Kundeservice</a></li>
+                        
+                        <li><a href="/dk/page/leveringsbetingelser.aspx">Salgsbetingelser</a></li>
+                        <li><a href="/dk/page/about-hvem-er-saxo.aspx">Om Saxo</a></li>
+                        <li><a href="/Newsletter">Nyhedsbrev</a></li>
+                        <li><a href="//support.saxo.com/Sp%C3%B8rgsm%C3%A5l_og_svar/Cookies" target="_blank">Cookiepolitik</a></li>
+                    </ul>
+                </div>
+                <div class="footer_links">
+                    <h5 class="heading heading--footer">Områder</h5>
+                    <ul class="list">
+                        <li><a href="/">Bøger</a></li>
+                        <li><a href="/dk/boeger/e-boeger">E-bøger</a></li>
+                        <li><a href="/dk/boeger/lydboeger">Lydbøger</a></li>
+                        <li><a href="/dk/boeger/danske-boeger/studieboeger">Studiebøger</a></li>
+                        <li><a href="/dk/online-kurser">Kurser</a></li>
+                        <li><a href="/gavekort">Gavekort</a></li>
+                        <li><a href="/dk/guide/klassesaet-og-skoleboeger.aspx">Klassesæt &amp; skolebøger</a></li>
+                        <li><a href="/dk/page/fotoservice.aspx">Saxo Fotoservice</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="grid one-twelfths lap-one-half palm-one-whole footer__section partners">
+                
+                <h5 class="heading heading--footer">Partnere</h5>
+                <div class="footer-partners">
+                    <a href="/side/saxo-er-clubm-partner" target="_blank">
+                        <img src="//staticcdn.saxo.com/4048/www/assets/images/shop/clubm.png" alt="Som Club Matas medlem får du billigere bøger" /></a>
+                </div>
+                
+            </section>
+            <section class="grid two-twelfths lap-one-half palm-one-whole footer__section footerPrize">
+                <h5 class="heading heading--footer">Udmærkelser</h5>
+                <p>FDIH</p>
+                <p>
+                    Mest populære danske<br />
+                    netbutik i 2016 (FDIH)
+                </p>
+                <img src="//staticcdn.saxo.com/4048/www/assets/images/site/gazelle_saxo_prize.png" alt="Mest populære danske netbutik i 2015 (FDIH)" />
+                <p>
+                    Modtager af Børsens
+                Gazelle Pris 2015
+                </p>
+            </section>
+            <section class="grid two-twelfths lap-one-half palm-one-whole footer__section newsletter">
+                <h5 class="heading heading--footer">Nyhedsbrev</h5>
+                <p>Tilmeld dig vores ugentlige nyhedsbrev med inspiration til din læsning.</p>
+                <div class="newselect">
+                    <select class="input--footer input--select" id="newsletterType">
+                        <option value="Perm_newsletter_BTC">Privat</option>
+                        <option value="Perm_newsletter_BTS">Studerende</option>
+                        <option value="Perm_newsletter_BTB">Erhverv</option>
+                        <option value="Perm_newsletter_BTI">Offentlig institution</option>
+                    </select>
+                </div>
+                <input type="text" value="" id="nameBox" placeholder="Navn" class="input--footer">
+                <input type="text" value="" id="emailBox" placeholder="E-mail" class="input--footer"><br />
+                <input id="submitEmailBtn" type="submit" value="Tilmeld" class="button button--primary">
+                <div class="progressBox" style="display: none;">
+                    <img src="//staticcdn.saxo.com/4048/www/assets/images/icons/loading_bar.gif" />
+                </div>
+                <div class="clr"></div>
+                <label id="errorLbl"></label>
+            </section>
+        </footer>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#submitEmailBtn').click(function () {
+            AddToNewsletter({ Email: "#emailBox", Name: "#nameBox", Type: "#newsletterType", ErrorLabel: "#errorLbl", SubmitBtn: "#submitEmailBtn", ProgressBar: ".progressBox" });
+        });
+    });
+</script>
+
+    </div>
+
+    <div class="offcanvas">
+        <div class="offcanvas__header">
+            <button data-next-level='0' class="js-offcanvas-next-lvl"></button>
+        </div>
+        <div data-current-level='0' class="offcanvas__content js-offcanvas-menu"></div>
+    </div>
+
+
+    
+    <script defer="defer" src="//staticcdn.saxo.com/4048/www/assets/dist/js/footerscripts.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var floating = new InitJsBox(true);
+            floating.init();
+        });      
+    </script>
+    
+    
+    <script defer="defer" src="//staticcdn.saxo.com/4048/www/assets/scripts/assistant_box.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var assistant = new SaxoAssistantBox();
+            assistant.init();
+        });      
+    </script>
+        
+
+
+<div id="rids_fields">
+</div>
+
+
+<script type="text/javascript" >
+    var R3_COMMON, R3_HOME, R3_CATEGORY, R3_ITEM, R3_SEARCH, R3_CART, R3_ADDTOCART;
+    var recommendation;
+    var recProductId = recProductId != undefined && recProductId.length > 0 ? recProductId : ''; 
+    var all_placements = all_placements != undefined && all_placements.length > 0  ? all_placements : [];
+    
+    
+    var placementId = 'footer_recommendations';
+    var imageHtml = '';
+    $('#' + placementId).html(imageHtml);
+
+    all_placements.push({
+        'controlid': placementId,
+        'count': '9',
+        'title': '',
+        'placement': 'generic_page.overlay',
+        'recommendationBasePath': '/anbefalinger/footer',
+        'swiperId': '',
+        'showTooltip' : 'True'
+    });
+    
+    
+    var env;
+
+    
+        env = 'recs';
+    
+        R3_COMMON = new r3_common();
+        R3_COMMON.setApiKey('6d580fc8-e293-11e0-9cab-12313b0349b4');
+        R3_COMMON.forceDisplayMode();
+        R3_COMMON.setBaseUrl(window.location.protocol + '//' + env + '.richrelevance.com/rrserver/');
+
+    
+
+        R3_COMMON.setClickthruServer(window.location.protocol + "//" + window.location.host);
+
+        var itemsToExclude = [];
+        for (var i = 0; i < itemsToExclude.length; i++) {
+            R3_COMMON.blockItemId(itemsToExclude[i]);
+        }
+
+    
+        R3_COMMON.addPlacementType('generic_page.overlay');
+        
+
+        // set variables for different types of recommendations
+    
+
+    rr_flush_onload();
+
+    r3();
+
+    recommendation = new Recommendation(all_placements, recProductId);
+    recommendation.init();
+    
+</script>
+
+    
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+
+</html>

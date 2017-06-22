@@ -1,0 +1,116 @@
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<div id="topbar" class="sticky">
+    <nav class="top-bar" data-topbar role="navigation"
+         data-options="is_hover: false"
+         style="margin-bottom: 20px;">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="ProductionPlan.php">Produktion.dbc.dk</a></h1>
+            </li>
+        </ul>
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+
+                <li class="active"><a class="button" href="?order=extraction">Udtræksdage</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=dbfdpf">DBF (+DPF)</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=bkm">BKM</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=ratings">Materialevurderinger</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=external">Dataleverancer - eksterne</a></li>
+                <!--                <li>&nbsp;</li>-->
+                <!--                <li class="active"><a class="button" href="?order=publishers">Forlagsadresser</a></li>-->
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=frontpages">Forsideservice</a></li>
+                <li>&nbsp;</li>
+                <li class="active"><a class="button" href="?order=distribution">Udsendelsesplan DBF-DPF</a></li>
+            </ul>
+            <ul class="right">
+
+                <?php if ($role == 'admin'): ?>
+                    <ul class="left">
+                        <li class="has-dropdown">
+                            <a href="#">Bruger Administration</a>
+                            <ul class="dropdown">
+                                <li class="active"><a href="useradm.php?cmd=create">Opret bruger</a></li>
+                                <!--                                <li class="active"><a href="?cmd=update">Ret Bruger</a></li>
+                                                                <li class="active"><a href="?cmd=delete">Slet Bruger</a></li>-->
+                                <li class="active"><a href="useradm.php?cmd=list">Vis Brugere</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<li class="active"><a class="button" href="useradm.php">Bruger administration</a></li>-->
+                <?php endif; ?>
+
+
+                <ul class="left">
+                    <?php if ($username): ?>
+                        <li class="has-dropdown">
+                            <a href="#"><?= $username ?></a>
+                            <ul class="dropdown">
+                                <li class="active">
+                                    <a href="login.php?cmd=logud" data-reveal-id="Loginmodal"
+                                       data-reveal-ajax="true">
+                                        Log ud
+                                    </a>
+                                </li>
+
+                                <?php if ($role != 'xadmin'): ?>
+                                    <li class="active"><a href="login.php?passwd=true" data-reveal-id="Loginmodal"
+                                                          data-reveal-ajax="true">Nyt passwd</a>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                        </li>
+
+
+                    <?php else: ?>
+                        <li>
+                            <button href="login.php" data-reveal-id="Loginmodal" data-reveal-ajax='true'>Login</button>
+                        </li>
+                        <li>&nbsp;</li>
+                    <?php endif ?>
+                </ul>
+                <li>&nbsp;</li>
+                <li class="active">
+                    <button id="printbutton" onclick="window.print();">Print</button>
+                </li>
+                <li>&nbsp;</li>
+                <li style="padding-right: 30px;" class="active">
+                    <a class="button" href="?order=changeYear">
+                        <?= $year ?>
+                    </a>
+                </li>
+
+                <!--                <li class=" active" style="padding-right: 30px;"><a class="button" href="?order=frontpages">GEM</a></li>-->
+            </ul>
+        </section>
+    </nav>
+    <?= $topHead ?>
+</div>
+<?php if ($calllogin): ?>
+    <script>
+        //        $(#Loginmodal).foundation('reveal', 'open', 'login.php');
+        alert("Forkert login eller password!!!");
+    </script>
+<?php endif; ?>
+
+<div id="ModalStatistic" class="reveal-modal " data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+<div id="Loginmodal" class="reveal-modal tiny" data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+<div id="newstatusmodal" class="reveal-modal tiny" data-reveal aria-hidden='true' role='dialog'>
+    Tekst
+</div>
+

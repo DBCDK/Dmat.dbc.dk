@@ -1,0 +1,208 @@
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+/* 
+    Created on : 16-09-2014, 13:13:30
+    Author     : hhl
+*/
+
+#form {
+    padding-left: 20px;
+}
+
+.dbfbackground {
+    font-size: 200%;
+    color: red;
+}
+
+.bottomAdd {
+    padding-bottom: 1000px;
+}
+
+.ramme {
+
+    padding-left: 1px;
+}
+
+.ramme5 {
+
+    padding-left: 15%;
+    font-size: 150%;
+}
+
+.ramme2 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    margin-left: 3%;
+    padding: 10px;
+    padding-left: 25px;
+    width: 650px;
+    height: 20px;
+}
+
+.ramme3 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    margin-left: 3%;
+    padding: 10px;
+    width: 200px;
+    padding-left: 25px;
+    height: 20px;
+}
+
+td {
+    width: 3%;
+}
+
+.updateClass {
+    color: green;
+}
+
+.ramme4 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    margin-left: 15%;
+    padding: 15px;
+    width: 1000px;
+    padding-left: 20px;
+    /*    height: 20px;*/
+}
+
+.ramme6 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    /*width: 1000px;*/
+    padding-left: 20px;
+    /*    height: 20px;*/
+}
+
+.info {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.chooseme {
+    background-color: aliceblue;
+}
+
+.lnk {
+    color: blue;
+}
+
+.choose {
+    padding: 12px;
+    margin-left: 3%;
+}
+
+#total {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    /*background-color: #f4f3ef;*/
+    background-color: #f1f0ee;
+}
+
+#header {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#leftblock {
+    width: 90%;
+    float: right;
+}
+
+.clear-line {
+    clear: both;
+    margin-bottom: 2px;
+    line-height: 2px;
+}
+
+#nav {
+    line-height: 20px;
+    bckground-color: #0000000;
+    width: 10%;
+    float: left;
+    padding: 5px;
+}
+
+#section {
+    line-height: 20px;
+    width: 87%;
+    float: left;
+    padding: 5px;
+    line-break: loose;
+    background-color: white;
+}
+
+#rightsec {
+    float: right;
+    width: 8%;
+    margin-left: auto;
+
+    padding-right: 30px;
+}
+
+#footer {
+    background-color: grey;
+    color: white;
+    clear: both;
+    text-align: left;
+    padding: 25px;
+}
+
+#links {
+    background-color: lightgray;
+    color: brown;
+    clear: both;
+    text-align: left;
+    padding: 30px;
+}
+
+#marc {
+    line-height: 85%;
+    width: 500px;
+}
+
+.tjek {
+    float: left;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.tjekright {
+    float: right;
+    margin-right: 200px;
+}
+
+.next_line {
+    clear: both;
+    margin-bottom: 2px;
+}
+
+#gbackground {
+    background-color: red;
+}
+
+.grey {
+    border-spacing: 0px 0px;
+    background-color: lightgray;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

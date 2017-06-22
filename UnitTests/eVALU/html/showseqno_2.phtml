@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title><?= $Titel ?></title>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<?php include 'topbar.phtml'; ?>
+
+<?php if ($debugstrng): ?>
+    <input onload="emptywin('<?= $debugstrng ?>')"/>
+<?php endif; ?>
+
+<form id='mainform' action="" onkeypress="return event.keyCode != 13;">
+    <input type="hidden" name="seqno" value="<?= $seqno ?>"/>
+    <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+    <input type="hidden" name="lokalid" value="<?= $lokalid ?>"/>
+    <input type="hidden" name="bibliotek" value="<?= $bibliotek ?>"/>
+    <input type="hidden" name="base" value="<?= $base ?>"/>
+    <input type="hidden" name="matchtype" value="<?= $matchtype ?>"/>
+</form>
+
+<div class="row">
+    <div id=recinfo class="small-2 column">
+        <span id="seqno<?= $seqno ?>">seqno:<?= $seqno ?></span>
+        <br/>
+        <span id="status"><?= $status ?></span>
+        <br/>
+        <span id="choice"><?= $choice ?><?= $pbkxwc ?></span>
+
+    </div>
+    <div class="small-6 column">
+        <h3><?= $sitetitle ?> (<?= $initials ?>)</h3>
+    </div>
+    <div class="small-4 column">&nbsp;</div>
+</div>
+
+<div class="row">
+    <div class="medium-12 bottomspace">
+        <hr/>
+    </div>
+</div>
+
+<div class="row ">
+    <div class="medium-10 column">
+
+        <button class="tiny secondary round" form='mainform'
+                onclick="openCloseWin('close', 'xx')" type="submit"
+                name="cmd" value="Fortryd"
+                title="Ingen handling, vis den næste post">Fortryd
+        </button>
+
+        <?php if ($status == 'eLu' or $status == 'AfventerElu'): ?>
+            <button class="tiny secondary round" form='mainform'
+                    type="submit" name="cmd" value='Afventer' <?= $disabledelu ?>
+                    title="Posten kan ikke gøres færdig nu.  Bliver sat til Afventer_elu for senere at kunne færdiggøres">
+                Afventer
+            </button>
+            <button class="tiny secondary round" form='mainform'
+                    type="submit" name="cmd" value='d08' <?= $disabledelu ?>
+                    title="Skriv en note som vil blive indsat i marcpostens felt d08">
+                d08
+            </button>
+        <?php endif; ?>
+
+        <?php if ($status == 'eLu'): ?>
+            <button class="tiny secondary round" form='mainform'
+                    type="submit" name="cmd" value='f991' <?= $disabledelu ?>
+                    title="Der bliver indsat en note i postens 991 *o: 'Trykt version med lektørudtalelse ( )' ">
+                991
+            </button>
+        <?php endif; ?>
+
+        <?php if ($status == 'eVa' or $status == 'Afventer' or $status == 'Drop'): ?>
+            <button class="tiny secondary round" form='mainform' id="drop"
+                    onclick="openCloseWin('close', 'xx')" type="submit"
+                    name="cmd" value='Drop' <?= $disabledeva ?>
+                    title="Posten er ikke relvant og bliver fjernet">Drop
+            </button>
+            <button class="tiny secondary round" form='mainform'
+                    type="submit" name="cmd" value='Afventer' <?= $disabledeva ?> id="waiting"
+                    title="Posten kan ikke gøres færdig nu.  Bliver sat til afventer for senere at kunne færdiggøres">
+                Afventer
+            </button>
+            <!--                    type="submit" name="cmd" value='d08' --><? //= $disabledeva ?>
+            <button class="tiny secondary round" form='mainform'
+                    type="submit" name="cmd" value='d08' <?= $disabledeva ?>
+                    title="Skriv en note som vil blive indsat i marcpostens felt d08">
+                d08
+            </button>
+        <?php endif; ?>
+
+        <button class="tiny secondary round"
+                onclick="openCloseWin('xml', '<?= $seqno ?>')"
+                title="Se xml posten fra Publizon">
+            xml
+        </button>
+
+        <?php if ($candidates) { ?>
+            <button class="tiny secondary round"
+                    onclick="openCloseWin('close', 'xx')"
+                    title="Luk alle de vinduer du har åbnet">
+                Luk vinduer
+            </button>
+            <?php if ($status == 'eVa' or $status == 'Afventer' or $status == 'Drop'): ?>
+                <button class="tiny secondary round" id="waiting"
+                        onclick="openCloseWin('none', '<?= $seqno ?>')"
+                        title="Ingen af kandidaterne dur.  Opret en ny post uden forlæg"
+                    <?= $disabledeva ?> >
+                    Ingen af nedenstående
+                </button>
+            <?php endif; ?>
+            <?php if ($status == 'eLu' or $status == 'AfventerElu'): ?>
+                <?php if ($templateFaust): ?>
+                    <button class="tiny secondary round"
+                            onclick="openCloseWin('open', '<?= $templatelink ?>')"
+                            title="Denne post danner forlæg (template)">
+                        Forlæg: <?= $templateFaust ?>
+                    </button>
+                    <!--                <button class="tiny secondary round"-->
+                    <!--                title="indsæt faust på en post i basis (lektør)">-->
+                    <!--                Jeg kender faust!-->
+                    <!--                </button>-->
+                <?php endif; ?>
+            <?php endif; ?>
+        <?php } ?>
+        <button class="tiny round secondary f70"
+                onclick="searchGoogle('<?= $firsttitle ?>')"
+                title="Søg titel (<?= $firsttitle ?>)">
+            Google Titel
+        </button>
+        <button class="tiny round secondary f70" value="<?= $published ?>"
+                onclick="searchSaxo('<?= $firsttitle ?> <?= $authorsearch ?>')"
+                title="Søg SAXO titel (<?= $firsttitle ?>)">
+            Saxo Titel
+        </button>
+        <?php if ($isbnsource): ?>
+            <button class="tiny round secondary f70"
+                    onclick="searchGoogle('<?= $isbnsource ?>')"
+                    title="Søg isbn">
+                Google ISBN
+            </button>
+            <button class="tiny round secondary f70"
+                    onclick="searchSaxo('<?= $isbnsource ?>')"
+                    title="Søg SAXO ISBN">
+                Saxo ISBN
+            </button>
+        <?php endif; ?>
+    </div>
+    <?php if ($updatelekbase): ?>
+        <div class="column medium-2" href="delLU.php?seqno=<?= $seqno ?>" data-reveal-id="dellektor"
+             data-reveal-ajax="true">
+            <button class="tiny round secondary f70">Slet LU</button>
+        </div>
+    <?php endif; ?>
+</div>
+<div class="row">
+    <?php if ($warningISBN): ?>
+        <div class="columns small-5">&nbsp;</div>
+        <div class="columns small-3 amme7 end"><?= $warningISBN ?></div>
+    <?php endif; ?>
+</div>
+<div class="row">
+    <form action='' id='yourChoice' class="inline">
+        <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+        <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+        <input type='hidden' name="cmd" value='showFaust'/>
+        <div class="small-1 columns">
+            <label for="right-label" class="inline">Eget valg:</label>
+        </div>
+        <div class="medium-2 columns">
+            <input class=" inline" id="faust" type="text"
+                   oninput='faustInput()' ondrop="faustDrop(event)" ondragover="allowDrop(event)"
+                   placeholder="Faust nummer"
+                   name='faust' size="11" maxlength="11"
+            >
+        </div>
+        <div class="medium-1 columns end">
+            <input class="tiny button" type="submit" name="ind" value="Indsæt faust">
+        </div>
+    </form>
+    <div class="nline-list small-1 columns">&nbsp;</div>
+    <div class="nline-list small-1 columns">
+        <?php if ($invalidISBN): ?>
+            <label class="errortxt"><?= $invalidISBN ?></label>
+        <?php else: ?>
+            <label>ISBN til trykt bog:</label>
+        <?php endif; ?>
+    </div>
+
+
+    <div class="inline-list small-2 columns end ">
+        <input class="inline" type="text" oninput='isbnInput()'
+               onkeypress="return event.keyCode != 13;"
+               id="expisbn" placeholder="ISBN" <?= $disabledlekfaust ?>
+               name='expisbn' size="50" maxlength="50"
+               value="<?= $isbnsource ?>"
+               form="mainform"
+        />
+    </div>
+    <div class="inline-list small-1 columns ramme2 ottomspace">
+        <label>&nbsp; Saxo Udg dato:</label>
+    </div>
+    <div class="inline-list small-1 columns end ramme2 ottomspace end">
+        <input class="inline" type="text"
+               onkeypress="return event.keyCode != 13;"
+               id="published" placeholder="Dato" <?= $disabledlekfaust ?>
+               name='published' size="10" maxlength="10"
+               value="<?= $published ?>"
+               form="mainform"
+        />
+    </div>
+
+</div>
+
+
+<?php if ($invalidisbn): ?>
+    <div class="row">
+        <div class="medium-7 columns end right bottomspace">
+            ISBN <?= $invalidisbn ?> findes allerede i Basis:
+            <a
+                    onclick="openCloseWin('open', 'base=Basis&lokalid=<?= $linkinvalidisbn ?>&bibliotek=870970')">
+                <span draggable="true" id="dd1" ondragstart="faustOK(event)"><?= $linkinvalidisbn ?></span>
+            </a>
+        </div>
+    </div>
+<?php endif; ?>
+
+<?php if ($notetextdisp): ?>
+    <div class="row">
+        <div class="small-5 columns bottomspace end">
+            <?= $notetextdisp ?>
+        </div>
+    </div>
+<?php endif; ?>
+
+<?php //if ($status == 'eLu' and $lektoers): ?>
+<?php if ($status == 'eLu' or $status == 'RETRO_eLu'): ?>
+    <div class='row'>
+    <?php if ($lektoers): ?>
+        <div class="small-1 columns ramm3">
+            <label for="right-label" class="inline">Lektør udtl.:</label>
+        </div>
+        <div class="small-6 columns ramm3 end">
+            <?php $i = 0; ?>
+            <ul class="inline-list">
+                <?php foreach ($lektoers as $link): ?>
+                    <?php $i++; ?>
+                    <li>
+                        <ul class="button-group round ">
+                            <li>
+                                <button styl="background-color: aquamarine;" class=" secondary round tiny f70"
+                                        onclick="openCloseWin('open', '<?= $link ?>')"
+                                        title="Hent posten fra Basis">
+                                    <?= $buttons[0][$i - 1] ?>
+                                </button>
+                            </li>
+                            <li>
+                                <!--                                link:-->
+                                <? //= $link ?><!-- status:--><? //= $status ?>
+                                <button style="background-color: #5da423" class="round tiny f70"
+                                        onclick="openCloseWin('insertLink', '<?= $link ?>', '<?= $status ?>')"
+                                        title="Indsæt f07*a med dette nummer!">
+                                    >>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
+
+<?php if ($lekfaust): ?>
+    <div class="row">
+        <div class="small-4 columns">
+            Peger til post med lektørudtalelse: <?= $lekfaust ?>
+            <input type="hidden" form='mainform' name="lekfaust" value="<?= $lekfaust ?>"/>
+        </div>
+    </div>
+<?php endif; ?>
+
+<?php if ($cmd == 'Afventer'): ?>
+    <form action='' id='waiting'>
+        <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+        <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+
+        <div class="row">
+            <div class="small-9 columns">
+                <div class="row">
+                    <div class="medium-1 columns">
+                        <label for="right-label" class="inline">Tekst:</label>
+                    </div>
+                    <div class="medium-4 columns">
+                        <input id="notetext" type="text" oninput='faustInput()'
+                               id="right-label" placeholder="forklarende tekst"
+                               name='notetext' maxlength="500"
+                               value="<?= $notetext ?>"/>
+                    </div>
+                    <div class="medium-7 columns">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-2 columns bottomspace">
+                <!--                Status:--><? //= $status ?>
+                <?php if ($status != 'eLu' or $status != 'AfventerELu'): ?>
+                    <button class="tiny round" type='submit' name='cmd' value='Afvent' id="wait">
+                        Afvent
+                    </button>
+                    <input type='hidden' name="notetype" value="waiting"/><br/>
+                <?php else: ?>
+                    <button class="tiny round" type='submit' name='cmd' value='Afvent' id="waitelu">
+                        Afvent eLu
+                    </button>
+                    <input type='hidden' name="notetype" value="waitingelu"/><br/>
+                <?php endif; ?>
+            </div>
+        </div>
+    </form>
+    <div class='next_line'></div>
+<?php endif ?>
+
+<?php if ($cmd == 'f991'): ?>
+    <form action='' id='waiting'>
+        <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+        <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+
+        <div class="row">
+            <div class="small-9 columns">
+                <div class="row">
+                    <div class="medium-2 columns">
+                        <label for="right-label" class="inline">Felt 991 *o:</label>
+                    </div>
+                    <div class="medium-5 columns">
+                        <input id="notetext" type="text" oninput='faustInput()'
+                               id="right-label" placeholder="forklarende tekst"
+                               name='notetext' maxlength="500"
+                               value="<?= $notetext ?>"/>
+                    </div>
+                    <div class="medium-5 columns">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-2 columns bottomspace">
+                <!--                --><?php //if ($status == 'eVa'): ?>
+                <!--                    <button class="tiny round" type='submit' name='cmd' value='Afvent'>-->
+                <!--                        Afvent-->
+                <!--                    </button>-->
+                <!--                    <input type='hidden' name="notetype" value="waiting"/><br/>-->
+                <!--                --><?php //else: ?>
+                <button class="tiny round" type='submit' name='cmd' value='insert991'>
+                    Indsæt felt 991*o
+                </button>
+                <input type='hidden' name="notetype" value="f991"/><br/>
+                <!--                --><?php //endif; ?>
+            </div>
+        </div>
+    </form>
+    <div class='next_line'></div>
+<?php endif ?>
+
+<?php if ($cmd == 'Note'): ?>
+    <form action='' id='evaluate'>
+        <input type='hidden' name="cmd" value="<?= $cmd ?>"/>
+        <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+        <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+        <input type='hidden' name="notetype" value="note"/><br/>
+
+        <div class="row">
+            <div class="medium-9 columns">
+                <div class="row">
+                    <div class="medium-1 columns">
+                        <label for="right-label" class="inline">d08:</label>
+                    </div>
+                    <div class="medium-4 columns">
+                        <input type="text" name='notetext' id='notetext'
+                               maxlength='100' size="100"
+                               value='<?= $notetext ?>'/>
+                    </div>
+                    <div class="medium-7 columns">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-2 columns bottomspace">
+                <button class="tiny round" type='submit' name='cmd' value='Gem d08'>
+                    Gem d08
+                </button>
+            </div>
+        </div>
+    </form>
+<?php endif; ?>
+
+
+
+
+<?php //if ($disabled): ?>
+<?php if ( !$showBKM): ?>
+    <input form='mainform' type="hidden" value="<?= $chck['DBF'] ?>" name="eVA-DBF" id="DBF"/>
+    <input form='mainform' type="hidden" value="<?= $chck['DBR'] ?>" name="eVA-DBR" id="DBR"/>
+    <input class='BKM' form='mainform' type="hidden" value="<?= $chck['BKM'] ?>" name="eVA-BKM" id="BKM"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['V'] ?>" name="eVA-V" id="V"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['B'] ?>" name="eVA-B" id="B"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['S'] ?>" name="eVA-S" id="S"/>
+    <input form='mainform' type="hidden" value="<?= $is_in_basis ?>" name="is_in_basis" id="is_in_basis"/>
+<?php endif; ?>
+
+
+<?php if ($showBKM): ?>
+    <input type="hidden" form='mainform' name="NewRec" value="NewRec"/>
+<?php if ($status != 'eLu' and $status != 'AfventerElu'): ?>
+
+    <div class="row amme7">
+        <div class="small-6 columns amme5 inline-list ">
+            <div id="DBRAMME" class="medium-3 columns ramme3 bottomspace">
+                <span id='DBFTXT' class="radio-label">DBF:</span>
+                <input type="checkbox" <?= $disabled ?>
+                       form='mainform'
+                       onclick="SetBKM('DBF')" <?= $chck['DBF'] ?>
+                       name="eVA-DBF" id='DBF'/>
+                <span class="radio-label">DBR:</span>
+                <input type="checkbox" <?= $disabled ?>
+                       form='mainform'
+                       onclick="SetBKM('DBR')" <?= $chck['DBR'] ?>
+                       name="eVA-DBR" id='DBR'/>
+            </div>
+            <div class="medium-1 column">&nbsp;</div>
+            <div class="small-7 columns ramme3 bottomspace end">
+                <span class="radio-label">BKM:</span>
+                <input class='BKM' type="checkbox" <?= $disabled ?>
+                       form='mainform'
+                       onclick="SetBKM('BKMV')" <?= $chck['BKM'] ?>
+                       name="eVA-BKM" id='BKM'/>
+                <span class="radio-label">V: </span>
+                <input class='VBS' <?= $disabled ?>
+                       form='mainform' onclick="SetBKM('V')"
+                       type="checkbox" <?= $chck['V'] ?>
+                       name="eVA-V" id="V"/>
+                <span class="radio-label">B: </span>
+                <input class='VBS' <?= $disabled ?>
+                       form='mainform' onclick="SetBKM('B')"
+                       type="checkbox" <?= $chck['B'] ?>
+                       name="eVA-B" id="B"/>
+                <span class="radio-label">S: </span>
+                <input class='VBS' <?= $disabled ?>
+                       form='mainform' onclick="SetBKM('S')"
+                       type="checkbox" <?= $chck['S'] ?>
+                       name="eVA-S" id="S"/>
+                <span class="radio-label">BKMV: </span>
+                <input class='BKMV'
+                       form='mainform' onclick="SetBKM('BKMV')"
+                       type="checkbox" <?= $chck['BKMV'] ?>
+                       name="eVA-BKMV" id="BKMV"/>
+            </div>
+        </div>
+
+        <div class="column medium-3 end">
+            <?php if ($secondChoice): ?>
+                <button class="tiny round" form="mainform" type="submit" id="newRegistration"
+                        name="cmd" value="Ny registrering" <?= $disabledeva ?>
+                        onclick="return haveChoosen('close');"
+                        title="Der bliver dannet en ny post med den valgte post som forlæg">
+                    Ny registrering
+                </button>
+            <?php else: ?>
+                <button class="tiny round" form="mainform" type="submit" <?= $disabledeva ?>
+                        onclick="return haveChoosen('close');"
+                        name="cmd" value='OK' id="OK">
+                    OK
+                </button>
+            <?php endif; ?>
+        </div>
+    </div>
+    <script>setDBxColor()</script>
+
+<?php if ($secondChoice): ?>
+<?php if ($mod > 15): ?>
+    <div class="row amme7">
+        <div class="small-6 columns inline-list ">
+            <div class="small-6 columns ramme3 bottomspace ">
+                <span class="radio-label">DBF:</span>
+                <input type="checkbox" disabled <?= $chck['DBF'] ?>
+                       name="eVA-DBF-info" id='DBF-info'/>
+                <span class="radio-label">BKM:</span>
+                <input type="checkbox" disabled <?= $chck['BKM'] ?>
+                       name="eVA-BKM-info" id='BKM-info'/>
+                <span class="radio-label">V: </span>
+                <input type="checkbox" disabled <?= $chck['V'] ?>
+                       name="eVA-V-info" id='V-info'/>
+                <span class="radio-label">B: </span>
+                <input type="checkbox" disabled <?= $chck['B'] ?>
+                       name="eVA-B-info" id='B-info'/>
+                <span class="radio-label">S: </span>
+                <input type="checkbox" disabled <?= $chck['S'] ?>
+                       name="eVA-S-info" id='S-info'/>
+            </div>
+            <div class="small-5 columns ramme8 bottomspace">
+                <button class="tiny round" form="mainform" type="submit" id="IsRegistred"
+                        name="cmd" value="Er registreret" <?= $disabledeva ?>
+                        onclick="openCloseWin('close', 'xx')"
+                        title="Posten er registreret. DBF/BKM/L data bliver sendt til Publizon. Basis posten uændret">
+                    Er registreret
+                </button>
+                <?= $booktype ?>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+<?php endif; ?>
+<?php endif; ?>
+<?php endif; ?>
+
+<?php if ($status == 'eLu' or $status == 'AfventerElu' or $status == 'RETRO_eLu'): ?>
+    <input form='mainform' type="hidden" value="<?= $chck['DBF'] ?>" name="eVA-DBF" id="DBF"/>
+    <input form='mainform' type="hidden" value="<?= $chck['DBR'] ?>" name="eVA-DBR" id="DBR"/>
+    <input class='BKM' form='mainform' type="hidden" value="<?= $chck['BKM'] ?>" name="eVA-BKM" id="BKM"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['V'] ?>" name="eVA-V" id="V"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['B'] ?>" name="eVA-B" id="B"/>
+    <input class='VBS' form='mainform' type="hidden" value="<?= $chck['S'] ?>" name="eVA-S" id="S"/>
+    <input form='mainform' type="hidden" value="<?= $is_in_basis ?>" name="is_in_basis" id="is_in_basis"/>
+    <div class="row">
+        <div class="small-2 columns ramme3 bottomspace">
+            <span class="radio-label">L:</span>
+            <input type="checkbox" <?= $disabledlekfaust ?>
+                   form='mainform'
+                   onclick="SetEluBKM('L','<?= $templateFaust ?>')" <?= $chck['L'] ?>
+                   name="eVA-L" id='L'/>
+            <span class="radio-label">BKMV: </span>
+            <input class='BKMV'
+                   form='mainform' onclick="SetEluBKM('BKMV','<?= $templateFaust ?>')"
+                   type="checkbox" <?= $chck['BKMV'] ?> <?= $disabledlekfaust ?>
+                   name="eVA-BKMV" id="BKMV"/>
+        </div>
+        &nbsp;
+        <div class="small-1 columns ">&nbsp;</div>
+        <div class="small-4 columns bottomspace inline-list">
+            <div class="inline-list medium-1 columns ">
+                <label>BKX&nbsp;</label>
+            </div>
+            <div class="inline-list medium-2 columns ">
+                <input class='inline-list' type="date"
+                    <?= $disabledlekfaustSLET ?>
+                       form='mainform' size="6" maxlength="6"
+                       placeholder="ååååuu"
+                       onkeypress="return event.keyCode != 13;"
+                       oninput="InputWC('BKXWC','<?= $weekcode ?>','<?= $templateFaust ?>')"
+                       value="<?= $bkxwc ?>"
+                       name="BKXWC" id='BKXWC'/>
+            </div>
+            <div class="small-4 columns end"><p id="wcerror" class="errortxt"></p>&nbsp;</div>
+        </div>
+
+        <div id="PrintedTemplate" class="small-3 columns ramme3 end" style="display:none;">
+            <span class="radio-label">Trykt forlæg L:</span>
+            <input type="checkbox" <?= $disabledlekfaust ?>
+                   form='mainform'
+                   name="PeVA-L" id='PL'/>
+        </div>
+        <div class="small-1 columns end">&nbsp;</div>
+
+    </div>
+
+<?php endif; ?>
+
+<?php if ($status == 'eLu' or $status == 'AfventerElu' or $status == 'RETRO_eLu'): ?>
+    <?php if ($is_in_basis): ?>
+        <!--    <script>Disable_L_BKX_BKMV()</script>-->
+        <input type="hidden" onload="Disable_L_BKX_BKMV" name="dummy"/>
+        <div class="row">
+            <div class="small-6 columns bottomspace ">
+                Posten findes allerede i Basis, derfor kan man ikke sætte L, BKX eller BKMV
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($eORp == 'printed'): ?>
+        <span><script>Disable_L_BKX_BKMV()</script></span>
+
+        <input type="hidden" name="eORp" value="printed" form="mainform"/>
+        <div class="row">
+            <div class="small-6 columns bottomspace ">
+                Du har valgt at der måske skal laves lektørudtagelse på den
+                <span class="printed">trykte bog</span>: <?= $expisbn ?>.<br/>
+                Den trykte bog kan senere blive valgt til lektørudtalelse ("på bordet")<br/>
+                Der vil blive indsat et link, f07, i ACC posten til e-bogen.<br/>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($eORp == 'ebook'): ?>
+        <span><script>Disable_L_BKX_BKMV()</script></span>
+        <input type="hidden" name="eORp" value="ebook" form="mainform"/>
+        <div class="row">
+            <div class="small-6 columns bottomspace ">
+                Du har valgt at der skal laves lektørudtagelse på <span class="ebook">e-bogen</span>.<br/>
+                Der vil blive indsat et link, f07, i ACC posten for den trykte bog (<?= $expisbn ?>).
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <div class="row">
+        <?php if ($eORp): ?>
+            <input type="hidden" name="expisbn" value="<?= $expisbn ?>" form="mainform"/>
+            <input type="hidden" name="eVA-L" value="<?= $chck['L'] ?>" form="mainform"/>
+            <input type="hidden" name="eVA-BKX" value="<?= $chck['BKX'] ?>" form="mainform"/>
+            <input type="hidden" name="eVA-BKMV" value="<?= $chck['BKMV'] ?>" form="mainform"/>
+            <div class="medium-1 columns inline-list">
+                <button class="tiny round" form="mainform" type="submit"
+                    <?= $disabledelu ?> id="OkLek"
+                        onclick="openCloseWin('close', 'xx')"
+                        name="cmd" value='LekFinal'>
+                    OK
+                </button>
+            </div>
+            <div class="medium-1 columns inline-list end">
+                <button class="tiny round" form="mainform" type="submit"
+                    <?= $disabledelu ?> id="Regret"
+                        onclick="openCloseWin('close', 'xx')"
+                        name="cmd" value='eORrRegret'>
+                    Fortryd
+                </button>
+            </div>
+        <?php else: ?>
+            <div class="row">
+                <div class="medium-1 columns end">
+                    <button class="tiny round" form="mainform" type="submit"
+                        <?= $disabledelu ?> id="LekOk"
+                            onclick="openCloseWin('close', 'xx')"
+                            name="Lek" value='OK'>
+                        OK
+                    </button>
+                </div>
+                <div class="medium-1 columns"></div>
+            </div>
+        <?php endif ?>
+    </div>
+<?php endif; ?>
+
+
+<?php if ($secondChoiceTxt): ?>
+    <div class="row">
+        <div class="medium-12 bottomspace">
+            <?= $secondChoiceTxt ?>
+        </div>
+    </div>
+<?php endif; ?>
+
+
+<?php if ($candidates and $status != 'Lu' and $status != 'fventerElu'): ?>
+
+    <?php if ($cntINT): ?>
+        <div class='row'>
+            <div style="font-size: 75%;" class='small-1 columns'>
+                ISBN ikke Titel:
+            </div>
+            <div class="medium-11 columns">
+                <?php $i = 0; ?>
+                <ul class="inline-list">
+                    <?php foreach ($isbnNotTitle as $link) { ?>
+                    <?php $i++; ?>
+                    <li>
+                        <ul class="button-group round">
+                            <li>
+                                <!--                                style="font-size: 50%; m/argin-bottom: 1%; "-->
+                                <button class="tiny round secondary f70"
+                                        onclick="openCloseWin('open', '<?= $link ?>')"
+                                        title="Hent posten fra Basis">
+                                    <?= $buttons[4][$i - 1] ?>
+                                </button>
+                            </li>
+                            <?php if ($status == 'eVa'): ?>
+                                <li>
+                                    <button class="tiny round f70 "
+                                            onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')"
+                                            title="Brug denne post som forlæg til en ny ACC post">
+                                        >>
+                                    </button>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
+                        <?php } ?>
+                    <li>
+                        <?= $endINT ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if (count($titleAndAuthorAndPublisher)): ?>
+        <div class='row'>
+            <div class='small-1 columns  '>
+                <label>T/F/F:</label>
+            </div>
+            <div class="medium-11 columns">
+                <?php $i = 0; ?>
+                <ul class="inline-list">
+                    <?php foreach ($titleAndAuthorAndPublisher as $link): ?>
+                        <?php $i++; ?>
+                        <li>
+                            <ul class="button-group round">
+                                <li>
+                                    <button class="tiny round secondary f70"
+                                            onclick="openCloseWin('open', '<?= $link ?>')"
+                                            title="Hent posten fra Basis">
+                                        <?= $buttons[3][$i - 1] ?>
+                                    </button>
+                                </li>
+                                <?php if ($status == 'eVa'): ?>
+                                    <li>
+                                        <button class="tiny round f70" id="c_ti_au_pu<?= $i ?>"
+                                                onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')"
+                                                title="Brug denne post som forlæg til en ny ACC post">
+                                            >>
+                                        </button>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                        </li>
+                    <?php endforeach; ?>
+                    <li>
+                        <?= $endTAP ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if (count($titleAndAuthor)): ?>
+        <div class='row'>
+            <div class='small-1 columns '>
+                <label>Titel/forfatter:</label>
+            </div>
+            <div class="small-11 columns">
+                <?php $i = 0; ?>
+                <ul class="inline-list">
+                    <?php foreach ($titleAndAuthor as $link): ?>
+                        <?php $i++; ?>
+                        <li>
+                            <ul class="button-group round">
+                                <li>
+                                    <button class="tiny round secondary f70"
+                                            onclick="openCloseWin('open', '<?= $link ?>')"
+                                            title="Hent posten fra Basis">
+                                        <?= $buttons[2][$i - 1] ?>
+                                    </button>
+                                </li>
+                                <?php if ($status == 'eVa'): ?>
+                                    <li>
+                                        <button class="tiny round f70" id="c_ti_au<?= $i ?>"
+                                                onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')"
+                                                title="Brug denne post som forlæg til en ny ACC post">
+                                            >>
+                                        </button>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                        </li>
+                    <?php endforeach; ?>
+                    <li>
+                        <?= $endTA ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php if (count($title)): ?>
+        <div class='row'>
+            <div class="small-1 columns ">
+                <label>Titel:</label>
+            </div>
+            <div class="small-11 columns">
+                <?php $i = 0; ?>
+                <ul class="inline-list">
+                    <?php foreach ($title as $link): ?>
+                        <?php $i++; ?>
+                        <li>
+                            <ul class="button-group round ">
+                                <li>
+                                    <button class=" secondary round tiny f70"
+                                            onclick="openCloseWin('open', '<?= $link ?>')"
+                                            title="Hent posten fra Basis">
+                                        <?= $buttons[1][$i - 1] ?>
+                                    </button>
+                                </li>
+                                <?php if ($status == 'eVa'): ?>
+                                    <li>
+                                        <button id="c_title<?= $i ?>" class="round tiny f70"
+                                                onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')"
+                                                title="Brug denne post som forlæg til en ny ACC post">
+                                            >>
+                                        </button>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                        </li>
+                    <?php endforeach; ?>
+                    <li>
+                        <?= $endT ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+
+<?php endif; ?>
+
+<div class="row">
+    <div class="medium-12">
+        <hr/>
+    </div>
+</div>
+
+
+<div class="row" data-equalizer>
+    <div class="small-3 columns panel" data-equalizer-watch>
+        <a href="<?= $contentUrl ?>">
+            <img src='<?= $Miniature ?>' id="rightsec"/>
+        </a>
+    </div>
+    <div class="small-3 columns panel" data-equalizer-watch>
+        <?php foreach ($data as $key => $arrs): ?>
+            <?php foreach ($arrs as $val): ?>
+                <?= $key ?><br/>
+            <?php endforeach ?>
+        <?php endforeach ?>
+    </div>
+    <div class="small-6 columns panel" data-equalizer-watch>
+        <?php foreach ($data as $key => $arrs): ?>
+            <?php foreach ($arrs as $val): ?>
+                <?= $val ?><br/>
+            <?php endforeach ?>
+        <?php endforeach ?>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="medium-12 columns">
+        <?= $descp['MainDescription'][0] ?>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-12 bottomspace">
+        <hr/>
+    </div>
+</div>
+
+<?php if ($setup != 'setup' and $setup != ''): ?>
+    <div class="row">
+        <div class="small-1 columns ">&nbsp;</div>
+        <div id="finido">finido</div>
+    </div>
+<?php endif; ?>
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

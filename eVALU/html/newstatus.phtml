@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>digitalResourcesBKM_newstatuse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../inc/foundation/css/foundation.css">
+    <script src="../inc/foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+<div class='row'>
+    <div class='small-12 columns'>
+        Ønsker du at ændre status til : <strong><?= $newstatus ?></strong>
+    </div>
+</div>
+<div class="row">
+    <div class="small-10 columns">
+        <hr/>
+    </div>
+</div>
+<div class="row">
+    <div class="small-12 columns">
+        <a href="newstatus.php?newstat=yes" class="button">Ja</a>
+        <a href="" class="button">Nej</a>
+    </div>
+</div>
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<script src="../inc/foundation/js/vendor/jquery.js"></script>
+<script src="../inc/foundation/js/foundation.min.js"></script>
+<script src="../inc/foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

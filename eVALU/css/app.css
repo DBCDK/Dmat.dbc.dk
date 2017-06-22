@@ -1,0 +1,357 @@
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+/* 
+    Created on : 28-07-2015, 10:46:26
+    Author     : hhl
+*/
+
+.false {
+    color: #cc6600;
+}
+
+.true {
+    color: #5da423;
+}
+
+.pageName {
+    text-align: center;
+    color: #61b6d9;
+    font-size: 20px;
+}
+
+.gem {
+    background-color: white;
+    color: white;
+    height: 0.01px;
+    border: 0px;
+    /*font-size: 10px;*/
+    white-space: nowrap;
+}
+
+table#product2, table#klistre {
+    border: none;
+    border: lightblue solid 0.1px;
+    /*width: 100%;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+}
+
+td.unittest {
+    font-size: 11px;
+    background-color: #f2f2f2;
+    padding: 0px;
+    /*border: lightblue solid 0.1px;*/
+    /*padding-right: 0.2px;*/
+    /*margin: -0.2px;*/
+    width: 10%;
+    /*font-family: Consolas;*/
+    /*width: 40px;*/
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+td.dbf {
+    font-size: 10px;
+    /*background-color: #61b6d9;*/
+    padding: 0px;
+    /*border: lightblue solid 0.1px;*/
+    /*padding-right: 0.2px;*/
+    /*margin: -0.2px;*/
+    width: 10%;
+    /*width: 40px;*/
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+input {
+    font-size: 10px;
+}
+
+.useryellow {
+    /*color: yellow;*/
+    /*color: gold;*/
+    color: violet;
+}
+
+.colorbox1 {
+    height: 20px;
+    width: 20px;
+    background-color: #5da423;
+}
+
+.userbox1 {
+    color: #5da423;
+}
+
+.colorbox2 {
+    height: 20px;
+    width: 20px;
+    background-color: #9e0c0f;
+}
+
+.userbox2 {
+    color: #9e0c0f;
+
+}
+
+.colorbox3 {
+    height: 20px;
+    width: 20px;
+    background-color: #007af4;
+}
+
+.userbox3 {
+    color: #007af4;
+}
+
+.colorbox4 {
+    height: 20px;
+    width: 20px;
+    background-color: #ababab;
+}
+
+.userbox4 {
+    color: #ababab;
+}
+
+.colorbox5 {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(181, 13, 72, 0.79);
+}
+
+.userbox5 {
+    color: rgba(181, 13, 72, 0.79);
+}
+
+.colorbox6 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+
+.userbox6 {
+    color: black;
+}
+
+.nonebox {
+    height: 20px;
+    width: 20px;
+    border: lightblue solid 0.1px;
+}
+
+.weekchoose {
+    background-color: white;
+    color: black;
+    border: lightblue solid 0.1px
+}
+
+.colligthblue {
+    /*background-color:  #cceeff;*/
+    background-color: #e6faff;
+}
+
+.colbeige {
+    background-color: beige;
+}
+
+.colyellow {
+    background-color: #ffffe3;
+}
+
+.colgrey {
+    background-color: lightgray;
+}
+
+.user {
+    color: red;
+
+    /*border: lightblue solid 0.1px;*/
+}
+
+.bhd {
+    /*color: #61b6d9;*/
+    /*color: #007af4;*/
+    color: rgba(181, 13, 72, 0.79);
+}
+
+.workday {
+    /*color: yellow;*/
+}
+
+.evenrow {
+    background-color: inherit;
+    border: 0px;
+}
+
+.unevenrow {
+    /*background-color: white;*/
+}
+
+.datecell {
+    /*color: darkblue;*/
+    /*background-color: #2ba6cb;*/
+    border: 0px;
+    font-size: 10px;
+    padding: 0px;
+    /*border: lightblue solid 0.1px;*/
+}
+
+.caption {
+    font-size: 30px;
+    color: #61b6d9;
+}
+
+.datecell2 {
+    /*color: darkgray;*/
+    font-size: 10px;
+    padding-top: 5px;
+    text-align: left;
+    border: solid 0.05px lightblue;
+}
+
+.datecell3 {
+    /*margin-top: 0px;*/
+    /*padding-top: 0px;*/
+    /*height: 14px;*/
+    border: 0px;
+}
+
+.hh {
+    border: lightblue solid 0.2px;
+    /*margin-bottom: 30px;*/
+    /*padding-bottom: 10px;*/
+    height: 50px;
+}
+
+.headtxt {
+    /*color: white;*/
+    font-size: 12px;
+    height: 75px;
+    width: 40px;
+    /*border: lightblue solid 0.1px;*/
+    /*text-align: center;*/
+}
+
+.bankholiday {
+    color: red;
+}
+
+.printed {
+    color: #cf6e0e;
+}
+
+.ebook {
+    color: #5da423;
+}
+
+.errortxt {
+    color: red;
+}
+
+pre {
+
+    line-height: 110%;
+}
+
+.f70 {
+    font-size: 70%;
+    margin-bottom: 1%;
+}
+
+.ramme4 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    /*margin-left: 15%;*/
+    padding: 1.5%;
+    /*width:1000px;*/
+    /*padding-left: 20px;*/
+    /*    height: 20px;*/
+}
+
+.ramme5 {
+    /*border-radius: 25px;*/
+    /*border: 2px solid grey;*/
+    /*margin-left: 15%;*/
+    padding: 30px;
+    /*width:1000px;*/
+    /*padding-left: 20px;*/
+    /*background-color: lightgray;*/
+    /*    height: 20px;*/
+}
+
+.ramme {
+    /*border-radius: 25px;*/
+    border: 2px solid grey;
+    /*margin-left: 15%;*/
+    /*padding: 30px;*/
+    /*width:1000px;*/
+    padding-left: 30px;
+    /*background-color: lightgray;*/
+    /*    height: 20px;*/
+}
+
+.ramme6 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    /*margin-left: 15%;*/
+    padding: 15px;
+    /*width:1000px;*/
+    /*padding-left: 20px;*/
+    background-color: lightgray;
+    /*    height: 20px;*/
+}
+
+.ramme7 {
+    /*border-radius: 25px;*/
+    /*border: 2px solid grey;*/
+    /*margin-left: 15%;*/
+    /*padding: 15px;*/
+    /*width:1000px;*/
+    /*padding-left: 20px;*/
+    background-color: lightcyan;
+    /*    height: 20px;*/
+}
+
+.candidate {
+    font-size: 50%;
+}
+
+.bottomspace {
+    margin-bottom: 30px;
+}
+
+.ramme {
+    border: 1px solid grey;
+}
+
+.ramme3 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    /*margin-left: 3%;*/
+    padding: 10px;
+    padding-bottom: 2px;
+    /*width:25px;*/
+    /*padding-left: 25px;*/
+    /*height: 45px;*/
+}
+
+.ramme8 {
+    border-radius: 25px;
+    /*border: 2px solid grey;*/
+    /*margin-left: 3%;*/
+    padding: 10px;
+    padding-bottom: 2px;
+    /*width:25px;*/
+    /*padding-left: 25px;*/
+    /*height: 45px;*/
+}
+
+.radio-label {
+    margin-left: 10px;
+    margin-right: 5px;
+    /*    padding-top: 20px;
+        margin-top: 20px;*/
+}

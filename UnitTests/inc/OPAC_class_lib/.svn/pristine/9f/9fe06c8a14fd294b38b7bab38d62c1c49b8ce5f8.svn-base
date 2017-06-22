@@ -1,0 +1,1071 @@
+<?php
+
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+class updateMediaDB {
+
+    private $db;
+    private $tablename;
+    private $reftable;
+    private $notetable;
+//    private $nseq;
+    private $dr;
+    private $status;
+    private $tablerecover;
+    private $recoverseq;
+    private $nothing;
+    private $programname;
+
+    function __construct($db, $reftable, $tablename, $dr = 'digitalresources', $notetable) {
+        $this->db = $db;
+        $this->tablerecover = $tablename . "recover";
+        $recovernseq = $this->tablerecover . "seq";
+        $this->recoverseq = $recovernseq;
+        $this->nothing = false;
+        $this->programname = 'unknown';
+
+        $select = "select tablename from pg_tables where tablename = '$reftable'";
+        $arr = $db->fetch($select);
+        if (!$arr) {
+            $create = "create table $reftable ("
+                . "seqno integer,"
+                . "createdate timestamp,"
+                . "base varchar(50),"
+                . "lokalid varchar(20),"
+                . "bibliotek varchar(20),"
+                . "type varchar(20), "
+                . "matchtype integer "
+                . ")";
+            $db->exe($create);
+        }
+
+        $nseq = $notetable . "seq";
+        $sql = "select tablename from pg_tables where tablename = $1";
+        $arr = $db->fetch($sql, array($notetable));
+        if (!$arr) {
+            $sql = "create table $notetable ( "
+                . "seqno integer, "
+                . "createdate timestamp with time zone, "
+                . "updated timestamp with time zone, "
+                . "type varchar(20), "
+                . "text varchar(500), "
+                . "initials varchar(20), "
+                . "status varchar(10), "
+                . "CONSTRAINT mediaservicednote_pkey PRIMARY KEY (seqno, text) )";
+            $db->exe($sql);
+            verbose::log(TRACE, "table created:$sql");
+//            $sql = "
+//        drop sequence if exists $nseq
+//       ";
+//            $db->exe($sql);
+//            $sql = "
+//        create sequence $nseq
+//        ";
+//            $db->exe($sql);
+        }
+
+        $tablerecover = $this->tablerecover;
+        $sql = "select tablename from pg_tables where tablename = $1";
+        $arr = $db->fetch($sql, array($tablerecover));
+        if (!$arr) {
+            $sql = "create table $tablerecover ( "
+                . "recoverseqno integer, "
+                . "recovercreatedate timestamp with time zone, "
+                . "seqno integer, "
+                . "status varchar(20), "
+                . "update timestamp with time zone, "
+                . "faust varchar(11), "
+                . "newfaust varchar(11), "
+                . "base varchar(10), "
+                . "choice varchar(30),"
+                . "promat timestamp with time zone, "
+                . "initials varchar(20), "
+                . "program varchar(250), "
+                . "CONSTRAINT recover_pkey PRIMARY KEY (recoverseqno) )";
+            $db->exe($sql);
+            verbose::log(TRACE, "table created:$sql");
+
+            $sql = "drop sequence if exists $recovernseq; "
+                . "create sequence $recovernseq ";
+
+            $db->exe($sql);
+        }
+
+        $this->tablename = $tablename;
+        $this->reftable = $reftable;
+        $this->notetable = $notetable;
+        $this->nseq = $nseq;
+        $this->dr = $dr;
+    }
+
+    /**
+     *
+     * @param type $name
+     */
+    function setProgramname($name) {
+        $this->programname = $name;
+    }
+
+    /**
+     *
+     * @param type $nothing
+     * @return type
+     */
+    function setNothing($nothing) {
+        $this->nothing = $nothing;
+        return;
+    }
+
+    function updateStatusFromMatch($seqno, $mMarc, $found, $record, $old = '') {
+        $this->status = 'ProgramMatch';
+        return $this->updateStatus($seqno, $mMarc, $found, $record, $old);
+    }
+
+    function updateRecover($seqno) {
+        $recover = $this->tablerecover;
+        $seq = $this->recoverseq;
+        $program = $this->programname;
+
+        $insert = "INSERT INTO $recover(
+            recoverseqno, recovercreatedate, seqno,status, update, faust, newfaust,
+            base, choice, promat, initials, username, is_in_basis, updatepub, program)
+                (   select  nextval('$seq'), current_timestamp,
+                    seqno,status,update, faust, newfaust, base, choice,
+                    promat, initials, username, is_in_basis, updatepub, '$program'
+                    from mediaservice where seqno = $seqno)";
+        $this->db->exe($insert);
+    }
+
+    function newStatus($seqno, $newstatus, $clear = false) {
+
+        $tablename = $this->tablename;
+        if ($clear) {
+            $setToNull = "promat = null, updatepub = null, ";
+        }
+        $update = "update $tablename "
+            . "set status = '$newstatus', "
+            . "$setToNull "
+            . "update = current_timestamp "
+            . "where seqno = $seqno ";
+        $this->updateRecover($seqno);
+        if ($this->nothing) {
+            echo "Update:$update\n";
+        } else {
+            $this->db->exe($update);
+        }
+    }
+
+    function updatePub($seqno, $status) {
+        $tablename = $this->tablename;
+        $sta = "";
+        if ($status == 'UpdatePublizon') {
+            $sta = ", status = 'Done' ";
+        }
+        $update = "update $tablename set updatepub = current_timestamp $sta "
+            . "where seqno = $seqno";
+        $this->updateRecover($seqno);
+        $this->db->exe($update);
+    }
+
+    function getSummary($prime) {
+        $tablename = $this->tablename;
+        if ($prime) {
+            $not = "";
+        } else {
+            $not = "not";
+        }
+        $prime = "('Afventer','AfventerElu','Drop','eLu','eVa')";
+        $select = "select status,booktype,count(*) as cnt "
+            . "from $tablename "
+            . "where status $not in $prime "
+            . "group by status, booktype "
+            . "order by booktype, status ";
+        $rows = $this->db->fetch($select);
+        return $rows;
+    }
+
+    function getPubSeqnos($status, $max, $seqno = 0) {
+        $tablename = $this->tablename;
+        $and = "and status in ($status) ";
+        $updatepub = "and updatepub is null ";
+        if ($seqno) {
+            $and = "and seqno = $seqno ";
+            $updatepub = "";
+        }
+        $sql = "select seqno, status, isbn13, faust, newfaust, choice from $tablename "
+            . "where provider = 'PubHubMediaService' "
+            . "$and "
+            . "$updatepub "
+            . "limit $max ";
+
+        $ret = $this->db->fetch($sql);
+        return $ret;
+    }
+
+    /**
+     *
+     * @param type $status
+     * @return type array
+     */
+    function getSeqnos($status) {
+        $tablename = $this->tablename;
+//        if (!$all) {
+        $newfaust = "and newfaust is not null ";
+//        }
+        $sql = "select seqno, newfaust, choice, title from $tablename "
+            . "where provider = 'PubHubMediaService' "
+            . "and status = '$status' "
+            . "$newfaust ";
+
+        return $this->db->fetch($sql);
+    }
+
+    /**
+     *
+     * @return type
+     */
+    function getIsbns() {
+        $tablename = $this->tablename;
+        $sql = "select isbn13 from $tablename "
+            . "where provider = 'PubHubMediaService' "
+            . "and status in ('Template','UpdateBasis','ProgramMatch') "
+            . "and newfaust is null "
+            . "and is_in_basis is null ";
+
+        return $this->db->fetch($sql);
+    }
+
+    /**
+     *
+     * @param type $isbn13
+     * @param type $new_faust
+     */
+    function insertNewFaust($isbn13, $new_faust) {
+        $nothing = $this->nothing;
+        $tablename = $this->tablename;
+
+
+// is there more than one ISBN13, if not get the seqno
+        $find = "select seqno from $tablename "
+            . "where isbn13 = '$isbn13' ";
+        $seqnos = $this->db->fetch($find);
+        if ($seqnos) {
+            if (count($seqnos) != 1) {
+                vebose::log(ERROR, "Forkert antal isbn's i $tablename (isbn: $isbn13");
+                return;
+            }
+        }
+        $seqno = $seqnos[0]['seqno'];
+        if (!$nothing) {
+
+        }
+        $sql = "update $tablename "
+            . "set newfaust = '$new_faust' "
+            . "where seqno = $seqno ";
+        verbose::log(TRACE, "Nothing:($nothing), isbn13: $isbn13, seqno:$seqno, new_faust:$new_faust");
+        if ($nothing)
+            echo $sql;
+        else {
+            $this->updateRecover($seqno);
+            $this->db->exe($sql);
+        }
+    }
+
+    /**
+     *
+     * @param type $seqno
+     * @param type $mMarc
+     * @param type $found
+     */
+    function updateStatus($seqno, $mMarc, $found, $record, $old = '') {
+        $tablename = $this->tablename;
+        $faust = "";
+        $akeys = array_keys($mMarc);
+        $lokalid = $akeys[0];
+        if ($found) {
+            $status = 'DigitalR';
+            $faust = "faust = '$lokalid', ";
+        } else {
+            $best_match = array();
+            foreach ($mMarc as $lokalid => $res) {
+                foreach ($res as $bib => $dataset) {
+                    foreach ($dataset as $base => $data) {
+                        $matchtype = $data['matchtype'];
+                        if (!array_key_exists($matchtype, $best_match)) {
+                            $best_match[$matchtype]['cnt'] = 0;
+                        }
+                        if ($base == 'Phus') {
+                            $matchtype = 50;
+                        }
+                        $best_match[$matchtype]['cnt']++;
+                        $best_match[$matchtype]['lokalid'] = $lokalid;
+                        $best_match[$matchtype]['bib'] = $bib;
+                        $best_match[$matchtype]['base'] = $base;
+                    }
+                }
+            }
+
+            krsort($best_match);
+            foreach ($best_match as $key => $value) {
+                break;
+            }
+            if ($value['cnt'] > 1) {
+                $status = 'eVa';
+                $lokalid = '';
+                $base = '';
+            } else {
+                $lokalid = $value['lokalid'];
+                $bib = $value['bib'];
+                $base = $value['base'];
+                switch ($key) {
+                case 351:
+                case 353:
+                    $status = 'UpdatePublizon';
+// faust ??
+                    break;
+                case 350:
+                case 352:
+                    $status = 'Template';
+                    break;
+//                    case 117:
+//                    case 217:
+                case 317:
+                case 319:
+                    $status = 'UpdatePublizon';
+                    $faust = "faust = '$lokalid', base = '$base', ";
+                    break;
+                case 116:
+                case 117:
+                case 118:
+                case 216:
+                case 218:
+                case 316:
+                case 318:
+                    $status = 'eVa';
+                    break;
+//                    case 115:
+//                    case 215:
+//                    case 315:
+//                    case 317:
+                case 417:
+                case 419:
+                    $status = 'eVa';
+                    break;
+//                    case 417:
+//                        $status = 'UpdatePublizon';
+//                        $faust = "faust = '$lokalid', base = '$base', ";
+                    break;
+                case 100:
+                case 101:
+                case 103:
+                case 104:
+                case 201:
+                case 203:
+                case 301:
+                case 303:
+                    $status = 'eVa';
+                    break;
+//                    case 100:
+//                    case 200:
+                case 102:
+                case 106:
+                case 202:
+                case 206:
+                case 300:
+                case 302:
+                case 306:
+                    $status = 'Template';
+                    if ($this->status) {
+                        $status = $this->status;
+                    }
+                    $faust = "faust = '$lokalid', base = '$base', ";
+                    break;
+                case 50:
+                    $status = 'Hold';
+                    break;
+                default:
+                    $status = 'eVa';
+                }
+            }
+        }
+
+        if ($record['status'] == 'OldTemplate' and $status == 'Template' and $old = 'OldTemplate') {
+            $status = 'OldTemplate';
+        }
+//        if ($record['status'] != $status and $record['lokalid'] != $lokalid and $record['base'] != $base) {
+        $update = "update $tablename set status = '$status', "
+            . "$faust "
+            . "update = current_timestamp "
+            . "where seqno = $seqno";
+        $this->updateRecover($seqno);
+        $this->db->exe($update);
+//        }
+    }
+
+    /**
+     *
+     * @param type $isbn13
+     * @return type
+     */
+    function IsItInDigitalResources($isbn13) {
+        $dr = $this->dr;
+        $select = "select format from $dr "
+            . "where isbn13 = '$isbn13' "
+            . "and format in ('eReolenLicens','eReolen') ";
+        $res = $this->db->fetch($select);
+        return $res;
+    }
+
+    /**
+     *
+     * @param type $seqno
+     * @param type $mMarch
+     */
+    function updateRefData($seqno, $mMarc) {
+        $this->db->exe('BEGIN');
+        $del = "delete from " . $this->reftable . " "
+            . "where seqno = $seqno";
+        $this->db->exe($del);
+        foreach ($mMarc as $lokalid => $val1) {
+            foreach ($val1 as $bibliotek => $val2) {
+                foreach ($val2 as $base => $val3) {
+                    $type = $val3['type'];
+                    $matchtype = $val3['matchtype'];
+                    $this->insertReftable($seqno, $base, $lokalid, $bibliotek, $type, $matchtype);
+                }
+            }
+        }
+        $this->db->exe('COMMIT');
+    }
+
+    /**
+     *
+     * @param type $seqno
+     * @return type
+     */
+    function getRefData($seqno) {
+        $select = "select seqno, base, lokalid, bibliotek, type, matchtype "
+            . "from " . $this->reftable . " "
+            . "where seqno = $seqno "
+            . "order by matchtype desc";
+        $refrows = $this->db->fetch($select);
+        return $refrows;
+    }
+
+    /**
+     *
+     * @param type $seqno
+     * @param type $base
+     * @param type $lokalid
+     * @param type $bibliotek
+     * @param type $type
+     * @param type $matchtype
+     */
+    function insertReftable($seqno, $base, $lokalid, $bibliotek, $type, $matchtype) {
+        $insert = "insert into " . $this->reftable . " "
+            . "(seqno, base, lokalid, bibliotek, type, matchtype) values"
+            . "($seqno, '$base', '$lokalid', '$bibliotek', '$type', "
+            . "'$matchtype')";
+        $this->db->exe($insert);
+    }
+
+    function getTableData($seqno, $direction, $req, $site) {
+        $tablename = $this->tablename;
+        $pagesize = 10;
+//        if ($page) {
+//            $_SESSION['page'] = $page;
+//        } else {
+//            $page = 1;
+//        }
+        $page = 1;
+        if ($_SESSION['page']) {
+            $page = $_SESSION['page'];
+        }
+
+//        if (array_key_exists('side', $req)) {
+//            $side = $req['side'];
+//        }
+
+        $type = $site;
+        if (array_key_exists('type', $req)) {
+            $type = $req['type'];
+        }
+        if ($type != 'Alle') {
+            $status = " and status = '$type' ";
+        }
+
+        $start = ($page - 1) * $pagesize;
+        $stop = $pagesize;
+
+        if (array_key_exists('cmd', $req)) {
+            $cmd = $req['cmd'];
+        }
+//        $status = "and status = 'eVa' ";
+        $title = "";
+        if ($site == 'eLu') {
+            $status = " and status = 'eLu' ";
+        }
+        switch ($cmd) {
+        case 'onlyone':
+            if ($type != 'Alle') {
+                $status = "and status = '" . $type . "' ";
+            }
+            break;
+        case 'titlesearch':
+            $title = $req['titlesearch'];
+            $title = "and lower(title) like '" . strtolower($title) . "' ";
+            $status = ' ';
+            break;
+        }
+        if ($direction == 1 || $direction == -1) {
+            if ($direction == 1) {
+                $operator = ">";
+                $desc = 'desc';
+            } else {
+                $operator = "<=";
+                $desc = '';
+            }
+// find new seqno
+
+            $select = "select seqno "
+                . "from $tablename "
+                . "where booktype = 'Ebog' "
+                . "and seqno $operator $seqno "
+                . "$status "
+                . "$title "
+                . "order by update $desc, seqno $desc "
+                . "limit 101 ";
+
+
+            $rows = $this->db->fetch($select);
+            if ($rows) {
+                $nrows = count($rows);
+                if ($nrows) {
+                    $seqno = $rows[$nrows - 1]['seqno'];
+                }
+            } else {
+                $seqno = 1;
+            }
+        }
+        $seqno--;
+        if ($seqno < 0) {
+            $seqno = 0;
+        }
+
+        $sql = "select count(*) as cnt from $tablename "
+            . "where booktype = 'Ebog' "
+//            . "and seqno > $seqno "
+            . "$status "
+            . "$title ";
+        $count = $this->db->fetch($sql);
+        $cnt = $count[0]['cnt'];
+        $pages = 0;
+        if ($cnt) {
+            $pages = (int)(($cnt + $pagesize - 1) / $pagesize);
+        }
+        $select = ""
+            . "select "
+            . "seqno, provider, to_char(createdate,'dd-mm-yyyy') as cdate, initials, "
+            . "booktype, filetype, choice, "
+            . "bookid, title, originalxml, isbn13, faust, to_char(lockdate,'DD-MM-YY HH24:MI:SS') as lockdate,"
+            . "to_char(publicationdate,'DD-MM-YYYY') as publicationdate, status,"
+            . "to_char(update,'DD-MM-YYYY HH24:MI:SS') as updated "
+            . "from $tablename "
+            . "where booktype = 'Ebog' "
+//            . "and seqno > $seqno "
+            . "$status "
+            . "$title "
+            . "order by update desc, publicationdate desc, seqno "
+            . "offset $start "
+            . "limit $stop ";
+
+//        echo $select;
+        $rows = $this->db->fetch($select);
+        $_SESSION['page'] = $page;
+        $rows[] = $pages;
+        return $rows;
+    }
+
+    /**
+     *
+     * Et eksperiment som ikke lykkedes.  Vender måske tilbage.
+     *
+     */
+    function newGetData($cmd, $seqno, $site) {
+        $tablename = $this->tablename;
+        $initials = getInitials();
+        if ($_SESSION['username']) {
+            $initials = $_SESSION['username'];
+        }
+        $this->db->exe('BEGIN');
+        $this->db->exe("select pg_advisory_lock($seqno)");
+
+//    $status = "and status in ('eVa','UpdateEre','Template') ";
+        $status = "and status = '$site' ";
+        $wseqno = "and seqno = $seqno ";
+        $lck = " ";
+        switch ($cmd) {
+        case 'Note' :
+        case 'Afventer' :
+        case 'none':
+            $status = ' ';
+            break;
+        case 'direct' :
+            $status = ' ';
+//                $lck = "and ( lockdate is null or "
+//                        . "(lockdate < current_timestamp - interval '1 hour' or "
+//                        . "initials = '$initials'))";
+            break;
+        case 'next' :
+            $desc = 'desc';
+            if ($seqno == 0) {
+                $wseqno = " ";
+            } else {
+//                $wseqno = "and seqno < $seqno ";
+                $wseqno = "and update <= (select update from $tablename where seqno = $seqno) and seqno != $seqno ";
+            }
+//                $lck = "and ( lockdate is null or "
+//                        . "(lockdate < current_timestamp - interval '1 hour' or "
+//                        . "initials = '$initials'))";
+            break;
+        case 'back' :
+            $wseqno = "and update > (select update from $tablename where seqno = $seqno)";
+            $desc = ' ';
+//                $lck = "and ( lockdate is null or "
+//                        . "(lockdate < current_timestamp - interval '1 hour' or "
+//                        . "initials = '$initials'))";
+            break;
+        }
+        $select = "select seqno, to_char(createdate, 'dd-mm-yyyy') as cdate, "
+            . "to_char(update, 'dd-mm-yyyy') as udated, "
+            . "booktype, filetype, bookid, title, originalxml, isbn13,"
+            . "status, choice, initials, to_char( current_timestamp - lockdate,'YYYYMMDDHH24MI') as timepassed "
+            . "from $tablename "
+            . "where booktype = 'Ebog' "
+            . "$lck "
+            . "+seqno+ "
+            . "$status "
+            . "order by update +desc+, publicationdate +desc+, seqno "
+            . "limit 1";
+
+        $sql = str_replace('+seqno+', $wseqno, $select);
+        $sql = str_replace('+desc+', $desc, $sql);
+        $rows = $this->db->fetch($sql);
+//        echo $sql;
+
+        if (!$rows) {
+            header('Location: ?cmd=Finido');
+        }
+
+        if ($rows) {
+            if ($rows[0]['initials']) {
+                if ($initials != $rows[0]['initials']) {
+                    if ($rows[0]['timepassed'] < 60) {
+                        header('Location: ?cmd=Locked');
+                        exit;
+                    }
+                }
+            }
+
+            $sql = "update $tablename set lockdate = current_timestamp, "
+                . "initials = '$initials' "
+                . "where seqno = " . $rows[0]['seqno'];
+            $this->updateRecover($seqno);
+            $this->db->exe($sql);
+        }
+        $this->db->exe("select pg_advisory_unlock($seqno)");
+        $this->db->exe('COMMIT');
+        return $rows;
+    }
+
+    function getXml($seqno) {
+        $tablename = $this->tablename;
+        $select = "select originalxml as xml from $tablename "
+            . "where seqno = $seqno";
+        return $this->db->fetch($select);
+    }
+
+    function getData($cmd, $seqno, $site) {
+        $tablename = $this->tablename;
+        $initials = getInitials();
+        if ($_SESSION['username']) {
+            $initials = $_SESSION['username'];
+            $username = $_SESSION['username'];
+            $role = $_SESSION['role'];
+        }
+        $list = getlist();
+        $foundation = getFoundation();
+
+        $this->db->exe('BEGIN');
+        $this->db->exe("select pg_advisory_lock($seqno)");
+        if ($foundation) {
+            if ($list == 'Alle') {
+                $status = " ";
+            } else {
+                $status = "and status in ('$list') ";
+            }
+        } else {
+            $status = "and status in ('$site') ";
+        }
+//        $status = "and status = '$site' ";
+        $wseqno = "and seqno = $seqno ";
+        $lck = " ";
+        switch ($cmd) {
+        case 'Note' :
+        case 'Afventer' :
+        case 'faust' :
+            $status = ' ';
+        case 'none':
+        case 'secondChoice':
+            $status = ' ';
+            break;
+        case 'direct' :
+            $status = ' ';
+            $lck = "and ( lockdate is null or "
+                . "(lockdate < current_timestamp - interval '1 hour' or "
+                . "username = '$username'))";
+            break;
+        case 'next' :
+            $desc = 'desc';
+            if ($seqno == 0) {
+                $wseqno = " ";
+            } else {
+//                $wseqno = "and seqno < $seqno ";
+                $wseqno = "and update <= (select update from $tablename where seqno = $seqno) and seqno != $seqno ";
+            }
+            $lck = "and ( lockdate is null or "
+                . "(lockdate < current_timestamp - interval '1 hour' or "
+                . "username = '$username'))";
+            break;
+        case 'back' :
+            $wseqno = "and update > (select update from $tablename where seqno = $seqno)";
+            $desc = ' ';
+            $lck = "and ( lockdate is null or "
+                . "(lockdate < current_timestamp - interval '1 hour' or "
+                . "username = '$username'))";
+            break;
+        }
+        $select = "select seqno, to_char(createdate, 'dd-mm-yyyy') as cdate, "
+            . "to_char(update, 'dd-mm-yyyy') as udated, "
+            . "booktype, filetype, bookid, title, originalxml, isbn13,"
+            . "status, choice, is_in_basis, newfaust "
+            . "from $tablename "
+            . "where booktype = 'Ebog' "
+            . "$lck "
+            . "+seqno+ "
+            . "$status "
+            . "order by update +desc+, publicationdate +desc+, seqno "
+            . "limit 1";
+
+        $sql = str_replace('+seqno+', $wseqno, $select);
+        $sql = str_replace('+desc+', $desc, $sql);
+        $rows = $this->db->fetch($sql);
+//        echo $sql;
+        if (!$rows) {
+            header('Location: ?cmd=Locked');
+        }
+        $_SESSION['newstatus'] = false;
+        if ($rows) {
+            if ($role == 'eVa') {
+                $updinitials = "initials = '$initials', ";
+                switch ($rows[0]['status']) {
+                case 'UpdatePublizon':
+                case 'UpdatePromat':
+                    $newfaust = $rows[0]['newfaust'];
+                    if (!$newfaust) {
+                        $_SESSION['newstatus'] = 'eVa';
+                    }
+                    break;
+                case 'OldEva':
+                    $_SESSION['newstatus'] = 'eVa';
+                    break;
+                case 'UpdateBasis':
+                case 'Template':
+                case 'eLu':
+                    $_SESSION['newstatus'] = 'eVa';
+                    break;
+                default:
+                    $_SESSION['newstatus'] = false;
+                }
+            }
+            if ($initials and $username) {
+                $sql = "update $tablename set lockdate = current_timestamp, "
+                    . "$updinitials "
+                    . "username = '$username' "
+                    . "where seqno = " . $rows[0]['seqno'];
+                $_SESSION['seqno'] = $rows[0]['seqno'];
+//                $this->updateRecover($seqno);
+                $this->db->exe($sql);
+            }
+        }
+        $this->db->exe("select pg_advisory_unlock($seqno)");
+        $this->db->exe('COMMIT');
+        return $rows;
+    }
+
+    function getNote($seqno) {
+        $sql = "select createdate, updated, type, text, initials, status "
+            . "from " . $this->notetable . " "
+            . "where seqno = $seqno ";
+        $rows = $this->db->fetch($sql);
+        if ($rows) {
+            return $rows;
+        } else {
+            return false;
+        }
+    }
+
+    function releaseLck($seqno) {
+        if ($seqno) {
+            $sql = "update " . $this->tablename . " set lockdate = null, "
+                . "username = null "
+                . "where seqno = $seqno ";
+            $this->db->exe($sql);
+        }
+    }
+
+    /**
+     *
+     * @param type $seqno
+     * @param type $req
+     */
+    function updateNote($seqno, $req) {
+        $initials = getInitials();
+        if ($_SESSION['username']) {
+            $initials = $_SESSION['username'];
+        }
+        $notetable = $this->notetable;
+
+        $notetype = $req['notetype'];
+        $notetext = $req['notetext'];
+        $this->db->exe('BEGIN');
+//        $select = "select isbn13 from " . $this->tablename . " "
+//                . "where seqno = $seqno";
+//        $rows = $this->db->fetch($select);
+//        $isbn13 = $rows[0]['isbn13'];
+        $find = "select seqno from $notetable "
+            . "where seqno = $seqno and type = '$notetype'";
+        $noteseqnos = $this->db->fetch($find);
+        if ($noteseqnos) {
+//            $noteseqno = $noteseqnos[0];
+            $update = "update $notetable "
+                . "set text = $1, "
+                . "initials = '$initials', "
+                . "updated = current_timestamp "
+                . "where seqno = $seqno and type = '$notetype'";
+            $this->db->query_params($update, array($notetext));
+        } else {
+//            $nseq = $this->nseq;
+            $insert = "insert into $notetable ( "
+                . "seqno, createdate, updated, type, text, initials, status ) "
+                . "values ( "
+                . "$seqno, "
+                . "current_timestamp, "
+                . "current_timestamp, "
+                . "'$notetype', "
+                . "$1, "
+                . "'$initials', "
+                . "'active' )";
+            $this->db->query_params($insert, array($notetext));
+        }
+        $this->db->exe('COMMIT');
+    }
+
+    /**
+     *
+     * @param type $req
+     */
+    function updateDB($req) {
+
+
+        $initials = getInitials();
+//        if ($_SESSION['username']) {
+//            $initials = $_SESSION['username'];
+//        }
+        // bliver sat så xDebug kan finde udaf det.
+        $cmd = $lokalid = $base = $score = $seqno = $type = $matchtype = $bibliotek = '';
+
+        $choice = '';
+        $BKM = $BKMV = false;
+
+        foreach ($req as $key => $value) {
+            ${$key} = "$value";
+            if ($key == 'eVA-BKX' or $key == 'eVA-L' or $key == 'eVA-BKMV') {
+                $promat = "promat = current_timestamp, ";
+            }
+            if ($key == 'eVA-BKM') {
+                $BKM = true;
+            }
+            if ($key == 'eVA-BKMV') {
+                $BKMV = true;
+            }
+            if (substr($key, 0, 4) == 'eVA-') {
+                if ($value) {
+                    $choice .= substr($key, 4) . ' ';
+                }
+            }
+        }
+//        $a = 0;
+        $is_in_basis = $req['is_in_basis'];
+
+        switch ($cmd) {
+
+        case 'Lektør':
+//            case 'IKKE Lektør':
+//            case 'BKM vurdering':
+            if ($is_in_basis) {
+                $status = ", status = 'UpdatePromat', "
+                    . "newfaust = faust ";
+            } else {
+                $status = ", status = 'UpdateBasis' ";
+            }
+            $update = "update " . $this->tablename . " set "
+                . "update = current_timestamp, "
+//                        . "initials = '$initials', "
+                . "$promat "
+                . "updatepub = null, "
+                . "choice = '$choice' "
+                . "$status "
+                . "where seqno = $seqno";
+//                    echo $update;
+            $this->updateRecover($seqno);
+            $this->db->exe($update);
+            break;
+        case 'Ny registrering':
+            $status = ", status = 'Template' ";
+            if ($BKM or $BKMV) {
+                $status = ", status = 'eLu' ";
+            }
+            $update = "update " . $this->tablename . " set "
+                . "update = current_timestamp, "
+                . "faust =  '" . $req['lokalid'] . "', "
+                . "initials = '$initials', "
+                . "$promat "
+                . "updatepub = null, "
+                . "choice = '$choice' "
+                . "$status "
+                . "where seqno = $seqno";
+//                    echo $update;
+            $this->updateRecover($seqno);
+            $this->db->exe($update);
+            break;
+
+        case 'Er registreret':
+            $f = "faust =  '" . $req['lokalid'] . "' ";
+            $is_in_basis = "is_in_basis = current_timestamp, ";
+            if ($_SESSION['to_elu'] and $BKM) {
+//                    $is_in_basis = "is_in_basis = current_timestamp, ";
+                $status = ", status = 'eLu' ";
+            } else {
+                $status = ", status = 'UpdatePublizon' ";
+            }
+            if ($BKMV) {
+                $status = ", status = 'UpdatePromat' ";
+            }
+            $update = "update " . $this->tablename . " set "
+                . "update = current_timestamp, "
+                . "initials = '$initials', "
+                . "$is_in_basis "
+                . "$promat "
+                . "updatepub = null, "
+                . "choice = '$choice', "
+                . "$f "
+                . "$status "
+                . "where seqno = $seqno";
+            $this->updateRecover($seqno);
+            $this->db->exe($update);
+
+            break;
+        case 'Done':
+        case 'Next':
+        case 'Back':
+        case 'OK' :
+
+            $f = "faust = null, ";
+//            case 'Ny registrering':
+            if ($NewRec == 'NewRec') {
+
+                if ($BKM || $BKMV) {
+                    $status = ", status = 'eLu' ";
+                } else {
+                    $status = ", status = 'UpdateBasis' ";
+                }
+                $update = "update " . $this->tablename . " set "
+                    . "update = current_timestamp, "
+                    . "initials = '$initials', "
+                    . "$promat "
+                    . "updatepub = null, "
+                    . "$f "
+                    . "choice = '$choice' "
+                    . "$status "
+                    . "where seqno = $seqno";
+                $this->updateRecover($seqno);
+                $this->db->exe($update);
+            }
+            break;
+        case 'Afvent' :
+            if ($req['oldstatus'] == 'eLu') {
+                $status = "status = 'AfventerElu', ";
+            } else {
+                $status = "status = 'Afventer', ";
+            }
+            $update = "update " . $this->tablename . " set "
+                . "update = current_timestamp, "
+                . "initials = '$initials', "
+                . "$status "
+                . "updatepub = null "
+                . "where seqno = $seqno";
+            $this->updateRecover($seqno);
+            $this->db->exe($update);
+            break;
+        case 'Drop':
+            $update = "update " . $this->tablename . " set "
+                . "update = current_timestamp, "
+                . "initials = '$initials', "
+                . "status = 'Drop',"
+                . "updatepub = null "
+                . "where seqno = $seqno";
+            $this->updateRecover($seqno);
+            $this->db->exe($update);
+            break;
+        case 'choose':
+            $mMarc = array();
+            $mMarc[$lokalid][$bibliotek][$base]['matchtype'] = $matchtype;
+            $this->updateStatusFromEva($seqno, $mMarc, $choice);
+            break;
+        }
+    }
+
+    function updateStatusFromEva($seqno, $mMarc, $choice) {
+        $tablename = $this->tablename;
+        foreach ($mMarc as $lokalid => $res) {
+            foreach ($res as $bib => $dataset) {
+                foreach ($dataset as $base => $data) {
+                    $matchtype = $data['matchtype'];
+                }
+            }
+        }
+        $rest = $matchtype % 100;
+        if ($rest == 50) {
+            $rest = 10;
+        }
+        if ($rest >= 15) {
+            $status = 'UpdatePublizon';
+        } else {
+            $status = 'Template';
+        }
+        $update = "update $tablename "
+            . "set status = '$status', "
+            . "faust = '$lokalid', "
+            . "base = '$base', "
+            . "updatepub = null, "
+            . "choice = '$choice', "
+            . "update = current_timestamp "
+            . "where seqno = $seqno";
+        $this->updateRecover($seqno);
+        $this->db->exe($update);
+    }
+
+}

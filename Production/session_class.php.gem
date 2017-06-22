@@ -1,0 +1,153 @@
+<?php
+
+class session {
+
+    private $db;
+    private $sitename;
+    private $username;
+    private $days;
+    private $tablename;
+    private $role;
+
+    function __construct($db, $sitename, $days = 0) {
+        session_start();
+
+        $this->sitename = $sitename;
+        $this->username = $sitename . 'username';
+        $this->days = $days;
+
+        $this->getC();
+
+        $this->db = $db;
+        $this->tablename = strtolower($sitename) . 'userinfo';
+        $this->role = false;
+
+// look for the userinfo table
+        $sql = "select tablename from pg_tables where tablename = $1";
+        $arr = $db->fetch($sql, array($this->tablename));
+        if (!$arr) {
+            $sql = "create table " . $this->tablename . " ( "
+                . "username varchar(50),"
+                . "createdate timestamp with time zone, "
+                . "update timestamp with time zone, "
+                . "role varchar(20),"
+                . "passwd varchar(20) "
+                . ")";
+            $db->exe($sql);
+//            verbose::log(TRACE, "table created:$sql");
+            $insert = "insert into " . $this->tablename . " "
+                . "( username, createdate, update, role, passwd) "
+                . "values "
+                . "('admin',current_timestamp,current_timestamp, 'admin', 'dglat')";
+            $db->exe($insert);
+//            $insert = "insert into " . $this->tablename . " "
+//                . "( username, createdate, update, role, passwd) "
+//                . "values "
+//                . "('eVa',current_timestamp,current_timestamp, 'eVa', 'eVa')";
+//            $db->exe($insert);
+//            $insert = "insert into " . $this->tablename . " "
+//                . "( username, createdate, update, role, passwd) "
+//                . "values "
+//                . "('eLu',current_timestamp,current_timestamp, 'eLu', 'eLu')";
+//            $db->exe($insert);
+        }
+    }
+
+    function getrole() {
+        return $this->role;
+    }
+
+    function setC() {
+        $c = $_SESSION[$this->username] . "/" . $_SESSION['role'];
+        if ($this->days) {
+            $days = 60 * 60 * 24 * $this->days;
+            setcookie($this->sitename, $c, time() + $days);
+        }
+    }
+
+    function getC() {
+        if (array_key_exists($this->sitename, $_COOKIE)) {
+            $c = $_COOKIE[$this->sitename];
+            $arr = explode('/', $c);
+            $_SESSION[$this->username] = $arr[0];
+            $_SESSION['role'] = $arr[1];
+        }
+    }
+
+    function clearC() {
+        setcookie($this->sitename, 'false', 1);
+    }
+
+    function logout() {
+        $_SESSION['role'] = false;
+//        $_SESSION[$this->username] = false;
+        unset($_SESSION[$this->username]);
+        $this->clearC();
+    }
+
+    function login($user, $passwd, $role) {
+        $loginOK = false;
+        // table will be used if user and role is in table
+        $sql = "select role from " . $this->tablename . " "
+            . "where username = $1 "
+            . "and role = $2 "
+            . "and passwd = $3 ";
+        $roles = $this->db->fetch($sql, array($user, $role, $passwd));
+        if ($roles) {
+//            $this->role = $roles[0]['role'];
+            $loginOK = true;
+        } else {
+            $descriptorspec = array(
+                0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
+                1 => array("pipe", "w"),  // stdout is a pipe that the child will write to
+                2 => array("pipe", "w") // stderr is a file to write to
+            );
+            $process = proc_open("kinit $user", $descriptorspec, $pipes);
+
+            if (is_resource($process)) {
+                // $pipes now looks like this:
+                // 0 => writeable handle connected to child stdin
+                // 1 => readable handle connected to child stdout
+                // Any error output will be appended to /tmp/error-output.txt
+
+                fwrite($pipes[0], $passwd);
+                fclose($pipes[0]);
+
+                //    echo stream_get_contents($pipes[1]);
+                fclose($pipes[1]);
+
+                // It is important that you close any pipes before calling
+                // proc_close in order to avoid a deadlock
+                $res = proc_close($process);
+                if ($res) {
+                    // have the user the right role
+                    $sql = "select role from " . $this->tablename . " "
+                        . "where username = $1 "
+                        . "and role = $2 ";
+                    $roles = $this->db->fetch($sql, array($user, $role));
+                    if ($roles) {
+//                        $this->role = $roles[0]['role'];
+                        $loginOK = true;
+                    }
+                }
+            }
+        }
+//        echo "loginOK:$loginOK\n";
+        if ($loginOK) {
+            $_SESSION['role'] = $role;
+            $_SESSION[$this->username] = $user;
+            $_SESSION['loginfailure'] = false;
+            $this->setC();
+            return true;
+        } else {
+            $_SESSION['role'] = false;
+            $_SESSION[$this->username] = false;
+            $_SESSION['loginfailure'] = true;
+            return false;
+        }
+//            }
+//        print_r($_SESSION);
+//            header("Location:index.php");
+//        }
+    }
+}

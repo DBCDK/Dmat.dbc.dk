@@ -1,0 +1,26 @@
+{
+  "id" : "3937277f-0623-30c6-a71f-68018c90aa99",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Tredive+pund+guld+Louis+L%27Amour",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-kzNSI.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:29:28 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d8758786a89b8a3c56e4fc2d8215f20301495013367; expires=Thu, 17-May-18 09:29:27 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=y55A64EF0wEkAAAANDRkNDNkOGUtZWRhZi00YWZjLWJjMjItZjU3NjdmNDlhYTQ0y0AMiO8cc1VdXEZhwgBcfq8ASOA1; expires=Tue, 25-Jul-2017 20:09:27 GMT; path=/; HttpOnly", "ASP.NET_SessionId=u3s23vmlrwhgredvmhq2jpis; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058d6dcbca3d3d-CPH"
+    }
+  },
+  "uuid" : "3937277f-0623-30c6-a71f-68018c90aa99"
+}

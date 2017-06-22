@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>digitalResourcesBKM_showtable</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/script.js"></script>
+</head>
+<body bgcolor="white">
+<?php if ($locked): ?>
+    <script>
+        alert(" Posten er låst af en anden bruger\neller der er ikke flere poster i den valgte kategori!");
+    </script>
+<?php endif; ?>
+<?php if ($finido): ?>
+    <script>
+        alert(" Der er ikke er flere poster i den valgte kategori!");
+    </script>
+<?php endif; ?>
+
+<div id='total'>
+    <div class="xx">
+        <div class="tjek">
+            <a href='index.php'>
+                <img alt="cover picture" src="pics/dbclogo.png" height="80"/>
+            </a>
+        </div>
+
+
+        <div class='tjek'><h1><?= $sitetitle ?> (<?= $initials ?>)</h1></div>
+        <div class="tjek" style='padding-top: 30px; '>
+            <button onclick="openCloseWin('info', '<?= $seqno ?>')">?</button>
+        </div>
+        <div class='next_line'></div>
+    </div>
+
+    <div class="tjek">
+        <form action="<?= $site ?>.php">
+            <input type="submit" name="text" value='Stik mig den næste'/>
+            <input type='hidden' name='seqno' value='0'/>
+            <input type='hidden' name='cmd' value='OK'/>
+        </form>
+    </div>
+
+    <div class="tjek">
+        <form action="<?= $site ?>.php">
+            Sorter efter:
+            <select name="type" onchange="this.form.submit()">
+                <?php foreach ($sites as $key => $val): ?>
+                    <option <?= $val ?> value="<?= $key ?>"><?= $key ?></option>
+                <?php endforeach; ?>
+            </select>
+            <input type='hidden' name='seqno' value='0'/>
+            <input type='hidden' name='cmd' value='onlyone'/>
+        </form>
+    </div>
+
+    <!--
+            <?php if ($site == 'eVa'): ?>
+                                                                        <div class="tjek">
+                                                                            <form action='<?= $site ?>.php'>
+                                                                                <input type='submit' name='type' value='Alle' />
+                                                                                <input type='hidden' name='seqno' value='0'/>
+                                                                                <input type='hidden' name='cmd' value='onlyone' />
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="tjek">
+                                                                            <form action='<?= $site ?>.php'>
+                                                                                <input type='submit' name='type' value='eVa' />
+                                                                                <input type='hidden' name='seqno' value='0'/>
+                                                                                <input type='hidden' name='cmd' value='onlyone' />
+                                                                            </form>
+                                                                        </div>
+            <?php endif; ?>
+
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='Template' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            -->
+    <!--
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='DigitalR' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            -->
+    <!--
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='UpdataEre' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            -->
+    <!--
+            <?php if ($site == 'eVa'): ?>
+                                                                        <div class="tjek">
+                                                                            <form action='<?= $site ?>.php'>
+                                                                                <input type='submit' name='type' value='Drop' />
+                                                                                <input type='hidden' name='seqno' value='0'/>
+                                                                                <input type='hidden' name='cmd' value='onlyone' />
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="tjek">
+                                                                            <form action='<?= $site ?>.php'>
+                                                                                <input type='submit' name='type' value='Afventer' />
+                                                                                <input type='hidden' name='seqno' value='0'/>
+                                                                                <input type='hidden' name='cmd' value='onlyone' />
+                                                                            </form>
+                                                                        </div>
+            <?php endif; ?>
+
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='eLu' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='UpdateBasis' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='UpdatePromat' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            <div class="tjek">
+                <form action='<?= $site ?>.php'>
+                    <input type='submit' name='type' value='UpdatePublizon' />
+                    <input type='hidden' name='seqno' value='0'/>
+                    <input type='hidden' name='cmd' value='onlyone' />
+                </form>
+            </div>
+            -->
+
+    <?php if ($site != 'Va'): ?>
+        <div class="tjek">
+            <form action="<?= $site ?>.php">
+                Titel: <input type='text' name='titlesearch' value=''/> (% trunkerer)
+                <input type='hidden' name='seqno' value='0'/>
+                <input type='hidden' name='cmd' value='titlesearch'/>
+            </form>
+        </div>
+    <?php endif; ?>
+
+    <!--
+            <?php if ($site == 'Lu'): ?>
+                                    <div class="next_line"></div>
+            <?php endif; ?>
+            -->
+    <form name="choice" action="<?= $site ?>.php">
+        <?php //if ($site != 'Va'): ?>
+        <input type="hidden" name="seqno" value="<?= $seqno + 1 ?>"/>
+        Seqno: <input type="text" name="seqnodirect" value="<?= $seqno ?>"/>
+        <input type="hidden" name="cmd" value="showdirect"/>
+        <?php //endif; ?>
+
+        <!--
+    <a href="<?= $site ?>.php?cmd=back page&seqno=<?= $seqno ?>"><btton>Back page</btton></a>
+    <a href="<?= $site ?>.php?cmd=next page&seqno=<?= $seqno + 1 ?>"><btton>Next page</btton></a>
+                -->
+
+        <table border='1' width="100%">
+            <tr>
+                <th>Seqno</th>
+                <th>Status</th>
+                <th>Titel</th>
+                <!-- <th>Oprettet</th> -->
+                <th>Opdateret</th>
+                <th>Publiceret</th>
+                <th>Format</th>
+                <th>isbn13</th>
+                <th>valgte</th>
+                <th>Initialer</th>
+                <th>Låst</th>
+                <? if ($type == 'Afventer'): ?>
+                    <th>Afventer</th>
+                <? endif ?>
+            </tr>
+            <? $i = 0; ?>
+            <?php foreach ($rows as $row): ?>
+                <?php $i++; ?>
+                <tr>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['seqno'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['status'] ?></td>
+                    <td class="left <? if ($i % 2): ?>grey<? endif ?>"><?= $row['title'] ?></td>
+                    <!-- <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['cdate'] ?></td> -->
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['updated'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['publicationdate'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['filetype'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['isbn13'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['choice'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['initials'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['lockdate'] ?></td>
+                    <? if ($type == 'Afventer'): ?>
+                        <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['Afventer'] ?></td>
+                    <? endif ?>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <div class="bottomAdd"></div>
+    </form>
+</div>

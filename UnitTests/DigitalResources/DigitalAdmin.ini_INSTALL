@@ -1,0 +1,161 @@
+[setup]
+
+
+ociuser= xxxxx
+ocipasswd = xxxxx
+ocidatabase = xxxxx.dbc.dk/xxxxx.dbc.dk
+
+connect       = "host=xxxx.dbc.dk dbname=xxxx user=xxxx password=xxxx"
+
+impcmd = "psql -h pgdrift.dbc.dk -U posthus -f $fil"
+
+; getFaust_cmd = "Rck_send -s terminus.dbc.dk -c Newnumber -S 0 -f DBCFAUST"
+; upload_cmd   = "Rck_send -s terminus.dbc.dk -c Sending -f isofile -l 870970 -u ebog -S 1"
+; convert_cmd  = "convert $input $output"
+; fpwscanning_cmd = fpwscanning -b 870970 -l $workdir/fpwscanning.log -i "$workdir/$id.png" -n "$long_id" -m "image/png" -d "forside_pic" 
+; addi_cmd = addi_load addi_load.cfg
+
+getFaust_cmd = "Rck_send -s koncept.dbc.dk -c Newnumber -S 0 -f DBCFAUST"
+upload_cmd   = Rck_send -s koncept.dbc.dk -c Sending -f isofile -l 870970 -u ebog -S $PhusOrBasis -t 'ACC=Y'
+convert_cmd  = "convert $input $output"
+fpwscanning_cmd = fpwscanning -b 870970 -l $workdir/fpwscanning.log -i "$workdir/$id.png" -n "$long_id" -m "image/png" -d "forside_pic"
+addi_cmd = addi_load addi_load.cfg
+
+workdir = work
+
+ftp_server = dbcposthus.dbc.dk
+ftp_user_name = ftp
+ftp_user_pass = ftp  
+
+; logfile for verbose output
+logfile = log/admin.log
+
+ 
+; curl_proxy shall be set in a production enviroment.  For testing (inside the firewall) this
+; options shall not be set.
+curl_proxy =  http://dmzproxy.dbc.dk:3128
+
+; set verboselevel
+;   WARNING - simple warnings
+;   ERROR   - errors in response
+;   FATAL   - major errors
+;   STAT    - Statístical logging
+;   TIMER   - timer logging
+;   TRACE   - program trace
+;   DEBUG   - debugging info
+;   Z3959   - calls to z3950 services
+;   OCI     - oracle
+verboselevel = WARNING+ERROR+FATAL+STAT+TIMER+TRACE+DEBUG+Z3950+OCI
+
+[seBasis]
+ociuser= xxxxx
+ocipasswd = xxxxx
+ocidatabase = xxxxx.dbc.dk/xxxxx.dbc.dk
+
+[sePhus]
+ociuser= xxxxx
+ocipasswd = xxxxx
+ocidatabase = xxxxx.dbc.dk/xxxxx.dbc.dk
+
+[test_setup]
+connect        = "host=xxxxx.dbc.dk dbname=xxxxx  user=xxxxx password=xxxxx"
+
+; format shall be: "RawXML", "eReolen" og "Netlydbog"
+
+[PubHubImages]
+format = eReolen,Netlydbog
+
+[PubHubXMLtoWell]
+datafile  = "150028.$ts.XMLdata"
+transfile = "150028.$ts.truns"
+transline = "b=databroend,f=$datafile,t=xml,c=utf-8,m=hhl@dbc.dk"
+format = RawXml
+
+[PubHubToWell]
+datafile  = "150028.$ts.data"
+transfile = "150028.$ts.truns"
+transline = "b=databroend,f=$datafile,t=dm2iso,c=latin-1,o=ebogsbib,m=kildepost@dbc.dk"
+format = PubHub
+
+; [eLibToWell]
+; datafile  = "150015.$ts.data"
+; transfile = "150015.$ts.truns"
+; transline = "b=databroend,f=$datafile,t=dm2iso,c=latin-1,o=netlydbog,m=kildepost@dbc.dk"
+
+
+[publizon]
+
+url            = http://service.pubhub.dk
+licenseKey = 4f0d65f9-bc38-470c-af52-cd11cd3b1ffa
+
+soap['ListAllBookIds'][] = "<soap:Envelope xmlns:soap=@http://www.w3.org/2003/05/soap-envelope@ xmlns:ser=@http://service.pubhub.dk/@>"
+soap['ListAllBookIds'][] = "  <soap:Header/>"
+soap['ListAllBookIds'][] = "  <soap:Body>"
+soap['ListAllBookIds'][] = "    <ser:ListAllBookIds>"
+soap['ListAllBookIds'][] = "       <ser:licenseKey>+key+</ser:licenseKey>"
+soap['ListAllBookIds'][] = "    </ser:ListAllBookIds>"
+soap['ListAllBookIds'][] = "  </soap:Body>"
+soap['ListAllBookIds'][] = "</soap:Envelope>"
+
+soap['GetBook'][] = "<soap:Envelope xmlns:soap=@http://www.w3.org/2003/05/soap-envelope@ xmlns:ser=@http://service.pubhub.dk/@>"
+soap['GetBook'][] = "   <soap:Header/>"
+soap['GetBook'][] = "   <soap:Body>"
+soap['GetBook'][] = "      <ser:GetBook>"
+soap['GetBook'][] = "         <ser:licenseKey>+key+</ser:licenseKey>"
+soap['GetBook'][] = "         <ser:bookId>+bookid+</ser:bookId>"
+soap['GetBook'][] = "      </ser:GetBook>"
+soap['GetBook'][] = "   </soap:Body>"
+soap['GetBook'][] = "</soap:Envelope>"
+
+
+[elib]
+; url             = https://www.elib.se/webservices/GetProductList.asmx
+
+retailerid      = 833
+retailerkeycode = 944bdcb6f83500dba6ce4445bd1f8990
+soap['GetProductList'][] = "<soap:Envelope xmlns:soap=@http://www.w3.org/2003/05/soap-envelope@ xmlns:web=@https://www.elib.se/webservices@>"
+soap['GetProductList'][] = "   <soap:Header/>"
+soap['GetProductList'][] = "   <soap:Body>"
+soap['GetProductList'][] = "      <web:GetProductList>"
+soap['GetProductList'][] = "         <web:retailerid>+retailerid+</web:retailerid>"
+soap['GetProductList'][] = "         <web:retailerkeycode>+retailerkeycode+</web:retailerkeycode>"
+soap['GetProductList'][] = "         <web:countrycode>dk</web:countrycode>"
+soap['GetProductList'][] = "         <web:fromdate>1900-01-01</web:fromdate>"
+soap['GetProductList'][] = "         <web:languagecode>da</web:languagecode>"
+soap['GetProductList'][] = "      </web:GetProductList>"
+soap['GetProductList'][] = "   </soap:Body>"
+soap['GetProductList'][] = "</soap:Envelope>"
+
+[pubhub]
+; url 		= http://libraryservices.qa.pubhub.dk/GetProductList.asmx
+url 		= https://libraryservices.pubhub.dk/GetProductList.asmx
+retailerid  = 951
+retailerkeycode = 1356e30339d1bccc5081d29f9b43a018
+soap['pubhub'][] = "<soap:Envelope xmlns:soap=@http://www.w3.org/2003/05/soap-envelope@ xmlns:pub=@http://pubhub.dk/@>"
+soap['pubhub'][] = "  <soap:Header/>"
+soap['pubhub'][] = "  <soap:Body>"
+soap['pubhub'][] = "     <pub:GetProductList>"
+soap['pubhub'][] = "        <pub:retailerid>+retailerid+</pub:retailerid>"
+soap['pubhub'][] = "        <pub:retailerkeycode>+retailerkeycode+</pub:retailerkeycode>"
+soap['pubhub'][] = "        <pub:countrycode>da</pub:countrycode>"
+soap['pubhub'][] = "         <pub:fromdate>1900-01-01</pub:fromdate>"
+soap['pubhub'][] = "        <pub:languagecode>DA</pub:languagecode>"
+soap['pubhub'][] = "     </pub:GetProductList>"
+soap['pubhub'][] = "  </soap:Body>"
+soap['pubhub'][] = "</soap:Envelope>"
+
+[pubhubDelete]
+; url     = https://libraryservices.pubhub.dk/GetRemovedProductList.asmx
+url             = https://libraryservices.pubhub.dk/getremovedproductlist.asmx?op=GetRemovedProductListWithType
+retailerid  = 951
+retailerkeycode = 1356e30339d1bccc5081d29f9b43a018
+soap['pubhubDelete'][] = "<soap:Envelope xmlns:soap=@http://www.w3.org/2003/05/soap-envelope@ xmlns:pub=@http://pubhub.dk/@>"
+soap['pubhubDelete'][] = "   <soap:Header/>"
+soap['pubhubDelete'][] = "   <soap:Body>"
+soap['pubhubDelete'][] = "      <pub:GetRemovedProductList>"
+soap['pubhubDelete'][] = "         <pub:retailerid>+retailerid+</pub:retailerid>"
+soap['pubhubDelete'][] = "         <pub:retailerkeycode>+retailerkeycode+</pub:retailerkeycode>""
+soap['pubhubDelete'][] = "         <pub:fromdate>2011-11-01</pub:fromdate>"
+soap['pubhubDelete'][] = "      </pub:GetRemovedProductList>"
+soap['pubhubDelete'][] = "   </soap:Body>"
+soap['pubhubDelete'][] = "</soap:Envelope>"i

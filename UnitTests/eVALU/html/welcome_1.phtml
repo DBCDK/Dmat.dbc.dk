@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <title>Welcome to eVa & eLu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!--        <? if ($alert): ?>
+        <script>
+            alert("Du har glemt at skrive Initaler ja");</script>
+        <? endif ?>-->
+
+<?php include "topbar.phtml"; ?>
+<br/>
+<div class="row">
+    <div class="small-2 columns ">&nbsp;</div>
+    <div class="small-8  column end ramme4 ">
+        <h3>eVa & eLu - Selektion af elektroniske bøger</h3>
+    </div>
+    <!--<div class="small-2 columns"></div>-->
+</div>
+<?php if ($ekspress): ?>
+    <br/><br/>
+    <div class="row">
+        <div class="small-2 columns ">&nbsp;</div>
+        <div class="small-8 column end ramme4">
+            <div class="medium-12 column end"><b>Ekspres:</b></div>
+            <?php foreach ($ekspress as $row): ?>
+                <div class="small-4 column textright">
+                    <a href="eVa.php?cmd=show&seqno=<?= $row['seqno'] ?>&type=<?= $row['status'] ?>"><?= $row['seqno'] ?></a>
+                </div>
+                <div class="small-4  column">
+                    <?= $row['status'] ?>
+                </div>
+                <div class="small-4  column">
+                    <?= $row['title'] ?>
+                </div>
+            <?php endforeach ?>
+        </div>
+    </div>
+<?php endif; ?>
+
+<br/><br/>
+<div class="row">
+    <div class="small-2 columns ">&nbsp;</div>
+    <div class="small-8 column end ramme4">
+        <?php foreach ($sum_prime as $row): ?>
+            <div class="small-4 column textright">
+                <?= $row['status'] ?>
+            </div>
+            <div class="small-4  column">
+                <?= $row['cnt'] ?>
+            </div>
+            <div class="small-4  column">
+                <?= $row['booktype'] ?>
+            </div>
+        <?php endforeach ?>
+    </div>
+</div>
+
+<br/><br/>
+<div class="row">
+    <div class="small-2 columns ">&nbsp;</div>
+    <div class="small-8 column end ramme4">
+        <?php foreach ($sum_not_prime as $row): ?>
+            <div class="medium-4 column textright">
+                <?= $row['status'] ?>&nbsp;
+            </div>
+            <div class="medium-4 column">
+                <?= $row['cnt'] ?>
+            </div>
+            <div class="medium-4 column">
+                <?= $row['booktype'] ?>
+            </div>
+        <?php endforeach ?>
+    </div>
+</div>
+
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<?php if ($loginfailure): ?>
+    <?php $_SESSION['loginfailure'] = false; ?>
+    <script>
+        $('#Loginmodal').foundation('reveal', 'open', 'login.php?loginfailure=true');
+    </script>
+<?php endif; ?>
+</body>
+</html>

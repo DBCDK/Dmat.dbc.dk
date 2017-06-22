@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <ListAllBooksResponse xmlns="http://service.pubhub.dk/">
+            <ListAllBooksResult>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>d6b2efb7-e8b5-49bf-9136-96ffcf6f89fd</BookId>
+                    <Identifier>9788711321706</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Spil med spejle</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>07-11-2014</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <NameOfBookSeries>Miss Marple</NameOfBookSeries>
+                    <MainDescription>På den store victorianske ejendom Stonygate har ægteparret Serrocold indrettet et
+                        hjem for unge, der har været i konflikt med loven. Mrs. Serrocold er en elskelig, naiv, ældre
+                        dame, som helt uforståeligt stræbes efter livet af en af hjemmets beboere, og samme aften findes
+                        Mrs. Serrocolds stedsøn, der gæster huset, myrdet. Hvem er det, der driver dette vanvittige spil
+                        i det store hus?&lt;br&gt;Miss Marple er også gæst i huset, og det lykkes hende, ved hjælp af al
+                        sin snilde og livsklogskab, at få sat en stopper for uhyggen.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">31.36</Price>
+                    <RecommendedPrice CurrencyCode="DKK">49</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>55180</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Agatha</NamesBeforeKey>
+                            <KeyNames>Christie</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>55181</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Tage</NamesBeforeKey>
+                            <KeyNames>la Cour</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>168 Sider</NumberOfPages>
+                    <FileSize>828 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Agatha Christie</Authors>
+                    <TranslatedBy>Tage la Cour</TranslatedBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788711321706.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>FFC</Code>
+                            <Description>Klassisk Krimi</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>F</Code>
+                            <Description>Fiktion og relaterede emner</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/d6b2efb7-e8b5-49bf-9136-96ffcf6f89fd.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/d6b2efb7-e8b5-49bf-9136-96ffcf6f89fd.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">31.36</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>pdf</FileType>
+                    <BookId>4a1f69f8-d64c-4db0-a9cf-30127b5944aa</BookId>
+                    <Identifier>9788773326626</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Intentionalitet og kunstnerisk skaben</Title>
+                    <PublicationDate>07-05-2010</PublicationDate>
+                    <PublisherName>Forlaget Medusa</PublisherName>
+                    <MainDescription>Artikel fra K&amp;K</MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">10.4</Price>
+                    <Contributors>
+                        <Contributor>
+                            <Id>3929</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Peter</NamesBeforeKey>
+                            <KeyNames>Bornedal</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>14 Sider</NumberOfPages>
+                    <FileSize>784 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Peter Bornedal</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788773326626.pdf</SampleUrl>
+                    <RightList/>
+                    <Subjects/>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/4a1f69f8-d64c-4db0-a9cf-30127b5944aa.JPG
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/4a1f69f8-d64c-4db0-a9cf-30127b5944aa.JPG
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">10.4</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>00881083-de5b-4517-96c7-de2f971aac03</BookId>
+                    <Identifier>9788793098268</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Skyerne over Vesterbro</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>20-10-2014</PublicationDate>
+                    <Edition>2.</Edition>
+                    <PublisherName>Metropolitan eBooks</PublisherName>
+                    <MainDescription>"Skyerne Over Vesterbro" er en tempofyldt historie fra Istedgade og omegn. Her
+                        forsøger 32-årige Jonas desperat at få magt over de tilfældigheder, der pludselig ændrer hans
+                        liv. På Københavns Hovedbanegård støder han ind i den slovakiske pige Kassia. Efter kort tid
+                        forsvinder hun sporløst. De næste 48 timer jagter Jonas Kassia og sandheden om hende. Imens
+                        forfølges han af ukendte mænd, der tilsyneladende ikke kun er ude efter ham.
+
+                        "Thomas Aagaard Skovmand er ferm til at skrue en elementært spændende historie sammen."
+                        - Helsingør Dagblad
+                    </MainDescription>
+                    <ShortDescription>Spændingsoman fra Istedgade og omegn. 32-årige Jonas leder efter den slovakiske
+                        pige Kassia. 48 timers tempofyldt jagt på Vesterbro forfulgt af ukendte mænd, der tilsyneladende
+                        ikke kun er ude efter ham.
+                    </ShortDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">55</Price>
+                    <RecommendedPrice CurrencyCode="DKK">99</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>53371</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Thomas Aagaard</NamesBeforeKey>
+                            <KeyNames>Skovmand</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>110 Sider</NumberOfPages>
+                    <FileSize>1163 KB</FileSize>
+                    <FileVersion>e-pub</FileVersion>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Thomas Aagaard Skovmand</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788793098268.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>FH</Code>
+                            <Description>Thriller / Spænding</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/00881083-de5b-4517-96c7-de2f971aac03.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/00881083-de5b-4517-96c7-de2f971aac03.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">55</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>pdf</FileType>
+                    <BookId>4b396b17-c7c5-467c-981c-9355a79c8240</BookId>
+                    <Identifier>9788779346321</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Sociolingvistik</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>25-06-2006</PublicationDate>
+                    <Edition>1</Edition>
+                    <PublisherName>Aarhus Universitetsforlag</PublisherName>
+                    <PartNumber>36</PartNumber>
+                    <NameOfBookSeries>Sprogforum</NameOfBookSeries>
+                    <MainDescription>Dette nummer af Sprogforum handler om en af sprog- og kulturpædagogikkens
+                        grundlagsvidenskaber: sociolingvistikken. Sociolingvistik er studiet af sproget i samfundet
+                        såvel som af sprogene i samfundet. Sociolingvistikken beskæftiger sig både med hvordan sproglig
+                        kommunikation (uanset hvilket sprog) er en integreret del af menneskenes liv og et udtryk for
+                        deres sociale relationer til hinanden, og med hvordan mennesker, institutioner og stater omgås
+                        den sproglige mangfoldighed i ethvert samfund og i verden.
+
+                        Anledningen til at lave dette nummer af Sprogforum er at sociolingvistikken er ved at komme på
+                        tapetet i skolen.
+
+                        Aktuelt er sociolingvistik fx en del af det nye fag 'Almen sprogforståelse' i gymnasiet. Og hvad
+                        er det så for et område sociolingvistikken dækker? Ja, det er et stort og voksende område der
+                        bl.a. omfatter emner som:
+
+                        Sprogbrug, magt og identitet i forskellige sociale situationer, talesprog og skriftsprog, sprog
+                        og socialklasse (sociolekter), sprog og lokalitet (dialekter og regionalsprog), sprog, alder og
+                        generation, sprog og køn, sprogforandring, sprogblanding og kodeskrift, sprog og kultur, sprog,
+                        nationalitet og etnicitet, sprog og medier (bl.a. i de nye medier: chat, sms m.m.), sprog i
+                        uddannelse, sprogpolitik, sproglig normering og standardisering, og sprogenes rolle i
+                        internationalisering og globalisering.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">33.2</Price>
+                    <Contributors>
+                        <Contributor>
+                            <Id>10660</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Bettina</NamesBeforeKey>
+                            <KeyNames>Brandt-Nilsson</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>10661</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Karen</NamesBeforeKey>
+                            <KeyNames>Lund</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>10662</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Bente</NamesBeforeKey>
+                            <KeyNames>Meyer</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>71 Sider</NumberOfPages>
+                    <FileSize>553 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Bettina Brandt-Nilsson, Karen Lund, Bente Meyer</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788779346321.pdf</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>CJA</Code>
+                            <Description>Sprogundervisningsteori og -metoder</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>CJ</Code>
+                            <Description>Sprogundervisning og -læring</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>C</Code>
+                            <Description>Sprog</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/4b396b17-c7c5-467c-981c-9355a79c8240.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/4b396b17-c7c5-467c-981c-9355a79c8240.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">33.2</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Lydbog</BookType>
+                    <FileType>zip_mp3</FileType>
+                    <BookId>a52ede1a-5754-497e-8fa0-bc7c3877db19</BookId>
+                    <Identifier>9788764505481</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Gud kommer kun til Afghanistan for at græde</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>11-10-2011</PublicationDate>
+                    <ImprintName>Audioteket</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <MainDescription>Under en af sine mange rejser til Afghanistan møder dokumentarfilmskaberen Siba
+                        Shakib kvinden Shirin Gol i en flygtningelejr og fascineres af hendes styrke og udstråling.
+                        Shirin Gol fortæller om sit liv, der er typisk for mange afghanske kvinders skæbne. Hun bliver
+                        født i en afsidesliggende bjerglandsby. Hendes navn betyder Sød Blomst, men der er ikke megen
+                        sødme i hendes liv. Det er snarere bestemt af århundreder gamle traditioner, fattigdom, korantro
+                        og islams syn på kvinder. Shirin-Gol er en lille pige, da russerne invaderer Afghanistan. Hendes
+                        far og brødre slutter sig til mujahedinerne for at bekæmpe russerne, mens hendes søstre bekæmper
+                        dem på deres egen vis. Til sidst må familien flygte til Kabul, hvilket bliver den første flugt
+                        af mange for Shirin Gol. I Kabul lærer hun, hvordan viden og uddannelse kan berige hendes liv.
+                        Det er med til at give hende styrke gennem de mange prøvelser, der venter hende, da hun bliver
+                        gift med en mand, der har vundet hende i spil, får et antal børn, tvinges til at flygte og flere
+                        gange udsættes for voldtægt.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">52</Price>
+                    <RecommendedPrice CurrencyCode="DKK">99.95</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>15121</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Siba</NamesBeforeKey>
+                            <KeyNames>Shakib</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>15122</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Anne</NamesBeforeKey>
+                            <KeyNames>Møller Åbom</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>15123</Id>
+                            <ContributorRoleCode>E07</ContributorRoleCode>
+                            <ContributorRoleName>Read by</ContributorRoleName>
+                            <NamesBeforeKey>Karin</NamesBeforeKey>
+                            <KeyNames>Hegelund</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <FileSize>371138 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Duration>508 Minutter</Duration>
+                    <Authors>Siba Shakib</Authors>
+                    <ReadBy>Karin Hegelund</ReadBy>
+                    <TranslatedBy>Anne Møller Åbom</TranslatedBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788764505481.mp3</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>BG</Code>
+                            <Description>Biografi: generelt</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/a52ede1a-5754-497e-8fa0-bc7c3877db19.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/a52ede1a-5754-497e-8fa0-bc7c3877db19.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">52</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Lydbog</BookType>
+                    <FileType>zip_mp3</FileType>
+                    <BookId>13f41eff-3d06-47e0-992f-700f4c4cf970</BookId>
+                    <Identifier>9788771622003</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Sværkeslægten 4</Title>
+                    <SubTitle>Rodbundne</SubTitle>
+                    <Language>dan</Language>
+                    <PublicationDate>29-01-2014</PublicationDate>
+                    <PublisherName>Lytteratur</PublisherName>
+                    <PartNumber>04</PartNumber>
+                    <MainDescription>Da Morten Sværkes ældste søn dør, står den unge Niels pludselig med det store
+                        ansvar for sværkeslægtens fremtid. Han klarer slægten helskindet gennem statsbankerotten i 1813,
+                        som ellers var skæbnesvanger for mange af tidens bønder og husmænd. I kærligheden går det
+                        imidlertid knap så godt for Niels.
+
+                        Efter Niels' død overtager sønnen Hans ansvaret for slægten, og han fører den gennem gode tider
+                        frem mod grundlovgivningen og treårskrigen.
+                        Hans splittes mellem to kvinder - den humørsyge Maren og den kønne, energiske Kirsten.
+
+                        Helene Strange kender den falsterske bondekultur indefra. Hendes blik for bondesamfundets
+                        hverdag i det 18. og 19. århundrede tilbyder os både indlevelse i de enkelte personers skæbner
+                        og en rig indlevelse i landbrugssamfundets mange kulturformer. Sværkeslægten er en saga om
+                        menneskets evne til at ændre forholdene til det bedre.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">89</Price>
+                    <Contributors>
+                        <Contributor>
+                            <Id>42672</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Helene</NamesBeforeKey>
+                            <KeyNames>Strange</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>42673</Id>
+                            <ContributorRoleCode>E07</ContributorRoleCode>
+                            <ContributorRoleName>Read by</ContributorRoleName>
+                            <NamesBeforeKey>Kjeld</NamesBeforeKey>
+                            <KeyNames>Høegh</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <FileSize>296427 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Duration>464 Minutter</Duration>
+                    <Authors>Helene Strange</Authors>
+                    <ReadBy>Kjeld Høegh</ReadBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788771622003.mp3</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>WQ</Code>
+                            <Description>Lokal interesse, slægtshistorie og nostalgi</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FV</Code>
+                            <Description>Historisk fiktion</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>JFSP3</Code>
+                            <Description>Aldersgrupper: voksne</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>JFSF</Code>
+                            <Description>Landbosamfund</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FT</Code>
+                            <Description>Sagaer</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>3JH</Code>
+                            <Description>ca. 1800 ca. 1900</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>1DND</Code>
+                            <Description>Danmark</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/13f41eff-3d06-47e0-992f-700f4c4cf970.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/13f41eff-3d06-47e0-992f-700f4c4cf970.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">89</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>505e9c49-c791-422c-b242-4b9de7e7e62d</BookId>
+                    <Identifier>9788711349755</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>En verdensomsejling under havet</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>07-11-2014</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <NameOfBookSeries>Mine første klassikere</NameOfBookSeries>
+                    <MainDescription>I slutningen af 1860'erne sætter fregatten "Abraham Lincoln" ud fra New York for at
+                        eftersøge en berygtet kæmpehval. Hvalen viser sig imidlertid at være undervandsbåden "Nautilus",
+                        der ledes af den hemmelighedsfulde Kaptajn Nemo.&lt;br&gt;&lt;br&gt;En verdensomsejling under
+                        havet, Jules Vernes’ berømte klassiker fra 1869, er i denne udgave oversat og bearbejdet af Arne
+                        Herløv Petersen.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">44.16</Price>
+                    <RecommendedPrice CurrencyCode="DKK">69</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>55160</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Jules</NamesBeforeKey>
+                            <KeyNames>Verne</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>128 Sider</NumberOfPages>
+                    <FileSize>11807 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Jules Verne</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788711349755.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>5AQ</Code>
+                            <Description>Læsealder fra ca. 14 år (Unge voksne)</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>3JH</Code>
+                            <Description>ca. 1800 ca. 1900</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>Y</Code>
+                            <Description>Børn og unges samt pædagogiske bøger</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>YFA</Code>
+                            <Description>Klassisk skønlitteratur (børn og unge)</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>YFC</Code>
+                            <Description>Eventyrsfortællinger (børn og unge)</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>5AL</Code>
+                            <Description>Læsealder fra ca. 10 år</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>5AN</Code>
+                            <Description>Læsealder fra ca. 12 år</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/505e9c49-c791-422c-b242-4b9de7e7e62d.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/505e9c49-c791-422c-b242-4b9de7e7e62d.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">44.16</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>f37bf70c-7d43-408a-920c-589208b966c8</BookId>
+                    <Identifier>9788711378076</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Polli 4 - Med vinden til havet</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>27-05-2013</PublicationDate>
+                    <ImprintName>Carlsen</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <PartNumber>4</PartNumber>
+                    <NameOfBookSeries>Polli</NameOfBookSeries>
+                    <MainDescription>Pollis elskede farfar er på hospitalet, og Polli ved, at det ikke er sundt for
+                        gamle mennesker at blive syge. Det gør hende frygtelig urolig, og når hun kigger ind i Mimuns
+                        smukke øjne, bliver hun både urolig og noget andet.&lt;br&gt;&lt;br&gt;Forfatteren til serien,
+                        Guus Kuijer, er vinder af ALMA (Astrid Lindgren memorial Award) 2012.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">31.36</Price>
+                    <RecommendedPrice CurrencyCode="DKK">49</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>33532</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Guus</NamesBeforeKey>
+                            <KeyNames>Kuijer</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>33533</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Tim</NamesBeforeKey>
+                            <KeyNames>Kane</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>112 Sider</NumberOfPages>
+                    <FileSize>13486 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Guus Kuijer</Authors>
+                    <TranslatedBy>Tim Kane</TranslatedBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788711378076.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>Y</Code>
+                            <Description>Børn og unges samt pædagogiske bøger</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>YFN</Code>
+                            <Description>Familie og hjem fortællinger (børn og unge)</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>5AK</Code>
+                            <Description>Læsealder fra ca. 9 år</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/f37bf70c-7d43-408a-920c-589208b966c8.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/f37bf70c-7d43-408a-920c-589208b966c8.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">31.36</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>pdf</FileType>
+                    <BookId>4b476e05-9e78-450a-8d35-01304541e9bd</BookId>
+                    <Identifier>9788792241801</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Strategisk kommunikation for praktikere - I andres brød 2.0</Title>
+                    <SubTitle>Håndbog om informationsjournalistik, virksomhedskommunikation og public relations
+                    </SubTitle>
+                    <Language>dan</Language>
+                    <PublicationDate>17-01-2011</PublicationDate>
+                    <Edition>2. udgave</Edition>
+                    <PublisherName>Forlaget Ajour</PublisherName>
+                    <MainDescription>Ny udgave netop udkommet.
+                        Kjær Hansens bog "I andres brød" er på 6 år udkommet i 5 oplag. Den tager udgangspunkt i, at
+                        journalister i stigende grad kommer ind i kommunikationsjobs og dermed har en anden funktion end
+                        den, de umiddelbart er uddannet til. Den udvikling er gået så hurtigt, at "Strategisk
+                        kommunikation for praktikere" ikke beskæftiger sig med den ændring, men tager praktikere i
+                        hånden uanset baggrund. Så foruden et lidt ændret fokus og en kraftig opdatering er bogen
+                        udvidet med håndfaste tjeklister, mange praktisk tips, flere metoder og nye eksempler.
+                        (2. udgave er identisk med 1. udgave - internetadresser og grundig korrektur er forskellen)
+                    </MainDescription>
+                    <ShortDescription>Man er i et kommunikationsjob. Man er journalist eller akademiker. Praktiker eller
+                        teoretiker. Det er fint, men ikke nok. Det er ikke længere tilstrækkeligt at være en god
+                        håndværker eller at have en dyb indsigt - begge dele er nødvendige. Denne bog, der står på
+                        skuldrene af "I andres brød", kombinerer de to dele på en meningsfyldt og praktisk måde.
+                        (2. udgave er identisk med 1. udgaven - internetadresser og grundig korrektur er forskellen)
+                    </ShortDescription>
+                    <DigitalProtection>AdobeDRM</DigitalProtection>
+                    <Price CurrencyCode="DKK">299.4</Price>
+                    <RecommendedPrice CurrencyCode="DKK">499</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>11150</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Jens Otto</NamesBeforeKey>
+                            <KeyNames>Kjær Hansen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>11151</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Hanne Birgitte</NamesBeforeKey>
+                            <KeyNames>Jørgensen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>443 Sider</NumberOfPages>
+                    <FileSize>3704 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Jens Otto Kjær Hansen, Hanne Birgitte Jørgensen</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788792241801.pdf</SampleUrl>
+                    <RightList>
+                        <Right Type="Kopi" Count="10"/>
+                        <Right Type="Print" Count="664"/>
+                    </RightList>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>GTC</Code>
+                            <Description>Kommunikationsstudier</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>KJSP</Code>
+                            <Description>Public relations</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>CBWJ</Code>
+                            <Description>Journalistiske stilarter</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>KNT</Code>
+                            <Description>Medier, information og kommunikation industrier</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/4b476e05-9e78-450a-8d35-01304541e9bd.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/4b476e05-9e78-450a-8d35-01304541e9bd.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">299.4</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>pdf</FileType>
+                    <BookId>4c05d360-4883-46dd-9d42-cdce6c929d2b</BookId>
+                    <Identifier>9788774575375</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Teologisk-politisk afhandling</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>18-02-2011</PublicationDate>
+                    <Edition>2</Edition>
+                    <PublisherName>Forlaget Anis</PublisherName>
+                    <MainDescription>Spinozas Tractatus theologico-politicus udkom i 1669-70 og foreligger her for
+                        første gang i en dansk oversættelse. Introduktion og oversættelse ved Niels Henningsen.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">113.4</Price>
+                    <RecommendedPrice CurrencyCode="DKK">209</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>11102</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Baruch</NamesBeforeKey>
+                            <KeyNames>Spinoza</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>11103</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Niels</NamesBeforeKey>
+                            <KeyNames>Henningsen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>295 Sider</NumberOfPages>
+                    <FileSize>2871 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Baruch Spinoza</Authors>
+                    <TranslatedBy>Niels Henningsen</TranslatedBy>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>HP</Code>
+                            <Description>Filosofi</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>HRC</Code>
+                            <Description>Kristendom</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/4c05d360-4883-46dd-9d42-cdce6c929d2b.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/4c05d360-4883-46dd-9d42-cdce6c929d2b.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">113.4</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>d8b62237-02e6-49d5-85a9-f91b9625b242</BookId>
+                    <Identifier>9788771289787</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Mistro avler mord</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>09-01-2015</PublicationDate>
+                    <Edition>2</Edition>
+                    <PublisherName>Rosenkilde &amp; Bahnhof</PublisherName>
+                    <NameOfBookSeries>En Albert Campion-krimi</NameOfBookSeries>
+                    <MainDescription>Fakta og fiktion glider sammen, da hemmeligheden bag telepatisk kommunikation
+                        bliver opdaget. Men den hemmelige genstand, der skal benyttes, er i to skoledrenges besiddelse.
+                        Om de har stjålet den eller opfundet den, vides ikke, men meget stærke kræfter er på spil for at
+                        få fat i den.
+                        En skæbnesvanger mistro breder sig, da en berømt fysiker bliver fundet livløs på sit værelse,
+                        mens gassen strømmer ud af hanen. Men er det mon mordforsøg eller forsøg på selvmord?
+                        Midt i disse forrygende begivenheder befinder Albert Campion sig, og han bliver hurtigt
+                        hovedperson i sagens opklaring.
+
+                        ”Margery Allingham skiller sig ud som et strålende lys.”
+                        – Agatha Christie
+
+                        Margery Allingham (1904-1966), engelsk kriminalforfatter og en af De Fire Store fra krimigenrens
+                        Golden Age. De Fire Store bestod af Dorothy L. Sayers, Agatha Christie, Ngoia Marsh og Margery
+                        Allingham. Sammen med bl.a. Ronald Knox og G.K. Chesterton var de medlemmer af den kendte
+                        sammenslutning af britiske krimiforfattere: The Detection Club. Allingham
+                        er mest kendt for sin serie med gentlemandetektiven Albert Campion.
+                    </MainDescription>
+                    <ShortDescription>Fakta og fiktion glider sammen, da hemmeligheden bag telepatisk kommunikation
+                        bliver opdaget. Men den hemmelige genstand, der skal benyttes, er i to skoledrenges besiddelse.
+                        Om de har stjålet den eller opfundet den, vides ikke, men meget stærke kræfter er på spil for at
+                        få fat i den.
+                        En skæbnesvanger mistro breder sig, da en berømt fysiker bliver fundet livløs på sit værelse,
+                        mens gassen strømmer ud af hanen. Men er det mon mordforsøg eller forsøg på selvmord?
+                        Midt i disse forrygende begivenheder befinder Albert Campion sig, og han bliver hurtigt
+                        hovedperson i sagens opklaring.
+                    </ShortDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">40</Price>
+                    <RecommendedPrice CurrencyCode="DKK">59</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>57661</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Margery</NamesBeforeKey>
+                            <KeyNames>Allingham</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>57662</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Poul Ib</NamesBeforeKey>
+                            <KeyNames>Liebe</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>298 Sider</NumberOfPages>
+                    <FileSize>1135 KB</FileSize>
+                    <FileVersion/>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Margery Allingham</Authors>
+                    <TranslatedBy>Poul Ib Liebe</TranslatedBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788771289787.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>FFC</Code>
+                            <Description>Klassisk Krimi</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FH</Code>
+                            <Description>Thriller / Spænding</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FYT</Code>
+                            <Description>Skønlitteratur i oversættelse</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FF</Code>
+                            <Description>Krimi og mysterier</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            https://images.pubhub.dk/thumbnails/d8b62237-02e6-49d5-85a9-f91b9625b242.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            https://images.pubhub.dk/originals/d8b62237-02e6-49d5-85a9-f91b9625b242.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">40</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Lydbog</BookType>
+                    <FileType>zip_mp3</FileType>
+                    <BookId>7dadbe1a-b541-4a6f-85b3-6d3015f501dd</BookId>
+                    <Identifier>9788711354759</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Her i nærheden</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>03-07-2013</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <MainDescription>Her i nærheden er et psykologisk spændingsdrama med den autistiske 20-årige Brian i
+                        centrum for begivenhederne, der tager fart efter fundet af en myrdet ung pige i en park i det
+                        indre København...&lt;br&gt;&lt;br&gt;HER I NÆRHEDEN rummer tre noveller med kvindeskikkelser,
+                        der har det svært med omverdenen: Moderen, der skal frigøre sin psykotiske søn, søsteren, der
+                        altid ved bedst og den gamle senile kvinde, hvis verden smuldrer. Indhold: Her i nærheden -
+                        Uanmeldt besøg - Havsens bund.&lt;br&gt;&lt;br&gt;Martha Christensen (1926-95) har siden
+                        debutromanen Vær god ved Remond, 1962, skrevet en lang række romaner og noveller. Martha
+                        Christensen modtaget en lang række litterære priser og blev i 1987 kåret til Årets forfatter og
+                        modtog Boghandlernes Gyldne Laurbær for romanen Dansen med Regitze. I 1989 blev hun valgt til
+                        Danskernes Ynglingsforfatter. Kaspar Rostrups filmatisering af Dansen med Regitze med Ghita
+                        Nørby og Fritz Helmuth blev en af dansk films største succeser. Filmen modtog 5 Bodil, blev
+                        Oscar-nomineret og vandt førsteprisen ved Den 1. Internationale Europæiske Film Festival i
+                        Frankrig i 1990.&lt;br&gt;&lt;br&gt;"Den sene aften var så lys at hun tydeligt kunne se urskiven
+                        på vækkeuret uden at behøve at trykke på kontakten og hun så at klokken var næsten tolv. Døren
+                        stod åben ind til stuen, hvor han skulle ligge og sove på sin briks men endnu havde hun ikke
+                        hørt ham komme hjem og hun brød sig ikke om at han strejfede om så sent." - De første linjer af
+                        Her i nærheden&lt;br&gt;&lt;br&gt;Martha Christensens stemme er så meget mere intens, som den er
+                        dæmpet, hendes drama så meget større som det skjuler sig i det små. "Her i nærheden" er
+                        fortællinger fra en mesters hånd...Hvor hun dog kan lytte...Hvor hun kan indleve sig, afkode
+                        livets dets signaler, antyde dets drama - og hugge skånselsløst afslørende til, når tiden er
+                        inde. - Bjørn Bredal, Politiken&lt;br&gt;&lt;br&gt;"-Den er så sart og skrøbelig. Det er en
+                        historie, der er gået i blodet på mig - beretning, jeg ikke kan glemme. Det er derfor den skal
+                        laves - som et slags privat hyldest fra mig til Martha. Hun sendte mig i sin tid novellen, før
+                        den blev udgivet. Ikke med henblik på, at den skulle filmatiseres, men bare som en gave, venner
+                        imellem. - Før "Dansen med Regitze" kendte jeg kun Martha Christensen som læser af hendes
+                        værker, men efter filmen opstod der et nært venskab mellem hende og hendes veninde Anna Jensen
+                        og mig og min familie. Jeg har haft mange gode samtaler med Martha og nu med Anna, der stadig
+                        sender kort og julegaver til børnene. ...den dybe interesse for menneskets sind og psyke -
+                        trangen til at tage den der lup og studere menneskets afkroge. Det er dybt fascinerende, og
+                        trangen gjorde hende til forfatter og mig til instruktør..." - Filminstruktør Kasper Rostrup om
+                        filmatiseringen af Her i nærheden&lt;br&gt;&lt;br&gt;"Der er jo den der blødende og glødende
+                        linje ind til det menneskelige...Det er uden dække, at Martha berører noget meget dybt,
+                        arketypisk menneskeligt hos os allesammen. Hun tager sig altid af dem som er sat uden for
+                        samfundet, de mennesker, som ikke har en chance. Der er noget helt jesusk i det på en eller ande
+                        måde, Dermed bliver det også som regel en meget lille historie. Men ved at gøre det meget enkelt
+                        og meget lille, så bliver det vældigt stort..." - Kasper Rostrup til Christian Monggaard
+                        Christensen, Information, i forbindelse med filmen Her i nærheden
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">63.97</Price>
+                    <RecommendedPrice CurrencyCode="DKK">99.95</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>34728</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Martha</NamesBeforeKey>
+                            <KeyNames>Christensen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>34729</Id>
+                            <ContributorRoleCode>E07</ContributorRoleCode>
+                            <ContributorRoleName>Read by</ContributorRoleName>
+                            <NamesBeforeKey>Helle</NamesBeforeKey>
+                            <KeyNames>Sihm</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <FileSize>273542 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Duration>331 Minutter</Duration>
+                    <Authors>Martha Christensen</Authors>
+                    <ReadBy>Helle Sihm</ReadBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788711354759.mp3</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>F</Code>
+                            <Description>Fiktion og relaterede emner</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/7dadbe1a-b541-4a6f-85b3-6d3015f501dd.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/7dadbe1a-b541-4a6f-85b3-6d3015f501dd.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">63.97</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>34089805-f3ed-4af3-9aca-f567b72b74ee</BookId>
+                    <Identifier>9788776917371</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Har man ret til en far?</Title>
+                    <SubTitle>- legal børnekidnapning i Danmark</SubTitle>
+                    <Language>dan</Language>
+                    <PublicationDate>18-03-2015</PublicationDate>
+                    <ImprintName>Books on Demand</ImprintName>
+                    <PublisherName>Books on Demand</PublisherName>
+                    <MainDescription>HAR MAN RET TIL EN FAR?
+
+                        I de sidste 30 år har danske politikerne og forskellige interesseorganisationer diskuteret
+                        hvordan reglerne skal være for samvær mellem børn og forældre efter skilsmisse. De nugældende
+                        regler gør desværre børnekidnapning muligt, og - i praksis - fuldt legalt.
+
+                        I denne bog, som udkom første gang i 1994, ser vi på situationen, som den så ud på denne tid og
+                        som den - i store træk - stadig ser ud i dag. Der fortælles om et antal cases, som forfatteren
+                        har mødt i sin tid som rådgiver i Foreningen Far.
+
+                        Læs denne bog og tænk dig grundigt om før du får børn!
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">36</Price>
+                    <RecommendedPrice CurrencyCode="DKK">45</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>68764</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Jakob</NamesBeforeKey>
+                            <KeyNames>Munck</KeyNames>
+                            <BiographicalNote>Jakob Munck (b. 1948) is a Cultural Sociologist living in Copenhagen.
+                            </BiographicalNote>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>68 Sider</NumberOfPages>
+                    <FileSize>322 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Jakob Munck</Authors>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>J</Code>
+                            <Description>Samfund og samfundsvidenskab</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/34089805-f3ed-4af3-9aca-f567b72b74ee.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/34089805-f3ed-4af3-9aca-f567b72b74ee.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">36</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>212a62e8-969c-4690-a8cf-9d97f5362bc9</BookId>
+                    <Identifier>9788711406267</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Operation Dacapo</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>01-12-2011</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <PartNumber>2</PartNumber>
+                    <NameOfBookSeries>Malika Asmina Els</NameOfBookSeries>
+                    <MainDescription>»Det var her, slaget skulle stå. Det var på den scene, Operation Dacapo skulle
+                        udspille sig. Det var lige her, danskerne skulle smage et pulver, de ikke ville komme sig over
+                        foreløbig.«&lt;br&gt;&lt;br&gt;En ung iraker er optændt af had til danskerne. Hans lillebror er
+                        blevet dræbt i Basra, og han beskylder dansk politi for drabet. Nu vil han hævne sin bror og
+                        sprede frygt i befolkningen, og snart står han i spidsen for planlægningen af et storstilet
+                        terrorangreb mod København.&lt;br&gt;&lt;br&gt;Samtidig kæmper den kvindelige
+                        vicepolitikommissær Malika en dobbelt kamp – dels for at opnå respekt blandt sine kolleger, dels
+                        for at forsøge at stoppe terroristerne i tide.&lt;br&gt;&lt;br&gt;OPERATION DACAPO er en roman
+                        om hævntørst og uforløst vrede. Bogen er en uafhængig fortsættelse af LASTEN og er andet bind i
+                        serien om indvandrerbetjent Malika Asmina Els.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">44.16</Price>
+                    <RecommendedPrice CurrencyCode="DKK">69</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>25251</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Hanne</NamesBeforeKey>
+                            <KeyNames>Bech Hansen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>256 Sider</NumberOfPages>
+                    <FileSize>343 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Hanne Bech Hansen</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788711406267.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>2ACSD</Code>
+                            <Description>Dansk</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FF</Code>
+                            <Description>Krimi og mysterier</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>1DND</Code>
+                            <Description>Danmark</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/Media/covers/originals/212a62e8-969c-4690-a8cf-9d97f5362bc9.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/Media/covers/thumbnails/212a62e8-969c-4690-a8cf-9d97f5362bc9.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">44.16</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>07c9f9c6-0fb3-4cd7-9534-3bd081246282</BookId>
+                    <Identifier>9788792922106</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Kvindens fortælling</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>24-05-2012</PublicationDate>
+                    <PublisherName>SFA-89</PublisherName>
+                    <MainDescription>Hvorledes går det dog til, at vi alle ser tilbage på vores liv og vore forspildte
+                        muligheder - hvorfor greb vi dem ikke, hvad stoppede os ??
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">12</Price>
+                    <Contributors>
+                        <Contributor>
+                            <Id>23045</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Anton</NamesBeforeKey>
+                            <KeyNames>Tjechov</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>23046</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Erik</NamesBeforeKey>
+                            <KeyNames>Rosekamp</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <FileSize>50 KB</FileSize>
+                    <FileVersion/>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Anton Tjechov</Authors>
+                    <TranslatedBy>Erik Rosekamp</TranslatedBy>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>FC</Code>
+                            <Description>Klassisk fiktion (før ca. 1945)</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/07c9f9c6-0fb3-4cd7-9534-3bd081246282.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/07c9f9c6-0fb3-4cd7-9534-3bd081246282.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">12</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>257c0ed8-d088-474d-b9ac-5893b652401b</BookId>
+                    <Identifier>9788771246292</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Litteratur i bevægelse</Title>
+                    <SubTitle>Nye tilgange til verdenslitteratur</SubTitle>
+                    <Language>dan</Language>
+                    <PublicationDate>27-08-2010</PublicationDate>
+                    <Edition>1</Edition>
+                    <PublisherName>Aarhus Universitetsforlag</PublisherName>
+                    <PartNumber>2</PartNumber>
+                    <NameOfBookSeries>Verdenslitteratur</NameOfBookSeries>
+                    <MainDescription>Redigeret af Dan Ringgaard og Mads Rosendahl Thomsen
+
+                        Globaliseringen er slået igennem med fuld kraft - også inden for litteraturen, hvor studiet af
+                        den globaliserede verdenslitteratur har spillet en stadig større rolle siden slutningen af
+                        1990'erne.
+
+                        Denne antologi præsenterer nye tilgange til verdenslitteratur. Tilsammen tegner de en
+                        "bevægelsens poetik" og udpeger bevægelse mellem sprog, nationaliteter, kulturer og litterære
+                        former som et genkommende princip i verdenslitterære tekster. Dermed åbnes nye veje til nogle af
+                        verdenslitteraturens kerneområder: forfatterskaber med rod i mere end én nation, tekster skrevet
+                        på flere sprog, oversættelse, rejselitteratur, migrantforfattere, tosprogede forfattere og
+                        transnationale kulturinstitutioner.
+
+                        Med bidrag af Jørn Erslev Andersen, Susan Bassnett, Horace Engdahl, Tabish Khair, Ingeborg
+                        Kongslien, Svend Erik Larsen, Vivian Liska, Patrick D. Murphy, Thomas Nolden og Rebecca L.
+                        Walkowitz.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">83.16</Price>
+                    <RecommendedPrice CurrencyCode="DKK">165</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>58143</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Dan</NamesBeforeKey>
+                            <KeyNames>Ringgaard et al.</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>162 Sider</NumberOfPages>
+                    <FileSize>574 KB</FileSize>
+                    <FileVersion/>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Dan Ringgaard et al.</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788771246292.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>D</Code>
+                            <Description>Litteratur og litterære studier</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>DSA</Code>
+                            <Description>Litteraturteori</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            https://images.pubhub.dk/originals/257c0ed8-d088-474d-b9ac-5893b652401b.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            https://images.pubhub.dk/thumbnails/257c0ed8-d088-474d-b9ac-5893b652401b.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">83.16</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>93d99b71-fd95-41b0-bc38-ca2ac15b6117</BookId>
+                    <Identifier>9788711394908</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Struensee - Til nytte og fornøjelse</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>05-04-2012</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <MainDescription>I AUGUST 2001 brød historiker Asser Amdisen forseglingen på den første af en stor
+                        bunke støvede arkivpakker i rigsarkivets læsesal. Pakkerne have ligget urørte som en del af de
+                        kongelige danske arkiver, siden højesteretsdommer Henrik Stampe i 1772 forseglede dem – kort
+                        efter den brutale henrettelse af Johann Friedrich Struensee. I pakkerne befandt sig
+                        retsprotokoller, vidneudsagn, breve og enkelte genstande fra skilsmissesagen mod dronning
+                        Caroline Mathilde, og dermed trådte Asser Amdisen direkte ind i hjertet af en af
+                        Danmarkshistoriens mest mytologiske beretninger. En beretning om galskab, forræderi, venskab,
+                        idealisme, magt og afmagt. I Struensee blotlægger forfatteren et helt usædvanligt liv fra vugge
+                        til grav og sætter Struensees liv i forhold til oplysningstidens danske og europæiske tænkning.
+                        Vi er med helt inde i de kongelige gemakker og intrigernes kringelkroge, og på vejen finder
+                        forfatteren nye oplysninger og rydder op i de mange fejlfortolkninger, Struensee har været udsat
+                        for.&lt;br&gt;&lt;br&gt;"I kølvandet på Struensee-filmen kommer han som bog i en sober og
+                        indholdsrig levnedsbeskrivelse."&lt;br&gt; - Jyllands-Posten&lt;br&gt;&lt;br&gt;"Det er
+                        velfunderet. Der spilles på det sikre – og det er mere end, hvad man kan sige om meget af den
+                        fiktion, der har været med til at tegne billedet af Struensee."&lt;br&gt; - Kulturkapellet&lt;br&gt;</MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">63.36</Price>
+                    <RecommendedPrice CurrencyCode="DKK">99</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>21869</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Asser</NamesBeforeKey>
+                            <KeyNames>Amdisen</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>288 Sider</NumberOfPages>
+                    <FileSize>595 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Asser Amdisen</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788711394908.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>BGH</Code>
+                            <Description>Biografi: Historiske, politiske og militære</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>HB</Code>
+                            <Description>Historie</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>1DND</Code>
+                            <Description>Danmark</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/93d99b71-fd95-41b0-bc38-ca2ac15b6117.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/93d99b71-fd95-41b0-bc38-ca2ac15b6117.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">63.36</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>fe097cde-5b4d-4bbb-93d3-fda6d1ca1cfc</BookId>
+                    <Identifier>9788793308251</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Nemesis</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>09-04-2015</PublicationDate>
+                    <Edition>1. e-bogs-udgave</Edition>
+                    <PublisherName>Skriveforlaget</PublisherName>
+                    <PartNumber>2</PartNumber>
+                    <MainDescription>To rockere bliver ofre for en bilbombe i slutningen af krimien Det onde netværk.
+                        Den ene er endda præsident for White Sharks, og nu skal de begraves i stor stil. Så her begynder
+                        Nemesis, og kriminalassistent Bjørn Agger og hans kollegaer må fortsætte opklaringen af
+                        bombeattentater, likvideringer, bandeopgør, hævnaktioner, kvindehandel, ulovlig prostitution,
+                        narkotikasmugling og alt det andet, de møder i deres daglige arbejde på Station City i
+                        København. Og bag det hele sidder bagmænd højt på strå og dirigerer store dele af den kriminelle
+                        verden – en verden, Erik Hauervig kan beskrive med en indlevelse som få, da han har stået i
+                        frontlinjen for at bekæmpe den det meste af sin livslange politikarriere.
+
+                        Nemesis er andet bind i serien om kriminalassistent Bjørn Agger fra Station City på Vesterbro i
+                        København.
+
+                        Erik Hauervig (f. 1949) er tidligere kriminalassistent og har med sine realistiske krimier om
+                        narko, vold og kvindehandel på og omkring Vesterbro i København slået sit navn fast som en af
+                        Danmark mest troværdige politikrimiforfattere.
+                    </MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">26</Price>
+                    <RecommendedPrice CurrencyCode="DKK">50</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>63336</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Erik</NamesBeforeKey>
+                            <KeyNames>Hauervig</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>349 Sider</NumberOfPages>
+                    <FileSize>2706 KB</FileSize>
+                    <FileVersion/>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Erik Hauervig</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788793308251.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>FF</Code>
+                            <Description>Krimi og mysterier</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            https://images.pubhub.dk/originals/fe097cde-5b4d-4bbb-93d3-fda6d1ca1cfc.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            https://images.pubhub.dk/thumbnails/fe097cde-5b4d-4bbb-93d3-fda6d1ca1cfc.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">26</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Lydbog</BookType>
+                    <FileType>zip_mp3</FileType>
+                    <BookId>f74c8702-ff5b-45d1-8911-21a8a20c0edd</BookId>
+                    <Identifier>9788758813356</Identifier>
+                    <IdentifierType>ISBN13</IdentifierType>
+                    <Title>Nattens hus #7: Forbrændt</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>05-11-2014</PublicationDate>
+                    <Edition>1. udgave</Edition>
+                    <ImprintName>Tellerup.dk</ImprintName>
+                    <PublisherName>Tellerup A/S</PublisherName>
+                    <PartNumber>7</PartNumber>
+                    <NameOfBookSeries>Nattens hus</NameOfBookSeries>
+                    <MainDescription>Det ser sort ud for Nattens Hus: Zoey Redbirds sjæl er knust og holdes fangen i Den
+                        Anden Verden. Stark er den eneste der kan nå Zoey, men ingen kriger er nogensinde vendt tilbage
+                        fra Den Anden Verden. Alle prøver at hjælpe – undtagen Kalona og Neferet. Der er kun syv dage
+                        tilbage inden Zoey vil dø ...
+                    </MainDescription>
+                    <ShortDescription>Det ser sort ud for Nattens Hus: Zoey Redbirds sjæl er knust og holdes fangen i
+                        Den Anden Verden. Stark er den eneste der kan nå Zoey, men ingen kriger er nogensinde vendt
+                        tilbage fra Den Anden Verden. Alle prøver at hjælpe – undtagen Kalona og Neferet. Der er kun syv
+                        dage tilbage inden Zoey vil dø ...
+                    </ShortDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">60</Price>
+                    <Contributors>
+                        <Contributor>
+                            <Id>55241</Id>
+                            <ContributorRoleCode>E07</ContributorRoleCode>
+                            <ContributorRoleName>Read by</ContributorRoleName>
+                            <NamesBeforeKey>Rebekka</NamesBeforeKey>
+                            <KeyNames>Owe</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>55242</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>P. C.</NamesBeforeKey>
+                            <KeyNames>Cast</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>55243</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Kristin</NamesBeforeKey>
+                            <KeyNames>Cast</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                        <Contributor>
+                            <Id>55244</Id>
+                            <ContributorRoleCode>B06</ContributorRoleCode>
+                            <ContributorRoleName>Translated by</ContributorRoleName>
+                            <NamesBeforeKey>Thomas</NamesBeforeKey>
+                            <KeyNames>Munkholt</KeyNames>
+                            <BiographicalNote/>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <FileSize>571587 KB</FileSize>
+                    <BookFormat xsi:nil="true"/>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Duration>826 Minutter</Duration>
+                    <Authors>P. C. Cast, Kristin Cast</Authors>
+                    <ReadBy>Rebekka Owe</ReadBy>
+                    <TranslatedBy>Thomas Munkholt</TranslatedBy>
+                    <SampleUrl>http://samples.pubhub.dk/9788758813356.mp3</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>VXQ</Code>
+                            <Description>Uforklarlige fænomener / det paranormale</Description>
+                        </SimpleSubject>
+                        <SimpleSubject>
+                            <Code>FR</Code>
+                            <Description>Kærlighedshistorier</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="Forside">
+                            https://images.pubhub.dk/originals/f74c8702-ff5b-45d1-8911-21a8a20c0edd.jpg
+                        </Image>
+                        <Image Type="ForsideMiniature">
+                            https://images.pubhub.dk/thumbnails/f74c8702-ff5b-45d1-8911-21a8a20c0edd.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">60</PriceBeforeDiscount>
+                </Book>
+                <Book>
+                    <BookType>Ebog</BookType>
+                    <FileType>epub</FileType>
+                    <BookId>642549c3-4e48-49f0-ad07-b1a6283c0278</BookId>
+                    <Identifier>9788711437155</Identifier>
+                    <IdentifierType>GTIN13</IdentifierType>
+                    <Title>Skydykker uden faldskærm</Title>
+                    <Language>dan</Language>
+                    <PublicationDate>30-04-2009</PublicationDate>
+                    <ImprintName>Lindhardt og Ringhof</ImprintName>
+                    <PublisherName>Lindhardt og Ringhof</PublisherName>
+                    <MainDescription>»Gider ikke tænke på Entusiasten i dag. Det er for hysterisk. Kan jo ikke nytte
+                        noget, at jeg bare sådan forsvinder ud i atmosfæren på grund af en fyr. Heller ikke selvom han
+                        giver mig sug i maven og får mig til at dukke op på arbejdet med trøjen på vrangen. Og bestemt
+                        heller ikke selvom han ringede rødvinssød i går og sagde, at han er forelsket i mig. Dumme Amor,
+                        kan du ikke bruge en anden som skydeskive?«&lt;br&gt;&lt;br&gt;Spacemermaid fylder 28 år og
+                        bliver forelsket i den, hun mindst ventede. Hun prøver at holde en finne i bølgen og ikke
+                        forsvinde ud i rummet, men det kan være lidt svært for en rumhavfrue .&lt;br&gt;&lt;br&gt;Advarsel:
+                        Dette er en virkelig historie.&lt;br&gt;</MainDescription>
+                    <DigitalProtection>DigitalVandmaerkning</DigitalProtection>
+                    <Price CurrencyCode="DKK">44.16</Price>
+                    <RecommendedPrice CurrencyCode="DKK">69</RecommendedPrice>
+                    <Contributors>
+                        <Contributor>
+                            <Id>28833</Id>
+                            <ContributorRoleCode>A01</ContributorRoleCode>
+                            <ContributorRoleName>By (author)</ContributorRoleName>
+                            <NamesBeforeKey>Charlotte Heje</NamesBeforeKey>
+                            <KeyNames>Haase</KeyNames>
+                            <Websites/>
+                        </Contributor>
+                    </Contributors>
+                    <NumberOfPages>208 Sider</NumberOfPages>
+                    <FileSize>347 KB</FileSize>
+                    <BookFormat>Reflowable</BookFormat>
+                    <SubscriptionSaleAllowed>true</SubscriptionSaleAllowed>
+                    <Authors>Charlotte Heje Haase</Authors>
+                    <SampleUrl>http://samples.pubhub.dk/9788711437155.epub</SampleUrl>
+                    <RightList/>
+                    <Subjects>
+                        <SimpleSubject>
+                            <Code>F</Code>
+                            <Description>Fiktion og relaterede emner</Description>
+                        </SimpleSubject>
+                    </Subjects>
+                    <Images>
+                        <Image Type="ForsideMiniature">
+                            http://images.pubhub.dk/thumbnails/642549C3-4E48-49F0-AD07-B1A6283C0278.jpg
+                        </Image>
+                        <Image Type="Forside">
+                            http://images.pubhub.dk/originals/642549C3-4E48-49F0-AD07-B1A6283C0278.jpg
+                        </Image>
+                    </Images>
+                    <PriceBeforeDiscount CurrencyCode="DKK">44.16</PriceBeforeDiscount>
+                </Book>
+            </ListAllBooksResult>
+        </ListAllBooksResponse>
+    </soap:Body>
+</soap:Envelope>

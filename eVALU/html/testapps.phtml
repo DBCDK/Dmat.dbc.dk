@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Test apps for Dmat.dbc.dk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<?php include 'topbar.phtml'; ?>
+<br/>
+<div class="row">
+    <div class="small-4 columns ">&nbsp;</div>
+    <div class="small-4 column end ramme ">
+        <h3>Dmat test apps</h3>
+    </div>
+    <!--<div class="small-2 columns"></div>-->
+</div>
+<br/><br/>
+<div class="row">
+    <div class="small-1 columns ">&nbsp;</div>
+    <div class="small-10 column end ramme">
+        <div class="small-10 columns">
+            <br/>
+            <a id="reggression" href="?cmd=run_test_MatchMedier">phpunit test_MatchMedier.php</a>
+            <br/><br/>
+            <a id="backup_match" href="?cmd=match_backup">backup tables to ( => *_match)</a>
+            <br/><br/>
+            <a id="restore_match" href="?cmd=match_restore">restore tables from *_match</a>
+            <br/><br/>
+            <a id="backup_eVa" href="?cmd=eVa_backup">backup tables to ( => *_eva)</a>
+            <br/><br/>
+            <a id="restore_eVa" href="?cmd=eVa_restore">restore tables from *_eva</a>
+            <br/><br/>
+            <a id="backup_eLu" href="?cmd=eLu_backup">backup tables to ( => *_.elu)</a>
+            <br/><br/>
+            <a id="restore_eLu" href="?cmd=eLu_restore">restore tables from *_elu</a>
+            <br/><br/>
+            <a id="backup_insF" href="?cmd=insF_backup">backup tables to ( => *_insF)</a>
+            <br/><br/>
+            <a id="restore_insF" href="?cmd=insF_restore">restore tables from *_insF</a>
+            <br/><br/>
+            <a id="backup_ToBasis" href="?cmd=ToBasis_backup">backup tables to ( => *_ToBasis)</a>
+            <br/><br/>
+            <a id="restore_ToBasis" href="?cmd=ToBasis_restore">restore tables from *_ToBasis</a>
+            <br/><br/>
+            <a id="backup_ToPromat" href="?cmd=ToPromat_backup">backup tables to ( => *_ToPromat)</a>
+            <br/><br/>
+            <a id="restore_ToPromat" href="?cmd=ToPromat_restore">restore tables from *_ToPromat</a>
+            <br/><br/>
+        </div>
+    </div>
+
+</div>
+
+<? if ($result): ?>
+    <div class="row">
+        <div class="small-1 columns ">&nbsp;</div>
+        <div class="small-10 column end ramme">
+            <div class="small-10 columns">
+                <samp>
+                    <?= $result ?>
+                </samp>
+            </div>
+        </div>
+    </div>
+<? endif; ?>
+
+<div class="row">
+    <div class="small-1 columns ">&nbsp;</div>
+    <div id="finido">finido</div>
+</div>
+</body>
+</html>

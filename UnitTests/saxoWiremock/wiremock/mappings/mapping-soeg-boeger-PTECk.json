@@ -1,0 +1,26 @@
+{
+  "id" : "b544b3f0-8adb-3076-911d-f410be3aef1f",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=9788702232967",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-PTECk.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:31:15 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d86a4eb1e2ea0f541418ca19e5d59b2221495013475; expires=Thu, 17-May-18 09:31:15 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=7HVsK4IF0wEkAAAAMWFhNDllYjEtMjFjYy00NTY2LWIxNDctY2NlMTc4NzM1MjU2EYIlQKA2-x8ScW-rplfJABDS9AM1; expires=Tue, 25-Jul-2017 20:11:15 GMT; path=/; HttpOnly", "ASP.NET_SessionId=yqama1vkb2y5xgvahkdexe3f; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "3605900ebb273cb9-CPH"
+    }
+  },
+  "uuid" : "b544b3f0-8adb-3076-911d-f410be3aef1f"
+}

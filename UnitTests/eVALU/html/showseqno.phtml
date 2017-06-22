@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title><?= $Titel ?></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
+        <link href="jsmodal/css/jsmodal-dark.css" rel="stylesheet" type="text/css" />
+        <script src="jsmodal/js/jsmodal-1.0d.js"></script>
+    </head>
+    <body>
+        <div id="total">
+            <form id='mainform' action="">
+                <input type="hidden" name="seqno" value="<?= $seqno ?>"/>
+                <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+                <input type="hidden" name="lokalid" value="<?= $lokalid ?>"/>
+                <input type="hidden" name="bibliotek" value="<?= $bibliotek ?>"/>
+                <input type="hidden" name="base" value="<?= $base ?>"/>
+                <input type="hidden" name="matchtype" value="<?= $matchtype ?>"/>
+            </form>
+            <div>
+                <div class="tjek">
+                    <a href='index.php'>
+                        <img alt="cover picture" src="pics/dbclogo.png" height="80" />
+                    </a>
+                </div>
+                <div  class="tjek" >seqno:<?= $seqno ?><br/><?= $status ?><br /><?= $choice ?></div>
+                <div class='tjek'><h1><?= $sitetitle ?> (<?= $initials ?>)</h1></div>
+                <div class="tjek" style='padding-top: 30px; '>
+                    <button onclick="openCloseWin('info', '<?= $seqno ?>')">?</button>
+                </div>
+                <div class='next_line' ></div>
+            </div>
+            <div id="form">
+                <div class="tjek"><input  form='mainform' onclick="openCloseWin('close', 'xx')" type="submit" name="cmd"  value="Fortryd" title="Ingen handling, vis den næste post" /></div>
+
+                <?php if ($site == 'eVa'): ?>
+                    <div class="tjek"><input form='mainform' onclick="openCloseWin('close', 'xx')" type="submit" name="cmd" value='Drop' title="Posten er ikke relvant og bliver fjernet"/></div>
+                    <div class="tjek"><input form='mainform' type="submit" name="cmd" value='Afventer' title="Posten kan ikke gøres færdig nu.  Bliver sat til afventer for senere at kunne færdiggøres"/></div>
+                <?php endif; ?>
+
+                <div class="tjek"><input form='mainform' type="submit" name="cmd" value='d08' title="Skriv en note som vil blive indsat i marcpostens felt d08" /></div>
+                <div class="tjek"><button onclick="openCloseWin('xml', '<?= $seqno ?>')" title="Se xml posten fra Publizon">xml</button></div>
+
+                <?php if ($candidates) { ?>
+                    <div class='tjek'><button onclick="openCloseWin('close', 'xx')" title="Luk alle de vinduer du har åbnet">Luk vinduer</button></div>
+                    <div class="tjek"><button onclick="openCloseWin('none', '<?= $seqno ?>')" title="Ingen af kandidaterne dur (VælgMig!).  Opret en ny post uden forlæg">Ingen af nedenstående</button></div>
+                <?php } ?>
+
+                <div class='tjek'><input form='mainform' onclick="openCloseWin('close', 'xx')" type="submit" name="cmd" value="Til oversigten" title="Forlad dette skærmbilled og se oversigten"/></div>
+
+                <?php if ($cmd == 'Afventer'): ?>
+                    <div class="next_line">
+                        <form action='' id='waiting'>
+                            <div class='tjek ramme'>
+                                <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+                                <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+                                <input type='hidden' name="notetype" value="waiting"/><br />
+                                <div class="tjek" style='margin-left: 35px;'>Afventer:</div>
+                                <textarea  style='margin-left: 2px;' name='notetext'  id='notetext' rows='1' cols='30' maxlength='500'><?= $notetext ?></textarea>
+                                <br/><br />
+                                <div style='margin-left: 35px;'>
+                                    <input class='choose' type='submit' name='cmd' value='Afvent'/>
+                                </div>
+                                <br /><br />
+                            </div>
+                        </form>
+                    </div>
+                    <div class='next_line' ></div>
+                <?php endif ?>
+
+                <?php if ($cmd == 'Note'): ?>
+                    <div class="next_line">
+                        <form action='' id='evaluate'>
+                            <div class='tjek ramme'>
+                                <input type='hidden' name="cmd" value="<?= $cmd ?>"/>
+                                <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+                                <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+                                <input type='hidden' name="notetype" value="note"/><br />
+                                <div class="tjek" style='margin-left: 35px;'>d08:</div>
+                                <!--
+                                <textarea  style='margin-left: 2px;' name='notetext'  id='notetext' rows='1' cols='30' maxlength='500'><?= $notetext ?></textarea>
+                                -->
+                                <input type="text" name='notetext' id='notetext' maxlength='100' size="100" value='<?= $notetext ?>'/>
+
+                                <br/><br />
+                                <div style='margin-left: 35px;'>
+                                    <input class='choose' type='submit' name='cmd' value='Gem d08'/>
+                                </div>
+                                <br /><br />
+                            </div>
+                        </form>
+                    </div>
+                    <div class='next_line' ></div>
+                <?php endif; ?>
+
+                <?php if ($site == 'eVa'): ?>
+                    <div class='next_line' >
+                        <form action='' id='yourChoice'>
+                            <div class="tjek ramme">
+                                <input type='hidden' name="seqno" value="<?= $seqno ?>"/>
+                                <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+                                <input type='hidden' name="cmd" value='showFaust'/>
+
+                                Eget valg (faust):
+                                <input id='faust' oninput='faustInput()' type='text' name='faust' size="11" maxlength="11" />
+                                <select name="base">
+                                    <option value='Basis' selected>Basis</option>
+                                    <option value='Phus' >Phus</option>
+                                </select> <input type="submit" name="egetvalg" value="Søg" />
+                            </div>
+                        </form>
+                    </div>
+                <?php endif; ?>
+
+                <div class="tjek ramme" style='margin-left:  20px;'><?= $notetextdisp ?></div>
+
+
+
+                <?php if ($showBKM): ?>
+                    <form action="" id='xx'>
+                        <input type="hidden" name="seqno" value="<?= $seqno ?>" />
+                        <input type="hidden" name="oldstatus" value="<?= $status ?>"/>
+                        <div class='next_line'></div><br />
+                    </form>
+
+                    <?php if ($site == 'eVa'): ?>
+                        <div class="ramme2">&nbsp;
+                            <span class="tjek">
+                                DBF:
+                                <input type="checkbox" <?= $disabled ?>
+                                       form='mainform'
+                                       onclick="SetBKM('BKMV')" <?= $chck['DBF'] ?>
+                                       name="eVA-DBF" id='DBF'/>
+                            </span>
+                            <span class="tjek">
+                                BKM:
+                                <input class='BKM' type="checkbox" <?= $disabled ?>
+                                       form='mainform'
+                                       onclick="SetBKM('BKMV')" <?= $chck['BKM'] ?>
+                                       name="eVA-BKM" id='BKM'/>
+                            </span>
+                            <span class="tjek">
+                                V:
+                                <input class='VBS' <?= $disabled ?>
+                                       form='mainform' onclick="SetBKM('V')"
+                                       type="checkbox" <?= $chck['V'] ?>
+                                       name="eVA-V" id="V"/>
+                            </span>
+                            <span class="tjek">
+                                B:
+                                <input class='VBS' <?= $disabled ?>
+                                       form='mainform' onclick="SetBKM('B')"
+                                       type="checkbox" <?= $chck['B'] ?>
+                                       name="eVA-B" id="B"/>
+                            </span>
+                            <span class="tjek">
+                                S:
+                                <input class='VBS' <?= $disabled ?>
+                                       form='mainform' onclick="SetBKM('S')"
+                                       type="checkbox" <?= $chck['S'] ?>
+                                       name="eVA-S" id="S"/>
+                            </span>
+                            <span class="tjek">
+                                BKMV:
+                                <input class='BKMV'  form='mainform'
+                                       onclick="SetBKM('BKMV')"
+                                       type="checkbox" <?= $chck['BKMV'] ?>
+                                       name="eVA-BKMV" id="BKMV"/>
+                            </span>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if ($site == 'eLu'): ?>
+                        <div class="ramme3">
+                            <span class="tjek">L: <input form='mainform' onclick="SetBKM('L')" type="checkbox" <?= $chck['L'] ?> name="eVA-L" id="L"/></span>
+                            <span class="tjek">BKX: <input class='BKX'  form='mainform' onclick="SetBKM('BKX')" type="checkbox" <?= $chck['BKX'] ?> name="eVA-BKX" id="BKX"/></span>
+                        </div>
+                    <?php endif ?>
+
+
+                    <?php if ($disabled): ?>
+                        <input form='mainform' type="hidden" value="<?= $chck['DBF'] ?>" name="eVA-DBF" id="DBF"/>
+                        <input class='BKM' form='mainform' type="hidden" value="<?= $chck['BKM'] ?>" name="eVA-BKM" id="BKM"/>
+                        <input class='VBS' form='mainform' type="hidden" value="<?= $chck['V'] ?>" name="eVA-V" id="V"/>
+                        <input class='VBS' form='mainform' type="hidden" value="<?= $chck['B'] ?>" name="eVA-B" id="B"/>
+                        <input class='VBS' form='mainform' type="hidden" value="<?= $chck['S'] ?>" name="eVA-S" id="S"/>
+                    <?php endif; ?>
+
+                    <input type="hidden" form='mainform' name="NewRec" value="NewRec" />
+
+                    <div class='next_line'></div><br /><br />
+                    <?php if ($site == 'eLu'): ?>
+                        <span>
+                            <input class="choose" form="mainform" type="submit" name="Lek" value='OK' />
+                            <!--
+                            <input class="choose" form="mainform" type="submit" name="cmd" value='Lektør' />
+                            <input class="choose" form="mainform" type="submit" name="cmd" value='IKKE Lektør' />
+                            <input class="choose" form="mainform" type="submit" name="cmd" value='BKM vurdering' style='margin-left:  100px;' />
+                            <input type='hidden' form="mainform" name='choice' value='<?= $choice ?>' />
+                            -->
+                        </span>
+                    <?php endif; ?>
+                    <?php if ($site == 'eVa'): ?>
+                        <span>
+                            <?php if ($secondChoice): ?>
+                                <input class="choose" form="mainform" type="submit" name="cmd" value="Ny registrering" title="Der bliver dannet en ny post med den valgte post som forlæg"/>
+                                <?php if ($mod > 15): ?>
+                                    <input class="choose" form="mainform" type="submit" name="cmd" value="Er registreret" title="Posten er registreret. DBF/BKM/L data bliver sendt til Publizon. Basis posten uændret" />
+                                    <input type="hidden" form='mainform' name="NewRec" value="OldRec" />
+                                <?php endif; ?>
+                            <?php else: ?>
+                                <input class="choose" form="mainform" type="submit" name="cmd" value='OK' />
+                            <?php endif; ?>
+                        </span>
+                    <?php endif; ?>
+                <?php endif; ?>
+
+                <div class="next_line" style="margin: 20px; margin-left: 45px;"><?= $secondChoiceTxt ?></div>
+
+                <?php if ($candidates): ?>
+
+                    <?php if ($cntINT): ?>
+                        <div class='next_line'>
+                            <span class='tjek'>ISBN ikke Titel:</span>
+                            <?php $i = 0; ?>
+                            <?php foreach ($isbnNotTitle as $link) { ?>
+                                <?php $i++; ?>
+                                <span class='chose'>
+                                    <button onclick="openCloseWin('open', '<?= $link ?>')" title="Hent posten fra Basis"><?= $buttons[4][$i - 1] ?></button>
+                                    <button class="chooseme" onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')" title="Brug denne post som forlæg til en ny ACC post">VælgMig!</button>
+                                </span>
+                            <?php } ?>
+                        </div>
+                        <?= $endINT ?>
+                    <?php endif; ?>
+
+                    <div class='next_line'>
+                        <span class='tjek'>Titel/forfatter/forlag:</span>
+                        <?php $i = 0; ?>
+                        <?php foreach ($titleAndAuthorAndPublisher as $link): ?>
+                            <?php $i++; ?>
+                            <span class='chose'>
+                                <button onclick="openCloseWin('open', '<?= $link ?>')" title="Hent posten fra Basis"><?= $buttons[3][$i - 1] ?></button>
+                                <button class="chooseme" onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')" title="Brug denne post som forlæg til en ny ACC post">VælgMig!</button>
+                            </span>
+                        <?php endforeach; ?>
+                        <?= $endTAP ?>
+                        <div class='next_line'></div>
+
+                        <div class='tjek'>Titel/forfatter:</div>
+                        <?php $i = 0; ?>
+                        <?php foreach ($titleAndAuthor as $link): ?>
+                            <?php $i++; ?>
+                            <button onclick="openCloseWin('open', '<?= $link ?>')" title="Hent posten fra Basis"><?= $buttons[2][$i - 1] ?></button>
+                            <button class="chooseme" onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')" title="Brug denne post som forlæg til en ny ACC post">VælgMig!</button>
+                        <?php endforeach; ?>
+                        <?= $endTA ?>
+
+                        <div class='next_line'></div>
+                        <span class='tjek'>Titel:</span>
+                        <?php $i = 0; ?>
+                        <?php foreach ($title as $link): ?>
+                            <?php $i++; ?>
+                            <span class='chose'>
+                                <button onclick="openCloseWin('open', '<?= $link ?>')" title="Hent posten fra Basis"><?= $buttons[1][$i - 1] ?></button>
+                                <button class="chooseme" onclick="openCloseWin('choosen', '<?= $link ?>', '<?= $status ?>')" title="Brug denne post som forlæg til en ny ACC post">VælgMig!</button>
+                            </span>
+                        <?php endforeach; ?>
+                        <?= $endT ?>
+                    </div>
+
+                <?php endif; ?>
+            </div>
+
+            <br/><br />
+
+            <div id="header"><h1><?= $data['Title'][0] ?></h1></div>
+            <!--       <img  src="http://images.pubhub.dk/thumbnails/38de5677-bde4-4cf9-927e-d6ce4d0f2a1c.jpg"  -->
+            <img  src='<?= $Miniature ?>' id="rightsec" style='margin-left: auto;margin-right: auto;' />
+            <div id="leftblock">
+                <?php foreach ($data as $key => $arrs): ?>
+                    <?php foreach ($arrs as $val): ?>
+                        <div class="clear-line">
+                            <div id="nav">
+                                <?= $key ?>
+                            </div>
+                            <div id="section">
+                                <?= $val ?>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                <?php endforeach ?>
+            </div>
+            <div id='footer'><?= $descp['MainDescription'][0] ?></div>
+        </div>
+    </body>
+</html>

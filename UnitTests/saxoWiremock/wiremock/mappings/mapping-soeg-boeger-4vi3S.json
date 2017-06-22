@@ -1,0 +1,26 @@
+{
+  "id" : "c4c4e3cc-839c-35f9-99ba-df003ed33220",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Pan+Knut+Hamsun",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-4vi3S.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:29:31 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d8243ab208141667055303a94f2a7d41a1495013370; expires=Thu, 17-May-18 09:29:30 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=tz3k7IEF0wEkAAAAN2Q1N2QyZjMtYTc4Yi00YWFhLThlNjUtYzUxZWUwMWNjZjUyUo6kE08vTwmbq6PLCRUKkdBNGPA1; expires=Tue, 25-Jul-2017 20:09:30 GMT; path=/; HttpOnly", "ASP.NET_SessionId=x5fge21edn4om4stjmj3dkz1; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058d7f0fcd3d3d-CPH"
+    }
+  },
+  "uuid" : "c4c4e3cc-839c-35f9-99ba-df003ed33220"
+}

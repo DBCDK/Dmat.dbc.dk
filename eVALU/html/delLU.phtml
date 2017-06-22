@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dmat delete LU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+
+<?php //include 'topbar.phtml'; ?>
+<!--<form action="delLU.php" methode="post" data-abide>-->
+<input type="hidden" name="seqno" value="<?= $seqno ?>"/>
+<div class="row">
+    <div class="medium-12 columns end">
+        Øsnker du at slette Lektør udtalelsen der knyttet til denne bog (<?= $seqno ?>)
+    </div>
+</div>
+<div class="row">
+    <div class="medium-12 columns end">
+        <h4>"<?= $title ?>"</h4>
+    </div>
+</div>
+
+<?php if (!$updatelekbase): ?>
+    <div class="row">
+        <div class="column medium-6 end errortxt">
+            Posten har ikke tilknyttet nogen lektørudtalelse!
+        </div>
+    </div>
+    <div class="row">
+        <div class="column medium-6 end">
+            <button class="small">exit</button>
+        </div>
+    </div>
+<?php endif; ?>
+
+<div class="row">
+    <div class="column medium-6 end" id="tst">
+        Lektørudtalelse: <?= $lekfaustok ?>
+    </div>
+</div>
+<div class="row">
+    <div class="column medium-12">
+        <!--        <div class="column medium-6 ">-->
+        <a class="button tiny" id="delluok" onClick="delLU(<?= $seqno ?>)">OK</a>
+        <!--        </div>-->
+    </div>
+
+</div>
+<!--</form>-->
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

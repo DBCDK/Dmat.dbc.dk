@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dmat Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        function loaded() {
+            // close after 5 minuts
+            window.setTimeout(CloseMe, 300000);
+        }
+
+        function CloseMe() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+<?php //include 'topbar.phtml'; ?>
+
+<div class="row">
+    <div class="medium-12 columns end">
+        <h1>Post #<?= $seqno ?> <?= $title ?></h1>
+    </div>
+</div>
+
+<div class="row bottomspace">
+    <div class="medium-12 columns end ramme3">
+        <span>
+            Isbn:<?= $isbn13 ?>&nbsp;
+            Type:<?= $booktype ?>&nbsp;
+            Oprettet:<?= $createdate ?>&nbsp;
+            Source:<?= $source ?>&nbsp;
+            Udgvielsesdato:<?= $publicationdate ?>&nbsp;
+
+        </span>
+    </div>
+</div>
+<div class="row bottomspace">
+    <div class="medium-12 columns">
+        <table>
+            <tr>
+                <?php foreach ($disp[0] as $name => $value): ?>
+                    <th><?= $name ?></th>
+                <?php endforeach; ?>
+            </tr>
+
+            <?php foreach ($disp as $i): ?>
+                <tr>
+                    <?php foreach ($i as $name => $value): ?>
+                        <td><?= $value ?></td>
+                    <?php endforeach; ?>
+                </tr>
+            <?php endforeach; ?>
+
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-12 columns ramme3 bottomspace">
+        <div class="medium-2 columns">
+            <label>Fra Faust:</label>
+        </div>
+        <div class="medium-10 columns">
+            Faustnummeret på den katalogisering der er valgt til forlæg <i>eller</i> det er den samme
+            katalogiering så derfor ingen handling.
+        </div>
+        <div class="medium-2 columns">
+            <label>Tildelt faust:</label>
+        </div>
+        <div class="medium-10 columns">
+            Faustnummeret på den ACC post der bliver dannet. Hvis "Fra Faust" er udfyldt, med dens katalogisering som
+            forlæg
+            ellers kun Publizon data.
+        </div>
+        <div class="medium-2 columns">
+            <label>Nyt trykt faust:</label>
+        </div>
+        <div class="medium-10 columns">
+            Faustnummeret på den bog der forventes komme.
+        </div>
+        <div class="medium-2 columns">
+            <label>Trykt faust:</label>
+        </div>
+        <div class="medium-10 columns">
+            Faustnummeret på trykt bog som har lektørudtalelse. Lektørudtalelsen skal dubleres så den også gælder den
+            ACC post der bliver dannet.
+        </div>
+        <div class="medium-2 columns">
+            <label>Lektør faust:</label>
+        </div>
+        <div class="medium-10 columns">
+            Faustnummer (lektør faust) på den post der er blevet/bliver oprettet i lektør basen og som peger
+            på enten e-bogen eller den trykte.
+        </div>
+        <div class="medium-2 columns">
+            <label>Trykt udg. dato:</label>
+        </div>
+        <div class="medium-10 columns">
+            Forventet udgivelsesdato for den trykte udgave.
+        </div>
+        <div class="medium-2 columns">
+            <label>Er i basis:</label>
+        </div>
+        <div class="medium-10 columns">
+            Posten findes allerede i Basis. Datoen siger hvornår den er konstateret i Basis.
+        </div>
+        <div class="medium-2 columns">
+            <label>LekDB upd.:</label>
+        </div>
+        <div class="medium-10 columns">
+            Hvornår lektørbasen er opdateret.
+        </div>
+        <div class="medium-2 columns">
+            <label>Forventet bogs ISBN:</label>
+        </div>
+        <div class="medium-10 columns">
+            ISBN på den bog der forventes komme.
+        </div>
+        <div class="medium-2 columns">
+            <label>BKX:</label>
+        </div>
+        <div class="medium-10 columns">
+            Ugekode for BKX.
+        </div>
+    </div>
+</div>
+<!--<a class="close-reveal-modal" aria-label="Close">&#215;</a>-->
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

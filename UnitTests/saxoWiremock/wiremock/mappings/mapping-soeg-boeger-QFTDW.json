@@ -1,0 +1,26 @@
+{
+  "id" : "4f55cb3b-6963-3ed5-a8a3-324545ebefac",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=En+verdensomsejling+under+havet+Jules+Verne",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-QFTDW.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:28:10 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d257368d11b139f9ede1888de9da7690c1495013290; expires=Thu, 17-May-18 09:28:10 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=jB0NvYEF0wEkAAAAZDkyY2NkYjAtOTQwNi00MGQzLWE3NmUtNjhlNGE1NDJjYWNhdTkSc_lS3hi4Bs9cKZpo4ryWV1s1; expires=Tue, 25-Jul-2017 20:08:10 GMT; path=/; HttpOnly", "ASP.NET_SessionId=ypscr0utdtxjetcnk2xtacmn; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058b895bfa3d3d-CPH"
+    }
+  },
+  "uuid" : "4f55cb3b-6963-3ed5-a8a3-324545ebefac"
+}

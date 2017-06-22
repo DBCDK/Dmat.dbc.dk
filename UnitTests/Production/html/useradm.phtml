@@ -1,0 +1,257 @@
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Production Plan admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../eVALU/foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../eVALU/css/app.css">
+    <script src="../eVALU/foundation/js/vendor/modernizr.js"></script>
+    <script src="../eVALU/js/script.js"></script>
+</head>
+<body>
+<?php include 'Production_topbar.phtml'; ?>
+
+
+<?php if ($cmd == 'create' or $cmd == 'knownuser' or $cmd == 'createok'): ?>
+    <div class="row">
+        <div class="medium-6 column ramme4 ">
+            <h3>Opret bruger i Production Plan</h3>
+        </div>
+    </div>
+    <br/>
+    <form method="get" action="">
+        <div class="row">
+            <div class="medium-6 column ramme4">
+                <div class="row">
+                    <div class="medium-2 column textright inline">
+                        <label for="user" class="right inline">Brugernavn</label>
+                    </div>
+                    <div class="medium-3 column ">
+                        <input type="text" id="user" name="user" value="<?= $user ?>"/>
+                    </div>
+                    <div class="medium-2 column">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-2 column inline">
+                        <label for="rolle" class="right inline">Rolle</label>
+                    </div>
+                    <div class="medium-3 column textright">
+                        <select name="role">
+                            <option <?= $seleVa ?> value="Bruger">Bruger</option>
+                            <!--<option <?= $selboth ?> value="Both">Both</option>-->
+                            <option <?= $seladmin ?> value="admin">admin</option>
+                        </select>
+                        <!--                                <input type="text"  id="rolle" name="role" value="<?= $role ?>" />-->
+                    </div>
+                    <div class="medium-2 column">
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="row">
+                        <div class="medium-8 column inline">
+                            <ul class="button-group">
+                                <li><input type="submit" name="cmd" value="Opret" class="button tiny inline"/></li>
+                                <!--                                        <li><input type="submit" name="cmd" value="Nulstil passwd" class="button tiny" /></li>
+                                                                    <li><input type="submit" name="cmd" value="Slet" class="button tiny" /></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php if ($cmd == 'knownuser'): ?>
+            <br/>
+            <div class="row">
+                <div class="medium-2 column  ">&nbsp;</div>
+                <div class="medium-6 column ">
+                    <!--<h3>Brugeren findes i forvejen: "<?= $user ?>"</h3>-->
+                    <div data-alert class="alert-box alert round">
+                        Brugeren findes i forvejen: "<?= $user ?>"
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                </div>
+                <div class="medium-2 column "></div>
+            </div>
+        <?php endif; ?>
+        <?php if ($cmd == 'createok'): ?>
+            <br/>
+            <div class="row">
+                <div class="medium-2 column  ">&nbsp;</div>
+                <div class="medium-6 column ">
+                    <div data-alert class="alert-box success round">
+                        <!--                        --><?php //if ($b_role == 'admin'): ?>
+                        <?php if ($b_role != 'xxadmin'): ?>
+
+                            Brugeren "<?= $user ?>" er oprettet med rolle <?= $b_role ?> og password <?= $b_role ?>
+                        <?php else: ?>
+                            Brugeren "<?= $user ?>" er oprettet med rolle <?= $role ?> og Windows password
+                        <?php endif; ?>
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                </div>
+                <div class="medium-2 column "></div>
+            </div>
+        <?php endif; ?>
+    </form>
+<?php endif; ?>
+
+<?php if ($cmd == 'list'): ?>
+    <!--            <div class="row">
+                    <div class="medium-6 column ramme4 ">
+                        <h3>Brugere i dmat.dbc.dk</h3>
+                    </div>
+                </div>
+                <br />-->
+    <div class="row">
+        <div class="medium-6 column ramme4">
+            <div class="medium-2 column textright">
+                Brugernavn
+            </div>
+            <div class="medium-2 column">
+                Oprettet
+            </div>
+            <div class="medium-2 column">
+                Opdateret
+            </div>
+            <div class="medium-2 column">
+                Rolle
+            </div>
+            <br/>
+            <?php foreach ($rows as $row): ?>
+                <div class="medium-2 column textright">
+                    <a href="?cmd=update&user=<?= $row['username'] ?>"><?= $row['username'] ?></a>
+                </div>
+                <div class="medium-2 column">
+                    <?= $row['createdate'] ?>
+                </div>
+                <div class="medium-2 column">
+                    <?= $row['update'] ?>
+                </div>
+                <div class="medium-2 column">
+                    <?= $row['role'] ?>
+                </div>
+                <br/>
+
+            <?php endforeach; ?>
+        </div>
+    </div>
+<?php endif; ?>
+
+<?php if ($cmd == 'update' or $cmd == 'updateok' or $cmd == 'resetok' or $cmd == 'delok'): ?>
+    <!--            <div class = "row">
+                            <div class = "medium-6 column ramme4 ">
+                                <h3>Bruger "<?= $user ?>"</h3>
+
+                            </div>
+                        </div>-->
+    <br/>
+    <form method="get" action="">
+        <input type="hidden" name="user" value="<?= $user ?>"/>
+        <div class="row">
+            <div class="medium-6 column ramme4">
+                <div class="row">
+                    <div class="medium-2 column textright inline">
+                        <label for="user" class="right inline">Brugernavn</label>
+                    </div>
+                    <div class="medium-3 column ">
+                        <input type="text" disabled id="user" name="user" value="<?= $user ?>"/>
+                    </div>
+                    <div class="medium-2 column">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-2 column inline">
+                        <label for="rolle" class="right inline">Rolle</label>
+                    </div>
+                    <div class="medium-3 column textright">
+                        <select name="role">
+                            <option <?= $seleVa ?> value="Bruger">Bruger</option>
+                            <!--                            <option --><? //= $seleLu ?><!-- value="eLu">eLu</option>-->
+                            <!--<option <?= $selboth ?> value="Both">Both</option>-->
+                            <option <?= $seladmin ?> value="admin">admin</option>
+                        </select>
+                        <!--                                <input type="text"  id="rolle" name="role" value="<?= $role ?>" />-->
+                    </div>
+                    <div class="medium-2 column">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-8 column inline">
+                        <ul class="button-group">
+                            <?php if ($cmd != 'delok'): ?>
+                                <li><input type="submit" name="cmd" value="Opdater" class="button tiny inline"/></li>
+                                <!--                                <li><input type="submit" name="cmd" value="Nulstil passwd" class="button tiny"/></li>-->
+                                <li><input type="submit" name="cmd" value="Slet" class="button tiny"/></li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php if ($cmd == 'updateok'): ?>
+            <br/>
+            <div class="row">
+                <div class="medium-2 column  ">&nbsp;</div>
+                <div class="medium-6 column ">
+                    <div data-alert class="alert-box success round">
+                        Brugeren "<?= $user ?>" er blevet opdateret. Rolle: "<?= $b_role ?>"
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                </div>
+                <div class="medium-2 column "></div>
+            </div>
+        <?php endif; ?>
+        <?php if ($cmd == 'resetok'): ?>
+            <br/>
+            <div class="row">
+                <div class="medium-2 column  ">&nbsp;</div>
+                <div class="medium-6 column ">
+                    <div data-alert class="alert-box success round">
+                        Brugeren "<?= $user ?>" har fået passwd: "<?= $role ?>"
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                </div>
+                <div class="medium-2 column "></div>
+            </div>
+        <?php endif; ?>
+        <?php if ($cmd == 'delok'): ?>
+            <br/>
+            <div class="row">
+                <div class="medium-2 column  ">&nbsp;</div>
+                <div class="medium-6 column ">
+                    <div data-alert class="alert-box success round">
+                        Brugeren "<?= $user ?>" er blevet slettet
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                </div>
+                <div class="medium-2 column "></div>
+            </div>
+        <?php endif; ?>
+    </form>
+<?php endif; ?>
+
+
+<script src="../eVALU/foundation/js/vendor/jquery.js"></script>
+<script src="../eVALU/foundation/js/foundation.min.js"></script>
+<script src="../eVALU/foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+{
+  "id" : "ee32a4c8-ea01-32af-a2f3-aba8503b7b96",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Dystopia+Dennis+J%C3%BCrgensen",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-lPmLD.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:29:01 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d1e12a0a8e3ecbb9c4d6f8b776a5776301495013340; expires=Thu, 17-May-18 09:29:00 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=U88X24EF0wEkAAAAZWM0ZTVkNTMtZTAxYy00ZmYyLTkyNjQtNDM3NTg0ZmZlMTJhc_iQcYW0X2nZnwoJkD8JhqEPe-Y1; expires=Tue, 25-Jul-2017 20:09:00 GMT; path=/; HttpOnly", "ASP.NET_SessionId=vcf2uz1402efpv43tkx5pxc5; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058cc46d233d3d-CPH"
+    }
+  },
+  "uuid" : "ee32a4c8-ea01-32af-a2f3-aba8503b7b96"
+}

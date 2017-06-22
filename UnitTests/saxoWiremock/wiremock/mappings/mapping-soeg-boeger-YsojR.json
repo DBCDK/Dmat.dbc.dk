@@ -1,0 +1,26 @@
+{
+  "id" : "ba29e0e6-fab5-3a57-982c-2085be6c98a8",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Litteratur+i+bev%C3%A6gelse+Dan+Ringgaard+et+al.",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-YsojR.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:28:49 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=da20fe419edba63f8c02a081fce3bb1e11495013329; expires=Thu, 17-May-18 09:28:49 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=XmcP1IEF0wEkAAAAYjBjYjc5ODEtZjczOC00MGM3LWFkZTMtM2JkNzEyNTljOGY2bgNu2V0PXG-oHab9-c5OQj31kGw1; expires=Tue, 25-Jul-2017 20:08:49 GMT; path=/; HttpOnly", "ASP.NET_SessionId=yp4u24if4etmopplchx3x4en; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058c7a9ec63d3d-CPH"
+    }
+  },
+  "uuid" : "ba29e0e6-fab5-3a57-982c-2085be6c98a8"
+}

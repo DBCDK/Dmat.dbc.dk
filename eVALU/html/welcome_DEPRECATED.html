@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <title>Welcome to eVa & eLu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!--        <link rel="stylesheet" type="text/css" href="../inc/foundation/css/app.css">
+            <script src="../inc/foundation/js/moderniz.js"></script>-->
+    <script src="js/script.js"></script>
+    <link href="jsmodal/css/jsmodal-dark.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body bgcoor="grey">
+<script src="jsmodal/js/jsmodal-1.0d.js"></script>
+<script>
+
+</script>
+<script>
+    function modal() {
+        Modal.open({
+            ajaxContent: 'statistik.php',
+            width: '30%',
+            height: '70%',
+            hideClose: false,
+            closeAfter: 30,
+            draggable: true
+        });
+    }
+</script>
+<?if($alert): ?>
+<script>
+    alert("Du har glemt at skrive Initaler");</script>
+<?endif?>
+
+<div id='total'>
+    <?= $her ?>
+    <div class="tjek">
+        <a href='/'>
+            <img alt="cover picture" src="pics/dbclogo.png" height="80"/>
+        </a>
+    </div>
+    <div class='tjek'>
+        <h1>eVa & eLu - Selektion af elektroniske bøger (<?= $initials ?>)</h1>
+    </div>
+    <div class="tjek" style='padding-top: 30px; '>
+        <button onclick="openCloseWin('info', '<?= $seqno ?>')">?</button>
+    </div>
+    <div class='next_line'></div>
+    <div style="padding-left: 300px;">
+        <table border='0'>
+            <?foreach($rows as $row):?>
+            <tr>
+                <td class="right" style=" padding-left: 10px; padding-right: 10px;"> <?= $row['status'] ?> </td>
+                <td class="right" style=" padding-left:  10px; padding-right: 10px;"> <?= $row['booktype'] ?> </td>
+                <td class='right' style=" padding-left: 10px; padding-right: 10px;"> <?= $row['cnt'] ?> </td>
+            </tr>
+            <?endforeach?>
+        </table>
+
+        <br/><br/>
+        <a href="eVa.php?type=eVa&seqno=0&cmd=onlyone">
+            <button>eVa</button>
+        </a>
+        <span style="padding-left: 100px"/>
+        <a href="eLu.php">
+            <button>eLu</button>
+        </a>
+
+        <form id='head' action=''>
+            <div class="next_line">
+                <br/><br/>
+                <br/><br/>
+                Dine initialer: <input form='head' type="text" name='ini' value='<?= $initials ?>'/>
+                &nbsp; &nbsp;
+                <input type="submit" form='head' name="Skift" value="Skift"/>
+        </form>
+    </div>
+    <br/> <br/><br/> <br/><br/>
+
+    <input id="modal-2" onclick="modal()" type="button" value="Statistik"/>
+    <br/><br/> <br/><br/><br/> <br/><br/>
+    <br/> <br/><br/> <br/><br/> <br/><br/>
+
+
+</div>
+</div>
+</body>
+</html>

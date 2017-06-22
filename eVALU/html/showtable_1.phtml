@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>dmat_showtable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function fetchNewTitles() {
+            $(document).ajaxStart(function() {
+                $('#fetchingOldTitlesModal').foundation('reveal', 'open');
+            });
+            $(document).ajaxComplete(function() {
+                $('#fetchingOldTitlesModal').foundation('reveal', 'close');
+            });
+            $.ajax({
+                url: "fetchOldTitles.php",
+                async: true,
+                success: function() {
+                    window.location.href = location.pathname + "?type=eVa&cmd=thispage";
+                }
+            });
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<div id="fetchingOldTitlesModal" class="reveal-modal alert-box round" data-reveal data-options="close_on_background_click:false;close_on_esc:false;">
+    <h3>Henter Old titler...</h3>
+</div>
+
+<?php if ($locked): ?>
+    <script>
+        alert(" Posten er låst af en anden bruger\neller der er ikke flere poster i den valgte kategori!");
+    </script>
+    <?php header('Location: index.php'); ?>
+<?php endif; ?>
+<?php if ($finido): ?>
+    <script>
+        alert(" Der er ikke er flere poster i den valgte kategori!");
+    </script>
+<?php endif; ?>
+
+<?php include 'topbar.phtml'; ?>
+
+<div class="row">
+    <div class="medium-4 column">
+        <div class="pagination">
+            <ul class="pagination">
+                <li class="arrow <?= $preunavailable ?>"><a href="<?= $pre ?>">&laquo;</a></li>
+                <li class="current"><a href="<?= $thispage ?>"><?= $currentpage ?></a></li>
+                <li class="arrow <?= $nxtunavailable ?>"><a href="<?= $nxt ?>">&raquo;</a></li>
+                <li> (<?= $pages ?>)</li>
+            </ul>
+        </div>
+    </div>
+<?php if ($type == "eVa" && $oldExists): ?>
+    <div class="medium-2 column right">
+        <a class="button right small" style="padding: 0.5rem 0.9375rem" data-tooltip title="Henter 10 titler fra OldEva eller OldTemplate" href="javascript:" onclick="fetchNewTitles()">
+            Hent 10 Old titler
+        </a>
+    </div>
+<?php endif; ?>
+</div>
+<div class="row">
+    <div class="large-12 column">
+        <table border='0' width='100%'>
+            <tr>
+                <th width='45'>Seqno</th>
+                <th width='100'>Status</th>
+                <th>Titel</th>
+                <!-- <th>Oprettet</th> -->
+                <th width='150'>Opdateret</th>
+                <th width='100'>Publiceret</th>
+                <!--<th>Format</th>-->
+                <th width='140'>isbn13</th>
+                <!--<th>valgte</th>-->
+                <!--<th>Initialer</th>-->
+                <!--<th>Låst</th>-->
+                <? if ($type == 'Afventer'): ?>
+                    <th width='200'>Afventer</th>
+                <? endif ?>
+            </tr>
+            <?php foreach ($rows as $row): ?>
+                <tr>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['seqno'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['status'] ?></td>
+                    <td class="left <? if ($i % 2): ?>grey<? endif ?>"><?= $row['title'] ?></td>
+                    <!-- <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['cdate'] ?></td> -->
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['updated'] ?></td>
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['publicationdate'] ?></td>
+                    <!--<td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['filetype'] ?></td>-->
+                    <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['isbn13'] ?></td>
+                    <!--<td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['choice'] ?></td>-->
+                    <!--<td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['initials'] ?></td>-->
+                    <!--<td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['lockdate'] ?></td>-->
+                    <? if ($type == 'Afventer'): ?>
+                        <td class="center <? if ($i % 2): ?>grey<? endif ?>"><?= $row['Afventer'] ?></td>
+                    <? endif ?>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    </div>
+</div>
+
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

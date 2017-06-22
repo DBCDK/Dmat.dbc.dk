@@ -1,0 +1,26 @@
+{
+  "id" : "4a093ab3-5989-3bfa-a657-e0e50bddc812",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Strategisk+kommunikation+for+praktikere+-+I+andres+br%C3%B8d+2.0+Jens+Otto+Kj%C3%A6r+Hansen%2C+Hanne+Birgitte+J%C3%B8rgensen",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-dk3jL.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:28:21 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d8dbf06e416732d327ed77f68cffbf3c21495013301; expires=Thu, 17-May-18 09:28:21 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=KVZnw4EF0wEkAAAAMDc2YzQ0OTEtYzM3Ny00ZGJkLThhYmItZTllNTk5MWI3MjY2ikD-PjPdxwVHLHLiu67L_kPPqqY1; expires=Tue, 25-Jul-2017 20:08:21 GMT; path=/; HttpOnly", "ASP.NET_SessionId=a3iu5c4e25wicrmmhp23atdu; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058bcbdd9d3d3d-CPH"
+    }
+  },
+  "uuid" : "4a093ab3-5989-3bfa-a657-e0e50bddc812"
+}

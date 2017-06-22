@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<html>
+<head>
+    <title>Statistik til Materialevalg</title>
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<div class="row">
+    <div class="small-12 column">
+        <br/>
+        <hr/>
+        <br/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-4 column">
+        <h4>Ændringer og tilvækst på ugebasis</h4>
+        <?= $maxweeks ?> uger
+    </div>
+    <img src="statistik.png"/>
+</div>
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script src="foundation/js/foundation/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

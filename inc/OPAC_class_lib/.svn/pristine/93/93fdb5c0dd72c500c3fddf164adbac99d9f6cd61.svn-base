@@ -1,0 +1,234 @@
+<script language='javascript'>
+<!--
+//-------- global vars for certain NN IE specific stuff
+var layerStyleRef="";
+var layerRef="";
+var styleSwitch="";
+var layershow="", layerhide="";
+var layer_on="off";
+
+if (navigator.appName == "Netscape") {
+    layerStyleRef="layer.";
+    layerRef="document.layers";
+    styleSwitch="";
+    layershow="show";
+    layerhide="hide"
+}else{
+    layerStyleRef="layer.style.";
+    layerRef="document.all";
+    styleSwitch=".style";
+    layershow="visible";
+    layerhide="hidden";
+}
+
+
+function vLIBshowlayer(which)
+{
+    eval(layerRef+'["'+which+'"]'+styleSwitch+'.visibility="' + layershow + '"');
+}
+
+function vLIBhidelayer(which)
+{
+    eval(layerRef+'["'+which+'"]'+styleSwitch+'.visibility="' + layerhide + '"');
+    for (var i=0; i < document.forms.length; i++) {
+        eval('document.forms[i]'+styleSwitch+'.visibility="' + layershow + '";');
+    }
+}
+
+function vLIBhideAllForms() {
+    for (var i=0; i < document.forms.length; i++) {
+        eval('document.forms[i]'+styleSwitch+'.visibility="' + layerhide + '";');
+    }
+}
+window.onload= vLIBhideAllForms;
+//-->
+</script>
+<style>
+.vLIBtdheader {
+background-color: #99BFE6;
+color: #000000;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+</style>
+
+<div id='vlibTemplateDebug' style="position:absolute; visibility: show; left:1px; top:1px; width:620px; height: 400px; overflow:auto; border-width: 1px; border-color: #808080; border-style:dotted; background-color: #ffffff; z-index:500">
+  <table width="100%" border="0" cellpadding="2" bgcolor="#99BFE6" height="160">
+    <tr>
+      <td>
+        <table width='100%' border=0 cellpadding=0 cellspacing=0 align=left bgcolor="#99BFE6" height="21" bordercolor="#99BFE6">
+          <tr class='vLIBtdheader'>
+            <td width='75%'>vlibTemplate Debugger<a name="#top"></a></td>
+            <td width='25%' align="right">close: <a href="javascript:vLIBhidelayer('vlibTemplateDebug');" class="vLIBtdheader">X</a> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="151">
+        <table width="100%" border="0" cellpadding="1" bgcolor="#99BFE6" bordercolor="#99BFE6">
+        <tmpl_if warnings>
+          <tr>
+            <td colspan="2" bgcolor="#ffffff">Click <a href="#warnings">here</a>
+              to see a list of warnings/errors.</td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="31%">&nbsp;</td>
+            <td width="69%">&nbsp;</td>
+          </tr>
+        </tmpl_if>
+          <tr bgcolor="#ffffff">
+            <td width="31%">No. of global vars:
+            </td>
+            <td width="69%" style='margin-left: 8px;'><tmpl_var vLIB_num_global_vars></td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="31%">No. of top level loops:
+            </td>
+            <td width="69%" style='margin-left: 8px;'><tmpl_var vLIB_no_top_level_loops></td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="31%" height="62" valign="top"> List of parameters: </td>
+            <td width="69%" style='margin-left: 8px;' height="62">
+              <table width="100%" border="1" cellpadding="0">
+                <tmpl_loop vLIB_list_params>
+                <tr bgcolor="#<tmpl_if __EVEN__>AAFFFF<tmpl_else>FFFFFF</tmpl_if>">
+                  <td width="40%" vAlign="top"><b><tmpl_var param_name></b>:</td>
+                  <td width="60%"><tmpl_var param_value></td>
+                </tr>
+                </tmpl_loop>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="338">
+        <table width="100%" border="0" cellpadding="0" bgcolor="#99BFE6">
+          <tr bgcolor="#ffffff">
+            <td width="38%" valign="top" height="76">List of Template vars:<br>
+              i.e. vars in html file
+            </td>
+            <td width="62%" height="76">
+              <table width="100%" border="1" cellpadding="0">
+                <tmpl_loop vLIB_include_files>
+                <tr>
+                  <td width="37%"><tmpl_if __FIRST__><b>files</b>:<tmpl_else>&nbsp;</tmpl_if></td>
+                  <td width="63%"><tmpl_var filename></td>
+                </tr>
+                </tmpl_loop>
+                <tmpl_loop vLIB_vars>
+                <tr>
+                  <td width="37%"><tmpl_if __FIRST__><b>Variables</b>:<tmpl_else>&nbsp;</tmpl_if></td>
+                  <td width="63%"><tmpl_var varname></td>
+                </tr>
+                </tmpl_loop>
+                <tmpl_loop vLIB_ifs>
+                <tr>
+                  <td width="37%"><tmpl_if __FIRST__><b>IF's</b>:<tmpl_else>&nbsp;</tmpl_if></td>
+                  <td width="63%"><tmpl_var ifname></td>
+                </tr>
+                </tmpl_loop>
+                <tmpl_loop vLIB_elseifs>
+                <tr>
+                  <td width="37%"><tmpl_if __FIRST__><b>ELSEIF's</b>:<tmpl_else>&nbsp;</tmpl_if></td>
+                  <td width="63%"><tmpl_var elseifname></td>
+                </tr>
+                </tmpl_loop>
+                <tmpl_loop vLIB_unless>
+                <tr>
+                  <td width="37%"><tmpl_if __FIRST__><b>UNLESS's</b>:<tmpl_else>&nbsp;</tmpl_if></td>
+                  <td width="63%"><tmpl_var unlessname></td>
+                </tr>
+                </tmpl_loop>
+              </table>
+
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="38%" bgcolor="#ffffff" valign="top">List of Template loops:<br>
+              i.e. in html fil </td>
+            <td width="62%" style='margin-left: 8px;'>
+                <tmpl_loop vLIB_loops>
+                    <tmpl_var loopname>
+                    <tmpl_unless __LAST__><br></tmpl_unless>
+                </tmpl_loop>
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="38%" valign="top">List of vlibTemplate:: global vars<br>
+              as in vars set using setvar/setloop():
+            </td>
+            <td width="62%" style='margin-left: 8px;'>
+                <tmpl_loop vLIB_tmplvars>
+                    <tmpl_var varname>
+                    <tmpl_unless __LAST__><br></tmpl_unless>
+                </tmpl_loop>
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="38%" height="62" valign="top"> vlibTemplate loops<br>
+              set using setloop():</td>
+            <td width="62%" style='margin-left: 8px;' height="62">
+                <tmpl_loop vLIB_tmplloops>
+                    <tmpl_var loopname>
+                    <tmpl_unless __LAST__><br></tmpl_unless>
+                </tmpl_loop>
+            </td>
+          </tr>
+        </table>
+        <tmpl_if warnings>
+        <table width="100%" border="0" cellpadding="0" bgcolor="#99BFE6">
+          <tr bgcolor="#ffffff">
+            <th valign="top" height="37" colspan="3"><a name="warnings" href='#top'>top</a>
+            <font color="#FB0D0D">Following
+              is a list of warning which could possibly resolve any issues you've
+              had parsing the template</font><br>
+            </th>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="22%" bgcolor="#ffffff" valign="top" height="23"><b>Problem</b></td>
+            <td width="45%" style='margin-left: 8px;' height="23"><b>Detail</b></td>
+            <td width="33%" style='margin-left: 8px;' height="23"><b>Location</b></td>
+          </tr>
+          <tmpl_loop vLIB_warnings>
+          <tr bgcolor="#ffffff">
+            <td width="22%" valign="top"><tmpl_var problem></td>
+            <td width="45%" style='margin-left: 8px;' valign="top">
+                <tmpl_var detail escape=html>
+            </td>
+            <td width="33%" style='margin-left: 8px;' valign="top"><tmpl_var location></td>
+          </tr>
+          </tmpl_loop>
+        </table>
+        </tmpl_if>
+
+        <table width="100%" border="0" cellpadding="0" bgcolor="#99BFE6">
+          <tr bgcolor="#ffffff">
+            <td width="38%" valign="top">
+                Here is the actual array with which
+                the variables and loops are built:
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="100%" valign="top">
+             <pre><tmpl_var vLIB_allarrvars></pre>
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="38%" valign="top">
+                Here is the array of global vars &amp; values:
+            </td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td width="100%" valign="top">
+             <pre><tmpl_var vLIB_allvars></pre>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</div>

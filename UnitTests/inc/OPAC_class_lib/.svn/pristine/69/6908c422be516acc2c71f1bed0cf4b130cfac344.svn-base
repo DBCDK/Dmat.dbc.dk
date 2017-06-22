@@ -1,0 +1,31 @@
+<?php
+
+    require_once "../inc/OLS_class_lib/oci_class.php";
+
+    class posthusDBException extends Exception {
+        //  public function __toString() {
+        // return "marcException -->".$this-
+    }
+
+    class posthusDB_class {
+        private $credentials;
+        private $status_params = array();
+
+        public function __construct($credentials) {
+            //if ( ! isset($_SESSION) ) session_start();
+            //            if ( ! array_key_exists('test',$_SESSION)) $_SESSION['test'] = 'hhl';
+            $this->credentials = $credentials;
+            try {
+                $phoci = new oci($this->credentials);
+                $phoci->connect();
+                
+                // read status table
+                $sql = "select * from status";
+                $this->status_params = $phoci->fetch_all_into_assoc($sql);
+            }
+            catch ( ociException $e ) {
+                print("Caught the error: ". str_replace("\n","<br />",$e)."<br />\r\n" );
+            }
+        }
+    }
+?>

@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+<html>
+<head>
+    <title>dmat fejl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<?php include 'admtopbar.phtml'; ?>
+
+<div class="row">
+
+    <div id='total'>
+
+
+        <!--    <div class="tjek">-->
+        <!--        <a href='/'>-->
+        <!--            <img alt="cover picture" src="pics/dbclogo.png" height="80"/>-->
+        <!--        </a>-->
+        <!--    </div>-->
+        <div class='tjek'>
+            <div class="tjek" style='padding-top: 10px; '>
+                <h1>Fejl Basis/Phus/DR</h1>
+
+            </div>
+        </div>
+
+        <div class='next_line'></div>
+        <div class="ramme5">Poster der mangler i Basis. Enten fordi de er i proces eller der er fejl i
+            produktionskoderne
+        </div>
+        <div class='next_line'></div>
+        <br/>
+
+        <form>
+            <input type="hidden" name="seqno" value="<?= $seqno ?>"/>
+
+            <div class="ramme6">
+
+                <table border="0">
+                    <tr>
+                        <?php foreach ($missingBasis[0] as $head => $val): ?>
+                            <th><?= $head ?></th>
+                        <?php endforeach ?>
+                    </tr>
+
+                    <?php foreach ($missingBasis as $missing): ?>
+                        <tr>
+                            <?php foreach ($missing as $key => $val): ?>
+                                <td class="info <?= $missing['updateClass'] ?>"><?= $val ?></td>
+                            <?php endforeach; ?>
+                            <?php if ($showpost): ?>
+                                <td class="info">
+                                    <input type="submit" value="ok"/>
+                                </td>
+                                <input type="hidden" name="type" value="ManglerBasis"/>
+                            <?php endif; ?>
+                        </tr>
+                        <?php if ($showpost): ?>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Faustnummer kandidater:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"></td>
+                                <td colspan="2">INGEN AF NEDENSTÅENDE brug: <a
+                                            href="http://devel7.dbc.dk/~hhl/posthus/DigitalResources/TrimDR.php?format=<?= $missing['format'] ?>&Isbn=<?= $missing['isbn13'] ?>&Search=OK">TrimDR</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Titel</th>
+                                <!--<th>Type</th>-->
+                                <th colspan="2">Ændre Faust til</th>
+                            </tr>
+                            <?php foreach ($missingDR as $missingD): ?>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <?= $missingD['title'] ?>
+                                    </td>
+                                    <!--<td>-->
+                                    <!--<?= $missingD['type'] ?>-->
+                                    <!--</td>-->
+                                    <td>
+                                    </td>
+                                    <td>
+                                        <input type="submit" name="chosenFaust" value="<?= $missingD['faustNumber'] ?>">
+                                        <!--<input type="hidden" name="TargetSeqno" value="<?= $missingD['TargetSeqno'] ?>">-->
+                                    </td>
+
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+            <br/>
+            <br/>
+
+            <div class='next_line'></div>
+            <div class="ramme5">Poster der mangler i DR. Sandsynligvis fordi de har skiftet faust nummer!</div>
+            <div class='next_line'></div>
+            <br/>
+
+            <div class="ramme6">
+                <table border="0">
+                    <tr>
+                        <?php foreach ($missingDR[0] as $head => $val): ?>
+                            <th><?= $head ?></th>
+                        <?php endforeach ?>
+                    </tr>
+                    <?php foreach ($missingDR as $missing): ?>
+                        <tr>
+                            <?php foreach ($missing as $key => $val): ?>
+                                <td class="info"><?= $val ?></td>
+                            <?php endforeach; ?>
+                            <?php if ($showpostDR): ?>
+                                <td class="info">
+                                    <input type="submit" value="ok"/>
+                                </td>
+                                <input type="hidden" name="type" value="ManglerDR"/>
+                            <?php endif; ?>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+            <br/> <br/>
+
+            <div class='next_line'></div>
+            <div class="ramme5">Poster med fejl i ERA koden</div>
+            <div class='next_line'></div>
+            <br/>
+
+            <div class="ramme6">
+
+
+                <table border="0">
+                    <tr>
+                        <?php foreach ($ERAerror[0] as $head => $val): ?>
+                            <th><?= $head ?></th>
+                        <?php endforeach ?>
+                    </tr>
+                    <?php foreach ($ERAerror as $missing): ?>
+                        <tr>
+                            <?php foreach ($missing as $key => $val): ?>
+                                <td class="info"><?= $val ?></td>
+                            <?php endforeach; ?>
+                            <?php if ($showpostERA): ?>
+                                <td class="info">
+                                    <input type="submit" value="ok"/>
+                                </td>
+                                <input type="hidden" name="type" value="ForkertERA"/>
+                            <?php endif; ?>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+            <br/>
+
+            <div style="padding-bottom: 300px;"></div>
+        </form>
+    </div>
+    <br/>
+</div>
+
+
+</body>
+</html>

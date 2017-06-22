@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Testdata for eVALU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="foundation/css/foundation.css">
+    <!--    <link rel="stylesheet" href="../foundation/css/foundation-datepicker.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <!--    <script src="../foundation/js/foundation-datepicker.js"></script>-->
+    <script src="foundation/js/vendor/modernizr.js"></script>
+    <script src="foundation/js/locales/foundation-datepicker.da.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<br/>
+<div class="row">
+    <div class="column medium-8 caption">
+        Post nr. <?= $seqno ?>
+    </div>
+    <div class="column medium-2">
+        <a href="?seqno=<?= $bckseqno ?>">Forrige post</a>
+    </div>
+    <div class="column medium-2">
+        <a href="?seqno=<?= $nxtseqno ?>">Næste post</a>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="column medium-12 ">
+        <h3><?= $headln ?></h3>
+    </div>
+</div>
+<div class="row">
+    <table id="klistre">
+        <tr>
+            <?php foreach ($info as $hd => $val): ?>
+                <th>
+                    <?= $hd ?>
+                </th>
+            <?php endforeach; ?>
+        </tr>
+        <tr>
+            <?php foreach ($info as $hd => $val): ?>
+                <td>
+                    <?= $val ?>
+                </td>
+            <?php endforeach; ?>
+        </tr>
+        </tr>
+    </table>
+</div>
+<br/>
+
+<div class="row">
+    <div class="column medium-12 ">
+        <table id="klistre" border="0">
+            <tr>
+                <th>
+                    Seqno
+                </th>
+                <th>
+                    Data sendes til Publizon (eReolen)
+                </th>
+            </tr>
+            <tr>
+                <td class="">
+                    <pre><?= $seqno ?></pre>
+                </td>
+                <td class="">
+                    <pre><?= $topub ?></pre>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="column medium-12 end">
+        <table id="klistre" border="0">
+            <tr>
+                <th>
+                    Post fra Publizon
+                </th>
+                <th>
+                    Post i Basis
+                </th>
+                <th>
+                    Post til Basis
+                </th>
+            </tr>
+            <tr>
+                <td class="unittest">
+                    <pre><?= $frompub ?></pre>
+                </td>
+                <td class="unittest">
+                    <pre><?= $frombasis ?></pre>
+                </td>
+                <td class="unittest">
+                    <pre><?= $tobasis ?></pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="column medium-12 end">
+        <table id="klistre" border="0">
+            <tr>
+                <th>
+                    Post til basis (trykt)
+                </th>
+                <th>
+                    Post til lektør
+                </th>
+                <th>
+                    Opdateret post i Basis
+                </th>
+            </tr>
+            <tr>
+                <td class="unittest">
+                    <pre><?= $printed ?></pre>
+                </td>
+                <td class="unittest">
+                    <pre><?= $tolek ?></pre>
+                </td>
+                <td class="unittest">
+                    <pre><?= $newBasis ?></pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br/>
+<br/>
+<hr>
+<div class="row">
+    <div class="column medium-8 caption">
+        <?= $seqno ?>
+    </div>
+    <div class="column medium-2">
+        <a href="?seqno=<?= $bckseqno ?>">Forrige post</a>
+    </div>
+    <div class="column medium-2">
+        <a href="?seqno=<?= $nxtseqno ?>">Næste post</a>
+    </div>
+</div>
+<hr/>
+<br/>
+<br/>
+
+
+<!--<script src="foundation/js/vendor/jquery.js"></script>-->
+<script src="foundation/js/foundation.min.js"></script>
+<!--<script src="foundation/js/foundation/foundation.equalizer.js"></script>-->
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "id" : "2aae5d49-f690-3233-a5f8-f4b71c716e78",
+  "request" : {
+    "url" : "/dk/soeg/boeger/?query=Operation+Dacapo+Hanne+Bech+Hansen",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-soeg-boeger-CqyZQ.txt",
+    "headers" : {
+      "Date" : "Wed, 17 May 2017 09:28:38 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Connection" : "keep-alive",
+      "Set-Cookie" : [ "__cfduid=d9bf3abb09964537c45f8f70f8987a3241495013318; expires=Thu, 17-May-18 09:28:38 GMT; path=/; domain=.saxo.com; HttpOnly", ".ASPXANONYMOUS=mOaVzYEF0wEkAAAAOTlmNDU5YjEtZDYwMy00YzM3LWJkMjQtODNkMThlNjQ1MDk1o0X-A5XGNhCQ1x0KotrhmbB5wSg1; expires=Tue, 25-Jul-2017 20:08:38 GMT; path=/; HttpOnly", "ASP.NET_SessionId=zbl1vtob1qxko3jzayvm5xmk; path=/; HttpOnly" ],
+      "Cache-Control" : "private",
+      "Vary" : "Accept-Encoding",
+      "X-AspNet-Version" : "4.0.30319",
+      "X-Powered-By" : "ASP.NET",
+      "P3P" : "CP: NOI ADM DEV COM NAV OUR STP",
+      "Server" : "cloudflare-nginx",
+      "CF-RAY" : "36058c36bc103d3d-CPH"
+    }
+  },
+  "uuid" : "2aae5d49-f690-3233-a5f8-f4b71c716e78"
+}

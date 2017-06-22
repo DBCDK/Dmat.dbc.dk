@@ -1,0 +1,244 @@
+<!--
+/**
+ * Copyright Dansk Bibliotekscenter a/s. Licensed under GNU GPL v3
+ * See license text at https://opensource.dbc.dk/licenses/gpl-3.0
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Production Plan for DBC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../eVALU/foundation/css/foundation.css" media="screen">
+    <link rel="stylesheet" href="../eVALU/foundation/css/foundation-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../eVALU/css/app.css">
+    <link rel="stylesheet" type="text/css" href="../eVALU/css/print.css" media="print">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../eVALU/foundation/js/foundation-datepicker.js"></script>
+    <script src="../eVALU/foundation/js/vendor/modernizr.js"></script>
+    <script src="../eVALU/foundation/js/locales/foundation-datepicker.da.js"></script>
+    <script src="../eVALU/js/script.js"></script>
+    <!--    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+</head>
+<body>
+<?php include 'Production_topbar.phtml'; ?>
+
+
+<?php if ($order == 'extraction'): ?>
+    <div class="row">
+        <div class="medium-12 columns">
+            <table>
+                <tr>
+                    <th>Kalenderuge</th>
+                    <th>Mandag</th>
+                    <th>Tirsdag</th>
+                    <th>990 opdatering (Onsdag) [Kl. 18:00]</th>
+                    <th>Udtræksdage fra Frozen (Torsdag)</th>
+                    <th>Fredag</th>
+                    <th colspan="3">Udtræk omfatter ajourdatoer (todsdag-onsdag)</th>
+                </tr>
+                <?php foreach ($weekcodes as $ln): ?>
+                    <tr>
+                        <?php foreach ($ln as $td): ?>
+                            <?= $td ?>
+                        <?php endforeach; ?>
+                    </tr>
+
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </div>
+<? endif; ?>
+
+<?php if ($display == 'distribution'): ?>
+    <div class="row bottomspace">
+        <div class="medium-1 columns">&nbsp;</div>
+        <div class="medium-5 columns ramme5">
+            <?= $hd1 ?>
+        </div>
+        <div class="medium-1 columns ">
+            &nbsp;
+        </div>
+        <div class="medium-5 columns ramme5 end">
+            <?= $hd2 ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-1 columns">&nbsp;</div>
+        <div class="medium-5 columns ">
+            <textarea rows="10" cols="50"><?= $html1 ?> </textarea>
+        </div>
+        <div class="medium-1 columns ">
+            &nbsp;
+        </div>
+        <div class="medium-5 columns end ">
+            <textarea rows="10" cols="50"><?= $html2 ?></textarea>
+
+        </div>
+    </div>
+    <br/><br/>
+    <div class="row">
+        <div class="medium-5 columns ">
+            &nbsp;
+        </div>
+        <div class="medium-4 columns ramme6 end">
+            <p>Tryk et tilfældigt sted i en af ovenstående html koder.</p>
+            <p>Tryk "CTRL-a" og derefter "CTRL-c" </p>
+            <p></p>
+            <p>Gå i Plone og tryk "CTRL-v" hvor du ønsker htmlkoden indsat!</p>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+    <div class="row bottomspace">
+        <div class="medium-1 columns">&nbsp;</div>
+        <div class="medium-5 columns ">
+            <?= $html1 ?>
+        </div>
+        <div class="medium-1 columns ">
+            &nbsp;
+        </div>
+        <div class="medium-5 columns end ">
+            <?= $html2 ?>
+        </div>
+    </div>
+<?php endif; ?>
+
+
+<?php if ($display == 'default'): ?>
+
+    <div class="row ">
+        <form action="#" method="post">
+            <table id="product2" role="grid" width="<?= $width ?>%">
+                <caption class="caption print-only"><?= $caption ?></caption>
+                <?= $head ?>
+                <?= $rowHTML ?>
+            </table>
+        </form>
+    </div>
+    <div style="margin-top: 40px;">
+        <hr>
+    </div>
+<?php endif; ?>
+
+<?php if ($display == 'default2'): ?>
+    <?= $head ?>
+    <br/>
+    <form id="producttable" action="#" method="post">
+        <?= $rowHTML ?>
+    </form>
+    <div style="margin-top: 40px;">
+        <hr>
+    </div>
+<?php endif; ?>
+
+<?php if ($order == 'changeYear'): ?>
+    <form id="chYear" action="#" method="post">
+        <input type="hidden" name="order" value="newYear"/>
+        <div class="row ">
+            <div class="medium-2 right columns">
+                <select id="yearselect" name="pickAyear">
+                    <?php foreach ($years as $y => $selected): ?>
+                        <option value="<?= $y ?>" <?= $selected ?> ><?= $y ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+    </form>
+    <script>
+        $('#yearselect').change(function () {
+            $('#chYear').submit();
+        });
+    </script>
+<?php endif; ?>
+
+<div>
+    <div id="newWeekCode" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle"
+         aria-hidden="true" role="dialog">
+        <div class="row">
+            <div class="caption">Ny ugekode</div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="small-2 column">
+                <button class="tiny  round weekchoose" onclick="newWeekCode2('out')">Udgår</button>
+            </div>
+            <div class="small-1 column">
+                &nbsp;
+            </div>
+            <div class="small-2 column">
+                <button class="tiny round weekchoose" onclick="newWeekCode2('blank')">blank</button>
+            </div>
+            <div class="small-1 column">
+                &nbsp;
+            </div>
+            <div class="small-2 column">
+                <label for="right-label" class="right inline">
+                    Ugekode:
+                </label>
+            </div>
+            <div class="small-3 column end">
+                <!--            <form action="" id="db">-->
+                <input id="datebox" type="text" size="12" value="111111" name="newWeekCode"
+                       onchange="newWeekCode2('gem');"/>
+                <!--            </form>-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="small-1 column input-group">
+                <div class="colorbox1 input-group-label"></div>
+                <input id="colorbox1" hecked='' class="input-group-field" type="radio" name="txtcolor" value="box1"/>
+            </div>
+            <div class="small-1 column end input-group">
+                <div class="colorbox2 input-group-label"></div>
+                <input id="colorbox2" hecked='' class="input-group-field" type="radio" name="txtcolor" value="box2"/>
+            </div>
+            <div class="small-1 column input-group">
+                <div class="colorbox3 input-group-label"></div>
+                <input id="colorbox3" hecked='true' class="input-group-field" type="radio" name="txtcolor"
+                       value="box3"/>
+            </div>
+            <div class="small-1 column end input-group">
+                <div class="colorbox4 input-group-label"></div>
+                <input id="colorbox4" hecked='' class="input-group-field" type="radio" name="txtcolor" value="box4"/>
+            </div>
+            <div class="small-1 column end input-group">
+                <div class="colorbox5 input-group-label"></div>
+                <input id="colorbox5" hecked='' class="input-group-field" type="radio" name="txtcolor" value="box5"/>
+            </div>
+            <div class="small-1 column end input-group">
+                <div class="colorbox6 input-group-label"></div>
+                <input id="colorbox6" hecked='' class="input-group-field" type="radio" name="txtcolor" value="box6"/>
+            </div>
+
+            <div class="small-1 column end input-group">
+                <div class="nonebox input-group-label"></div>
+                <input id="nonebox" hecked='' class="input-group-field" type="radio" name="txtcolor"
+                       value="nonecolor"/>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <hr>
+            <button class="tiny" onclick="newWeekCode2()">GEM</button>
+        </div>
+    </div>
+</div>
+<!--<script src="../eVALU/foundation/js/vendor/jquery.js"></script>-->
+<script src="../eVALU/foundation/js/foundation.min.js"></script>
+<!--<script src="../eVALU/foundation/js/foundation/foundation.equalizer.js"></script>-->
+<script>
+    $(document).foundation();
+</script>
+<?php if ($loginfailure): ?>
+    <?php $_SESSION['loginfailure'] = false; ?>
+    <script>
+        $('#Loginmodal').foundation('reveal', 'open', 'login.php?loginfailure=true');
+    </script>
+<?php endif; ?>
+</body>
+</html>
